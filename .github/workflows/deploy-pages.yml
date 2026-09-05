@@ -1,0 +1,57 @@
+name: Deploy Pages
+
+# Builds web/ (static landing + blog, as-is) and docs/ (MkDocs manual) into
+# one combined site and publishes it to GitHub Pages:
+#   /            -> web/ (landing page, blog)
+#   /docs/       -> the MkDocs user manual (EN default, /docs/es/ for Spanish)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs
+        run: pip install -r requirements.txt
+
+      - name: Build docs
+        run: mkdocs build --strict
+
+      - name: Assemble combined site
+        run: |
+          mkdir -p _site
+          cp -r web/. _site/
+          rm -rf _site/docs
+          cp -r site_build _site/docs
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

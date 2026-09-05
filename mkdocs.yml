@@ -1,0 +1,91 @@
+site_name: Vectopen Docs
+site_description: Manual de usuario de Vectopen, el editor vectorial libre hecho en Godot.
+site_url: https://malabo1990.github.io/vectopen-web/docs/
+repo_url: https://github.com/malabo1990/-Vectopen
+repo_name: malabo1990/Vectopen
+edit_uri: https://github.com/malabo1990/vectopen-web/edit/main/docs/
+
+docs_dir: docs
+site_dir: site_build
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/malabo1990/-Vectopen
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
+      - The Interface: getting-started/interface.md
+  - Tools:
+      - Overview: tools/index.md
+      - Selection & Move: tools/selection-move.md
+      - Shapes (Rectangle, Ellipse): tools/shapes.md
+      - Pen & Bézier Curves: tools/pen-bezier.md
+      - Text: tools/text.md
+      - Brush: tools/brush.md
+      - Hand & Navigation: tools/hand-navigation.md
+  - Files:
+      - Project Format (.vtc): files/project-format.md
+      - Export & Import: files/export-import.md
+  - Keyboard Shortcuts: keyboard-shortcuts.md
+  - Integrations:
+      - MCP Server (AI): integrations/mcp-server.md
