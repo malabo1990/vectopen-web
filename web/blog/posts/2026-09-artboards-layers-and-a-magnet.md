@@ -40,7 +40,8 @@ The layer tree is now a real mirror of the scene graph, not a parallel model:
   Godot, `clip_children` clips to the *shape the node draws*. A bare group or a
   text node draws nothing, so turning on clipping made the children vanish.
   Now the top child (or, for text, the letters) becomes the mask and the rest
-  of the content is reparented under it — the Illustrator/Affinity behaviour.
+  of the content is reparented under it — the standard clip-mask behaviour
+  found in professional vector editors.
 
 While fixing that I found a latent bug: the serializer returned early for every
 shape kind *without* saving children, so figure-inside-figure nesting was lost

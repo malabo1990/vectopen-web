@@ -1,6 +1,6 @@
 # Vectopen
 
-**Vectopen** is a free, open-source vector graphics editor built with [Godot Engine](https://godotengine.org) 4.7 — think Figma/Illustrator, running on Godot's own 2D engine.
+**Vectopen** is a free, open-source vector graphics editor built with [Godot Engine](https://godotengine.org) 4.7 — a professional vector workspace running on Godot's own 2D engine.
 
 This site is the **user manual**: how to install Vectopen, how the interface is laid out, what each tool does, how projects are saved and exported, and how to connect an AI agent to a running instance through the built-in MCP server.
 

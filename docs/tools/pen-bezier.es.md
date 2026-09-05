@@ -14,7 +14,7 @@ Buena para bocetos rápidos y formas de bordes rectos; para trazados curvos y ed
 
 ## Herramienta Bézier
 
-Una herramienta de pluma por puntos de anclaje de verdad, el mismo modelo de interacción que la pluma de Illustrator/Figma:
+Una herramienta de pluma por puntos de anclaje de verdad, el mismo modelo de interacción que se encuentra en editores vectoriales profesionales:
 
 1. **Clic** para colocar un punto de anclaje.
 2. **Clic y arrastra** (en vez de un clic simple) para colocar un anclaje *con* un asa de curva — el segmento que llega a ese punto se vuelve curvo. Por defecto los dos brazos del asa se mantienen simétricos.

@@ -16,7 +16,7 @@ Export and import work per-artboard, from the **Export** panel.
 | **VOP** | Vectopen's own project-snapshot format. |
 | **JSON** | Plain-text data dump of the artboard. |
 
-`.ai` (Adobe Illustrator) and `.dxf` (AutoCAD) are recognized but **not supported** for export.
+`.ai` (a proprietary vector format) and `.dxf` (a CAD interchange format) are recognized but **not supported** for export.
 
 ## Import formats
 

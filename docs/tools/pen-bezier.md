@@ -14,7 +14,7 @@ Good for quick sketches and straight-edged shapes; for curved, precisely-editabl
 
 ## Bézier tool
 
-A proper anchor-point pen tool, the same interaction model as Illustrator/Figma's pen:
+A proper anchor-point pen tool, the same interaction model found in professional vector editors:
 
 1. **Click** to place an anchor point.
 2. **Click and drag** (instead of a plain click) to place an anchor *with* a curve handle — the segment leading into that point becomes curved. By default the two handle arms stay symmetric.
