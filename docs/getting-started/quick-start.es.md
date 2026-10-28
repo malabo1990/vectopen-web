@@ -1,39 +1,45 @@
-# Primeros pasos
+# Inicio rápido
 
-Un recorrido de cinco minutos: crear un proyecto, dibujar una forma, editarla, deshacer, guardar y exportar.
+Cinco minutos: dibujar una forma, darle color, añadir un degradado, guardar y exportar. Los pasos usan la interfaz **Modern**; las mismas herramientas están en Smart y Pro, solo que en otro sitio (ver [La interfaz](interface.md)).
 
-## 1. Empieza un proyecto nuevo
+## 1. Abre Vectopen
 
-Abre Vectopen. Un proyecto nuevo empieza con un único artboard llamado **Artboard**, listo para dibujar.
+Un documento nuevo empieza con una mesa de trabajo lista para dibujar. Para elegir la interfaz, abre el botón **⚙ ajustes** (arriba a la derecha) y elige **Smart**, **Modern** o **Pro** — puedes cambiarla cuando quieras.
 
-## 2. Elige una herramienta
+## 2. Dibuja una forma
 
-La barra de herramientas de la izquierda tiene las herramientas de dibujo (ver **[Herramientas](../tools/index.md)** para la lista completa). Haz clic en **Rectángulo** para seleccionarla.
+En la barra de herramientas de abajo, pulsa el botón de **formas**. El panel de formas se abre a la derecha: elige un rectángulo, una elipse, una estrella o una de las formas personalizadas (corazón, gota, nube…).
 
-## 3. Dibuja una forma
+Haz clic y arrastra sobre la mesa de trabajo.
 
-Haz clic y arrastra sobre el artboard para dibujar un rectángulo. Suelta para terminarlo — aparece como una capa nueva.
+- **Mayús** — mantiene las proporciones (cuadrado, círculo).
+- **Alt** — dibuja desde el centro.
 
-- Mantén **Shift** mientras arrastras para forzar un cuadrado perfecto.
-- Mantén **Alt** para dibujar desde el centro hacia afuera en vez de desde una esquina.
+## 3. Edítala
 
-## 4. Selecciónala y edítala
+Con la herramienta **Selección** (la flecha, o **V**), haz clic en la forma:
 
-Cambia a la herramienta **Selección** y haz clic en el rectángulo. Con él seleccionado:
+- Arrástrala para moverla; arrastra un tirador para cambiar su tamaño; arrastra el tirador redondo de arriba para girarla.
+- El **inspector** de la derecha muestra los valores exactos — posición, tamaño, giro, opacidad, relleno, trazo, efectos.
 
-- Arrástralo para moverlo, o arrastra un asa para redimensionarlo.
-- Abre el panel **Inspector** para editar valores exactos — posición, tamaño, color de relleno, color/grosor de trazo, radio de esquina, rotación.
+## 4. Color y degradado
 
-## 5. Deshaz si hace falta
+En el inspector, pulsa la muestra de **Relleno**. Elige un color, o cambia a degradado **lineal** o **radial** y arrastra las paradas de color. La muestra de **Trazo** funciona igual: los trazos también admiten degradados. Ver [Color y degradados](../objects/color-gradients.md).
 
-**Ctrl+Z** deshace la última acción, **Ctrl+Shift+Z** la rehace. Cada creación de forma, borrado y edición de propiedad desde el Inspector es un único paso deshacible.
+## 5. Deshacer
 
-## 6. Guarda tu proyecto
+**Ctrl+Z** deshace, **Ctrl+Mayús+Z** rehace. Cada acción — dibujar, mover, cambiar un color, ejecutar un script — es un solo paso.
 
-Usa **Guardar** en el menú de archivo (o **Guardar como** la primera vez) para escribir un archivo de proyecto `.vtc` — ver **[Formato de proyecto](../files/project-format.md)**.
+## 6. Guardar
 
-## 7. Exporta
+**Ctrl+S** guarda un archivo `.vtc` (la primera vez te pregunta dónde). Ver [Formato de proyecto](../files/project-format.md).
 
-Usa **Exportar** para renderizar el artboard actual a PNG, SVG u otro formato soportado — ver **[Exportar e importar](../files/export-import.md)**.
+## 7. Exportar
 
-Ese es el ciclo básico. Todo lo demás —las herramientas Pluma y Bézier, texto, trazos de pincel, capas, múltiples artboards— se construye sobre esta misma base.
+Pulsa **Exportar** (barra superior) o usa la sección **Exportar** al final del inspector. Elige SVG, PDF, PNG, JPEG, WEBP… Ver [Exportar e importar](../files/export-import.md).
+
+## Lo siguiente
+
+- [Capas](../objects/layers.md) — organizar, agrupar, ocultar y bloquear.
+- [Efectos, filtros y shaders](../objects/effects-filters-shaders.md) — sombras, resplandor, grano de película, neón, tus propios shaders.
+- [Scripts y complementos](../automation/scripts-addons.md) — que Vectopen haga el trabajo repetitivo.

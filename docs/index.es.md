@@ -1,18 +1,28 @@
 # Vectopen
 
-**Vectopen** es un editor de gráficos vectoriales libre y de código abierto, hecho con [Godot Engine](https://godotengine.org) 4.7 — un espacio de trabajo vectorial profesional, corriendo sobre el motor 2D de Godot.
+**Vectopen** es un editor de gráficos vectoriales libre y de código abierto para Windows, macOS y Linux, hecho con [Godot Engine](https://godotengine.org). Sin cuenta, sin telemetría y sin versión de pago.
 
-Este sitio es el **manual de usuario**: cómo instalar Vectopen, cómo está organizada la interfaz, qué hace cada herramienta, cómo se guardan y exportan los proyectos, y cómo conectar un agente de IA a una instancia en ejecución a través del servidor MCP incluido.
+Este es el **manual de usuario**: cómo instalar Vectopen, cómo son las tres interfaces, qué hace cada herramienta y panel, y cómo guardar, exportar y automatizar tu trabajo.
 
-!!! note "¿Buscas el código fuente?"
-    Vectopen vive en [github.com/malabo1990/-Vectopen](https://github.com/malabo1990/-Vectopen). Las notas de arquitectura, benchmarks y demás material para colaboradores viven bajo `docs/` en el propio repositorio — este sitio solo cubre el *uso* de la app.
+!!! info "Versión actual: 0.2.0-alpha"
+    Es una **alfa**: casi todo funciona, algunas cosas todavía no, y encontrarás fallos. Cada página dice claramente cuando algo está incompleto. Si algo falla, cuéntalo en **[Telegram](https://t.me/vectopen)** o abre un issue en **[GitHub](https://github.com/malabo1990/-Vectopen/issues)**.
 
 ## Por dónde empezar
 
-- ¿Primera vez aquí? Empieza por **[Instalación](getting-started/installation.md)** y **[Primeros pasos](getting-started/quick-start.md)**.
-- ¿Ya la tienes corriendo? Ve directo a **[La interfaz](getting-started/interface.md)**, o a **[Herramientas](tools/index.md)**.
-- ¿Quieres que un agente de IA maneje el lienzo por ti? Mira **[Servidor MCP](integrations/mcp-server.md)**.
+- **¿Eres nuevo?** [Instalación](getting-started/installation.md) → [Inicio rápido](getting-started/quick-start.md).
+- **¿Qué interfaz elegir?** [La interfaz](getting-started/interface.md) explica Smart, Modern y Pro.
+- **Dibujar:** [Herramientas](tools/index.md) — formas, trazados Bézier, edición de nodos, pincel y texto.
+- **Trabajar con objetos:** [Capas](objects/layers.md) · [Color y degradados](objects/color-gradients.md) · [Efectos, filtros y shaders](objects/effects-filters-shaders.md) · [Vectorizar](objects/vectorize.md)
+- **Automatizar:** [Scripts y complementos](automation/scripts-addons.md) · [Servidor MCP (IA)](integrations/mcp-server.md)
+- **Archivos:** [Formato de proyecto](files/project-format.md) · [Exportar e importar](files/export-import.md)
 
-## Estado
+## Novedades de la 0.2.0-alpha
 
-Vectopen está en desarrollo activo. Algunos paneles y atajos descritos aquí pueden estar implementados solo parcialmente — cada página intenta decirlo claramente cuando una función todavía no está completa, en vez de describir un comportamiento aspiracional.
+- Primeras versiones descargables: Windows, macOS (Intel y Apple Silicon) y Linux (.deb, .rpm, .tar.gz).
+- Tres interfaces — **Smart**, **Modern** y **Pro** — cada una con todos los paneles.
+- Degradados en los **trazos**, no solo en los rellenos.
+- Biblioteca de formas: corazón, gota, flechas, cruz, luna, rayo, bocadillo, nube.
+- Capas con iconos por tipo, miniaturas, vista compacta y subcapas correctas.
+- La interfaz en 10 idiomas.
+
+Lee la historia completa en el [blog](https://malabo1990.github.io/vectopen-web/blog/post.html?p=2026-10-vectopen-0-2-0-alpha).

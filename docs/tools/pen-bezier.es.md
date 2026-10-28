@@ -1,25 +1,36 @@
-# Pluma y curvas Bézier
+# Pluma, Bézier y edición de nodos
 
-Vectopen tiene dos herramientas de dibujo de trazados, para dos flujos de trabajo distintos.
+## Pluma
 
-## Herramienta Pluma
+Una herramienta rápida de líneas: cada clic añade un punto recto.
 
-Una herramienta rápida de línea/polilínea a mano alzada: cada clic añade un punto recto a la línea actual.
+- **Clic izquierdo** — empieza una línea o añade el siguiente punto.
+- **Clic derecho** — termina la línea. Cambiar de herramienta también la termina.
 
-- **Clic izquierdo** en espacio vacío del artboard: empieza una línea nueva, o añade el siguiente punto a la que está en curso.
-- **Clic derecho**: termina la línea actual.
-- Cambiar de herramienta también termina cualquier línea en curso.
+## Bézier (D)
 
-Buena para bocetos rápidos y formas de bordes rectos; para trazados curvos y editables con precisión, usa la herramienta **Bézier**.
+La pluma clásica de puntos de anclaje:
 
-## Herramienta Bézier
+1. **Haz clic** para poner un punto de esquina.
+2. **Haz clic y arrastra** para poner un punto suave con tiradores; los tiradores quedan simétricos.
+3. Mantén **Alt** al arrastrar para mover cada tirador por separado.
+4. Acércate al **primer punto** — se resalta; haz clic para cerrar la forma.
+5. **Intro** o **Escape** terminan un trazado abierto.
 
-Una herramienta de pluma por puntos de anclaje de verdad, el mismo modelo de interacción que se encuentra en editores vectoriales profesionales:
+El resultado es un trazado editable: relleno, trazo (con [degradados](../objects/color-gradients.md)), grosor y abierto/cerrado están en el inspector.
 
-1. **Clic** para colocar un punto de anclaje.
-2. **Clic y arrastra** (en vez de un clic simple) para colocar un anclaje *con* un asa de curva — el segmento que llega a ese punto se vuelve curvo. Por defecto los dos brazos del asa se mantienen simétricos.
-3. Mantén **Alt** mientras arrastras un asa para romper la simetría y dar forma a cada brazo de la curva de forma independiente.
-4. Acerca el ratón al **primer punto de anclaje** — se resalta para mostrar que el trazado se cerrará en un lazo si haces clic ahí.
-5. Pulsa **Enter** o **Escape** para terminar un trazado abierto sin cerrarlo.
+## Editar nodos
 
-El resultado es un `VectorPath` — un trazado Bézier real y editable, con color de relleno, color de trazo, grosor de trazo y estado abierto/cerrado, todo editable después desde el **Inspector**, igual que cualquier otra figura.
+Selecciona un trazado y elige la herramienta **Edición de nodos** para editar sus puntos.
+
+| Acción | Cómo |
+|---|---|
+| Seleccionar un punto | Clic · **Mayús+clic** añade o quita de la selección |
+| Seleccionar todos los puntos | **A** |
+| Mover puntos | Arrástralos |
+| Añadir un punto | **Doble clic** sobre el trazado |
+| Borrar puntos | **X**, **Supr** o **Retroceso** |
+| Sacar tiradores de un punto (hacerlo suave) | **Alt + arrastrar** desde el punto |
+| Mover un tirador | Arrastra el tirador |
+| Modo **Agarrar** | **G**, luego mueve el ratón; **X** / **Y** bloquean un eje; clic o **Intro** confirma, **Escape** cancela |
+| Volver a Selección | **Escape** |

@@ -1,34 +1,39 @@
 # Export & Import
 
-Export and import work per-artboard, from the **Export** panel.
+## Exporting
 
-## Export formats
+Open **Export** — the button in the top bar (Modern and Pro), the export button at the bottom-left (Smart), or the **Export** section at the end of the inspector for a quick export of the selection.
 
-| Format | Notes |
+You can export a whole **artboard** or only the **selected objects** (cropped to their bounds).
+
+| Format | Type | Notes |
+|---|---|---|
+| **SVG** | Vector | The best choice for the web and other vector apps. Gradients — including stroke gradients — are kept. Option: **convert text to curves**, so it looks right without the font. |
+| **PDF** | Vector | For printing and sharing. |
+| **EPS** | Vector | For older print workflows. |
+| **PNG** | Image | With a **scale** factor (1×, 2×, …) and optional **transparent background**. |
+| **JPEG** | Image | With a **quality** setting. |
+| **WEBP** | Image | Small files, with quality and transparency. |
+| **TSCN / SCN** | Godot scene | To use your artwork in a Godot game. |
+| **VOP** | Data | A JSON description of the artboard. |
+
+## Importing
+
+Drag a file onto the canvas, or use **Open / Import**.
+
+| Format | Becomes |
 |---|---|
-| **SVG** | Vector export — the most portable option for sharing artwork with other tools. |
-| **PNG** | Raster export, with a configurable scale factor. |
-| **JPEG** | Raster export. |
-| **JPEG XL**, **WEBP** | Modern raster formats. |
-| **PDF** | Basic vector PDF export. |
-| **EPS** | Encapsulated PostScript. |
-| **TSCN** / **SCN** | Godot scene formats — useful if you're pulling artwork into a Godot project. |
-| **VOP** | Vectopen's own project-snapshot format. |
-| **JSON** | Plain-text data dump of the artboard. |
+| **SVG** | Editable shapes, paths and text |
+| **PNG, JPEG, WEBP** | An image object (use [Vectorize](../objects/vectorize.md) to turn it into shapes) |
+| **GLB / glTF** | A 3D model object |
+| **TSCN / SCN** | Godot scene content |
+| **VOP**, `.vectopen` | Vectopen data |
 
-`.ai` (a proprietary vector format) and `.dxf` (a CAD interchange format) are recognized but **not supported** for export.
+!!! note "SVG import"
+    In 0.2.0-alpha, SVG import turns curves into many short straight segments. Importing real Bézier curves is planned.
 
-## Import formats
+Not supported: `.ai`, `.dxf`, `.pdf` import and JPEG XL.
 
-| Format | Notes |
-|---|---|
-| **SVG** | Vector import, parsed into real editable shapes. |
-| **PNG**, **JPEG** | Imported as a raster `Sprite2D` — not vectorized. |
-| **EPS**, **TSCN**, **SCN** | Supported. |
-| **VOP** | Vectopen's own format. |
+## Exporting from scripts or an AI agent
 
-`.ai`, `.pdf`, `.dxf`, `.jpeg xl` and `.webp` are not yet supported for import.
-
-## Exporting from an AI agent
-
-If you have the **[MCP server](../integrations/mcp-server.md)** enabled, the `export_artboard` tool exposes PNG/SVG export directly to an AI agent, waiting for the export to actually finish before returning.
+[Scripts](../automation/scripts-addons.md) and the [MCP server](../integrations/mcp-server.md) can export artboards too.

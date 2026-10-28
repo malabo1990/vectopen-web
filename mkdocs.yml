@@ -49,6 +49,33 @@ plugins:
         - locale: es
           name: Español
           build: true
+          site_description: Manual de usuario de Vectopen, el editor vectorial libre hecho en Godot.
+          nav_translations:
+            Home: Inicio
+            Getting Started: Primeros pasos
+            Installation: Instalación
+            Quick Start: Inicio rápido
+            The Interface: La interfaz
+            Tools: Herramientas
+            Overview: Resumen
+            Select: Selección
+            Shapes: Formas
+            Pen, Bézier & Nodes: Pluma, Bézier y nodos
+            Text: Texto
+            Brush: Pincel
+            Hand & Navigation: Mano y navegación
+            Objects: Objetos
+            Layers: Capas
+            Colour & Gradients: Color y degradados
+            Effects, Filters & Shaders: Efectos, filtros y shaders
+            Vectorize: Vectorizar
+            Automation: Automatización
+            Scripts & Add-ons: Scripts y complementos
+            MCP Server (AI): Servidor MCP (IA)
+            Files: Archivos
+            Project Format (.vtc): Formato de proyecto (.vtc)
+            Export & Import: Exportar e importar
+            Keyboard Shortcuts: Atajos de teclado
 
 markdown_extensions:
   - admonition
@@ -77,15 +104,21 @@ nav:
       - The Interface: getting-started/interface.md
   - Tools:
       - Overview: tools/index.md
-      - Selection & Move: tools/selection-move.md
-      - Shapes (Rectangle, Ellipse): tools/shapes.md
-      - Pen & Bézier Curves: tools/pen-bezier.md
+      - Select: tools/selection-move.md
+      - Shapes: tools/shapes.md
+      - Pen, Bézier & Nodes: tools/pen-bezier.md
       - Text: tools/text.md
       - Brush: tools/brush.md
       - Hand & Navigation: tools/hand-navigation.md
+  - Objects:
+      - Layers: objects/layers.md
+      - Colour & Gradients: objects/color-gradients.md
+      - Effects, Filters & Shaders: objects/effects-filters-shaders.md
+      - Vectorize: objects/vectorize.md
+  - Automation:
+      - Scripts & Add-ons: automation/scripts-addons.md
+      - MCP Server (AI): integrations/mcp-server.md
   - Files:
       - Project Format (.vtc): files/project-format.md
       - Export & Import: files/export-import.md
   - Keyboard Shortcuts: keyboard-shortcuts.md
-  - Integrations:
-      - MCP Server (AI): integrations/mcp-server.md

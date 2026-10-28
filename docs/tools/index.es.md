@@ -1,20 +1,20 @@
-# Visión general de herramientas
+# Resumen de herramientas
 
-La barra de herramientas de Vectopen tiene nueve herramientas:
+Las mismas herramientas están en las tres interfaces: en Modern en la barra de abajo, en Pro en la columna izquierda y en Smart en la columna lateral del panel Capas.
 
-| Herramienta | Propósito |
-|---|---|
-| [Selección](selection-move.md) | Seleccionar, mover y redimensionar figuras existentes |
-| [Mover](selection-move.md) | Actualmente idéntica a Selección (ver nota abajo) |
-| [Pluma](pen-bezier.md) | Dibujo libre |
-| [Bézier](pen-bezier.md) | Dibujar curvas Bézier precisas, punto a punto |
-| [Rectángulo](shapes.md) | Crear rectángulos |
-| [Elipse](shapes.md) | Crear elipses |
-| [Texto](text.md) | Insertar y editar texto |
-| [Mano](hand-navigation.md) | Actualmente idéntica a Selección (ver nota abajo) |
-| [Pincel](brush.md) | Trazos de pincel vectorial a mano alzada |
+| Herramienta | Tecla | Para qué sirve |
+|---|---|---|
+| [Selección](selection-move.md) | **V** | Seleccionar, mover, redimensionar y girar objetos |
+| [Edición de nodos](pen-bezier.md#editar-nodos) | — | Editar los puntos y tiradores de un trazado |
+| Mesa de trabajo | **A** | Crear y redimensionar mesas de trabajo |
+| [Formas](shapes.md) | **R** rectángulo · **E** elipse · **S** estrella | Rectángulos, elipses, polígonos, estrellas y formas personalizadas |
+| [Pluma y Bézier](pen-bezier.md) | **D** (Bézier) | Trazados rectos y curvas Bézier precisas |
+| [Pincel](brush.md) | **B** | Trazos vectoriales a mano alzada |
+| [Texto](text.md) | **T** · **P** (párrafo) | Texto de punto y texto de párrafo (en marco) |
+| Imagen | — | Colocar una imagen (PNG, JPEG, WEBP, SVG) en la mesa de trabajo |
 
-Haz clic en una herramienta de la barra para activarla. Solo hay una herramienta activa a la vez, y cada una interpreta el ratón y el teclado de forma distinta mientras está activa — las páginas de esta sección lo describen herramienta por herramienta.
+Las herramientas con opciones (formas, Bézier, pincel, texto) muestran sus ajustes en un panel — en Modern y Pro, dentro del panel derecho.
 
-!!! warning "Mover y Mano están en desarrollo"
-    A día de hoy, **Mover** y **Mano** ejecutan exactamente la misma implementación que **Selección** — hacer clic en cualquiera de las dos te da selección/arrastre/redimensionado de figuras, no un modo dedicado de mover el artboard o navegar el lienzo. Navegar el lienzo en sí no requiere ninguna de estas herramientas: funciona desde **cualquier** herramienta con **Espacio+arrastre** o **clic central+arrastre** — ver **[Mano y navegación](hand-navigation.md)**.
+Desplazar y hacer zoom funciona con cualquier herramienta — ver [Mano y navegación](hand-navigation.md).
+
+Los objetos nuevos van a la **mesa de trabajo sobre la que dibujas**; si dibujas fuera de todas, van a la activa.

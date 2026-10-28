@@ -1,25 +1,36 @@
-# Pen & Bézier Curves
+# Pen, Bézier & Node Editing
 
-Vectopen has two path-drawing tools, for two different workflows.
+## Pen
 
-## Pen tool
+A quick polyline tool: every click adds a straight point.
 
-A quick freehand/polyline tool: every click adds a straight point to the current line.
+- **Left-click** — start a line, or add the next point.
+- **Right-click** — finish the line. Switching tools also finishes it.
 
-- **Left-click** on empty artboard: start a new line, or add the next point to the one in progress.
-- **Right-click**: finish the current line.
-- Switching tools also finishes whatever line is in progress.
+## Bézier (D)
 
-Good for quick sketches and straight-edged shapes; for curved, precisely-editable paths, use the **Bézier** tool instead.
+The classic anchor-point pen:
 
-## Bézier tool
+1. **Click** to place a corner point.
+2. **Click and drag** to place a smooth point with handles; the handles stay symmetric.
+3. Hold **Alt** while dragging to move each handle independently.
+4. Move near the **first point** — it highlights; click to close the shape.
+5. **Enter** or **Escape** finishes an open path.
 
-A proper anchor-point pen tool, the same interaction model found in professional vector editors:
+The result is an editable path: fill, stroke (including [gradients](../objects/color-gradients.md)), stroke width and open/closed are all in the inspector.
 
-1. **Click** to place an anchor point.
-2. **Click and drag** (instead of a plain click) to place an anchor *with* a curve handle — the segment leading into that point becomes curved. By default the two handle arms stay symmetric.
-3. Hold **Alt** while dragging a handle to break the symmetry and shape each arm of the curve independently.
-4. Move the mouse near the **first anchor point** — it snaps and highlights to show the path will close into a loop if you click there.
-5. Press **Enter** or **Escape** to finish an open path without closing it.
+## Editing nodes
 
-The result is a `VectorPath` — a real editable Bézier path, with fill color, stroke color, stroke width, and open/closed state all editable afterward from the **Inspector**, same as any other shape.
+Select a path and choose the **Node edit** tool to edit its points.
+
+| Action | How |
+|---|---|
+| Select a point | Click it · **Shift+click** adds or removes from the selection |
+| Select all points | **A** |
+| Move points | Drag them |
+| Add a point | **Double-click** on the path |
+| Delete points | **X**, **Delete** or **Backspace** |
+| Pull handles out of a point (make it smooth) | **Alt + drag** from the point |
+| Move a handle | Drag the handle |
+| **Grab** mode | **G**, then move the mouse; **X** / **Y** lock to an axis; click or **Enter** to confirm, **Escape** to cancel |
+| Back to Select | **Escape** |

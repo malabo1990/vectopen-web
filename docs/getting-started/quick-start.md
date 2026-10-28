@@ -1,39 +1,45 @@
 # Quick Start
 
-A five-minute tour: create a project, draw a shape, edit it, undo, save, and export.
+Five minutes: draw a shape, colour it, add a gradient, save and export. The steps use the **Modern** interface; the same tools exist in Smart and Pro, just in a different place (see [The Interface](interface.md)).
 
-## 1. Start a new project
+## 1. Open Vectopen
 
-Launch Vectopen. A new project starts with a single artboard named **Artboard**, ready to draw on.
+A new document starts with one artboard, ready to draw on. To choose the interface, open the **⚙ settings** button (top-right) and pick **Smart**, **Modern** or **Pro** — you can change it any time.
 
-## 2. Pick a tool
+## 2. Draw a shape
 
-The toolbar on the left holds the drawing tools (see **[Tools](../tools/index.md)** for the full list). Click **Rectangle** to select it.
+In the toolbar at the bottom, click the **shapes** button. The shape panel opens on the right: pick a rectangle, an ellipse, a star or one of the custom shapes (heart, drop, cloud…).
 
-## 3. Draw a shape
+Click and drag on the artboard.
 
-Click and drag on the artboard to draw a rectangle. Release to finish it — it appears as a new layer.
+- **Shift** — keep proportions (square, circle).
+- **Alt** — draw from the centre.
 
-- Hold **Shift** while dragging to constrain it to a square.
-- Hold **Alt** to draw from the center outward instead of from a corner.
+## 3. Edit it
 
-## 4. Select and edit it
+With the **select** tool (the arrow, or **V**), click the shape:
 
-Switch to the **Selection** tool and click the rectangle. With it selected:
+- Drag it to move it; drag a handle to resize it; drag the round handle above it to rotate it.
+- The **inspector** on the right shows exact values — position, size, rotation, opacity, fill, stroke, effects.
 
-- Drag it to move it, or drag a handle to resize it.
-- Open the **Inspector** panel to edit exact values — position, size, fill color, stroke color/width, corner radius, rotation.
+## 4. Colour and gradient
 
-## 5. Undo if needed
+In the inspector, click the **Fill** swatch. Choose a colour, or switch to **linear** or **radial** gradient and drag the colour stops. The **Stroke** swatch works the same way — strokes can have gradients too. See [Colour & Gradients](../objects/color-gradients.md).
 
-**Ctrl+Z** undoes the last action, **Ctrl+Shift+Z** redoes it. Every shape creation, deletion, and property edit through the Inspector is a single undoable step.
+## 5. Undo
 
-## 6. Save your project
+**Ctrl+Z** undoes, **Ctrl+Shift+Z** redoes. Every action — drawing, moving, a colour change, a script run — is one step.
 
-Use the **Save** action in the file menu (or **Save As** the first time) to write a `.vtc` project file — see **[Project Format](../files/project-format.md)**.
+## 6. Save
+
+**Ctrl+S** saves a `.vtc` file (you choose where the first time). See [Project Format](../files/project-format.md).
 
 ## 7. Export
 
-Use **Export** to render the current artboard to PNG, SVG, or another supported format — see **[Export & Import](../files/export-import.md)**.
+Click **Export** (top bar) or use the **Export** section at the bottom of the inspector. Choose SVG, PDF, PNG, JPEG, WEBP… See [Export & Import](../files/export-import.md).
 
-That's the core loop. Everything else — the Pen and Bézier tools, text, brush strokes, layers, multiple artboards — builds on these same basics.
+## Next
+
+- [Layers](../objects/layers.md) — organise, group, hide and lock.
+- [Effects, Filters & Shaders](../objects/effects-filters-shaders.md) — shadows, glow, film grain, neon, your own shaders.
+- [Scripts & Add-ons](../automation/scripts-addons.md) — let Vectopen do the repetitive work.

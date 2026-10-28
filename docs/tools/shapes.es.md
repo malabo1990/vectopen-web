@@ -1,25 +1,36 @@
-# Formas: rectángulo y elipse
+# Formas
 
-Ambas herramientas de forma funcionan igual:
+Pulsa el botón de **formas** para abrir el panel de formas y elegir qué dibujar. Tiene seis tipos:
 
-1. Haz clic y arrastra sobre el artboard para definir el rectángulo de contorno de la figura.
-2. Suelta para crearla. Arrastres menores de ~3px se ignoran (para evitar figuras accidentales minúsculas).
-
-## Teclas modificadoras mientras arrastras
-
-| Tecla | Efecto |
+| Tipo | Opciones |
 |---|---|
-| **Shift** | Fuerza un cuadrado perfecto (Rectángulo) o círculo (Elipse) |
-| **Alt** | Dibuja desde el punto central hacia afuera en vez de desde una esquina |
+| **Polígono** | Polígono regular desde 3 lados; preajustes de triángulo, pentágono, hexágono… |
+| **Estrella** | Número de puntas, profundidad y redondeo |
+| **Rectángulo** | Rectángulo o cuadrado con esquinas redondeadas |
+| **Elipse** | Elipse, anillo, tarta o arco |
+| **Gota** | Gota / lágrima |
+| **Formas** | Formas listas: **corazón, flechas, cruz, luna, rayo, bocadillo, nube** |
 
-## Aspecto por defecto
+## Dibujar
 
-Las figuras nuevas se crean con un relleno neutro y un trazo oscuro; ambos son totalmente editables después desde el **Inspector** (color de relleno, color y grosor de trazo, y —en rectángulos— radio de esquina, incluyendo radios independientes por esquina).
+1. Elige una forma en el panel.
+2. Haz clic y arrastra sobre la mesa de trabajo. Los arrastres de menos de unos 3 px se ignoran.
 
-## Crear en el centro
+| Tecla al arrastrar | Efecto |
+|---|---|
+| **Mayús** | Mantiene las proporciones (cuadrado, círculo, estrella regular) |
+| **Alt** | Dibuja desde el centro hacia fuera |
 
-Las herramientas de forma también permiten insertar una figura de tamaño por defecto centrada en el artboard actual directamente, sin arrastrar — útil cuando prefieres ajustar la posición después en vez de dibujar a mano alzada.
+También puedes insertar una forma en el centro de la mesa de trabajo directamente desde el panel, y luego colocarla.
 
-## ¿En qué artboard?
+## Editar
 
-Una figura se añade al artboard que contiene el centro de tu arrastre; si tu arrastre cae completamente fuera de todos los artboards, va al que esté activo en ese momento.
+Cualquier forma se puede mover, **redimensionar arrastrando sus tiradores** y girar con la herramienta Selección — estrellas y formas personalizadas incluidas. En el inspector puedes cambiar:
+
+- posición, tamaño, giro y opacidad;
+- relleno y trazo (color o [degradado](../objects/color-gradients.md)), grosor y estilo del trazo;
+- **rectángulos:** radio de las esquinas, igual para todas o cada una por separado;
+- **elipses:** elipse completa, arco o tarta (ángulo inicial/final, radio interior para anillos);
+- **polígonos y estrellas:** número de lados o puntas, radio interior.
+
+Para editar una forma punto a punto, conviértela en trazado y usa la [edición de nodos](pen-bezier.md#editar-nodos).

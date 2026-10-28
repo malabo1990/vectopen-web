@@ -1,34 +1,39 @@
 # Exportar e importar
 
-Exportar e importar funcionan por artboard, desde el panel **Export**.
+## Exportar
 
-## Formatos de exportación
+Abre **Exportar** — el botón de la barra superior (Modern y Pro), el botón de exportar de abajo a la izquierda (Smart) o la sección **Exportar** al final del inspector para exportar rápido la selección.
 
-| Formato | Notas |
+Puedes exportar una **mesa de trabajo** entera o solo los **objetos seleccionados** (recortados a su tamaño).
+
+| Formato | Tipo | Notas |
+|---|---|---|
+| **SVG** | Vectorial | La mejor opción para la web y otros programas vectoriales. Conserva los degradados, también los de los trazos. Opción: **convertir el texto en curvas**, para que se vea bien sin la fuente. |
+| **PDF** | Vectorial | Para imprimir y compartir. |
+| **EPS** | Vectorial | Para flujos de imprenta antiguos. |
+| **PNG** | Imagen | Con **escala** (1×, 2×, …) y **fondo transparente** opcional. |
+| **JPEG** | Imagen | Con ajuste de **calidad**. |
+| **WEBP** | Imagen | Archivos pequeños, con calidad y transparencia. |
+| **TSCN / SCN** | Escena de Godot | Para usar tu dibujo en un juego de Godot. |
+| **VOP** | Datos | Una descripción en JSON de la mesa de trabajo. |
+
+## Importar
+
+Arrastra un archivo al lienzo, o usa **Abrir / Importar**.
+
+| Formato | Se convierte en |
 |---|---|
-| **SVG** | Exportación vectorial — la opción más portable para compartir arte con otras herramientas. |
-| **PNG** | Exportación de trama, con un factor de escala configurable. |
-| **JPEG** | Exportación de trama. |
-| **JPEG XL**, **WEBP** | Formatos de trama modernos. |
-| **PDF** | Exportación vectorial básica a PDF. |
-| **EPS** | Encapsulated PostScript. |
-| **TSCN** / **SCN** | Formatos de escena de Godot — útil si vas a llevar el arte a un proyecto de Godot. |
-| **VOP** | Formato propio de instantánea de proyecto de Vectopen. |
-| **JSON** | Volcado de datos del artboard en texto plano. |
+| **SVG** | Formas, trazados y textos editables |
+| **PNG, JPEG, WEBP** | Un objeto imagen (usa [Vectorizar](../objects/vectorize.md) para convertirlo en formas) |
+| **GLB / glTF** | Un objeto de modelo 3D |
+| **TSCN / SCN** | Contenido de una escena de Godot |
+| **VOP**, `.vectopen` | Datos de Vectopen |
 
-`.ai` (un formato vectorial propietario) y `.dxf` (un formato de intercambio CAD) se reconocen pero **no están soportados** para exportación.
+!!! note "Importar SVG"
+    En la 0.2.0-alpha, al importar un SVG las curvas se convierten en muchos segmentos rectos cortos. Importar curvas Bézier reales está previsto.
 
-## Formatos de importación
+No se puede importar: `.ai`, `.dxf`, `.pdf` ni JPEG XL.
 
-| Formato | Notas |
-|---|---|
-| **SVG** | Importación vectorial, interpretada como figuras editables reales. |
-| **PNG**, **JPEG** | Se importan como un `Sprite2D` de trama — no se vectorizan. |
-| **EPS**, **TSCN**, **SCN** | Soportados. |
-| **VOP** | Formato propio de Vectopen. |
+## Exportar desde scripts o un agente de IA
 
-`.ai`, `.pdf`, `.dxf`, `.jpeg xl` y `.webp` todavía no están soportados para importación.
-
-## Exportar desde un agente de IA
-
-Si tienes el **[servidor MCP](../integrations/mcp-server.md)** activado, la herramienta `export_artboard` expone exportación PNG/SVG directamente a un agente de IA, esperando a que la exportación termine de verdad antes de responder.
+Los [scripts](../automation/scripts-addons.md) y el [servidor MCP](../integrations/mcp-server.md) también pueden exportar mesas de trabajo.

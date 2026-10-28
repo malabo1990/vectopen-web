@@ -1,13 +1,16 @@
 # Project Format (.vtc)
 
-Vectopen saves projects as **`.vtc`** files — a single-file container holding a project manifest plus each artboard's contents, compressed. This is what **Save** / **Save As** write, and what **Open** reads back.
+Vectopen saves documents as **`.vtc`** files. **Ctrl+S** saves (the first time it asks where), **Ctrl+N** starts a new document; Open and Save As are in the file menu.
 
-A few things worth knowing:
+- **One file, one document.** A `.vtc` holds every artboard, layer and object, with their colours, gradients (fill and stroke), effects, filters and shaders — the file to back up or send to someone.
+- **Built for big documents.** Each artboard is stored and compressed separately. Opening a file reads only the list of pages; a page loads when you scroll to it, and saving rewrites only the pages you changed. A test document with 1,000 pages and 100,000 objects opens in about 1.4 seconds.
+- **Undo history is not saved.** Reopening a document starts with an empty history.
+- Images placed in the document are stored inside the file.
 
-- **One file, one project.** A `.vtc` bundles every artboard, layer, and shape in the project — it's the file you'd back up or hand to someone else.
-- **Undo history is not part of the file.** Only the current state of the project is saved; the undo/redo stack resets when you reopen a project.
-- A **`.json`** export option also exists in the Save dialog, useful as a plain-text backup or for inspecting a project's data outside Vectopen — it is not meant as the primary save format.
+## Where files go
 
-## Where files are saved
+Wherever you choose — **Save As** opens the normal file dialog, and **Save** writes back to the same file.
 
-Vectopen doesn't force a specific folder — **Save As** opens a normal file picker, and **Save** writes back to wherever the project was last saved (or prompts for a location the first time).
+## Older projects
+
+Older `.vectopen` projects can still be opened; save them again to convert them to `.vtc`.

@@ -1,25 +1,36 @@
-# Shapes: Rectangle & Ellipse
+# Shapes
 
-Both shape tools work the same way:
+Click the **shapes** button to open the shape panel and pick what to draw. It has six kinds:
 
-1. Click and drag on the artboard to define the shape's bounding box.
-2. Release to create it. Drags smaller than ~3px are ignored (to avoid accidental slivers).
-
-## Modifier keys while dragging
-
-| Key | Effect |
+| Kind | Options |
 |---|---|
-| **Shift** | Constrain to a perfect square (Rectangle) or circle (Ellipse) |
-| **Alt** | Draw outward from the center point instead of from a corner |
+| **Polygon** | Regular polygon from 3 sides up; presets for triangle, pentagon, hexagon… |
+| **Star** | Number of points, depth and rounding |
+| **Rectangle** | Rectangle or square with rounded corners |
+| **Ellipse** | Ellipse, ring, pie or arc |
+| **Drop** | Drop / teardrop |
+| **Shapes** | Ready-made shapes: **heart, arrows, cross, moon, bolt, speech bubble, cloud** |
 
-## Default appearance
+## Drawing
 
-New shapes are created with a neutral fill and a dark stroke; both are fully editable afterward from the **Inspector** (fill color, stroke color, stroke width, and — for rectangles — corner radius, including independent per-corner radii).
+1. Pick a shape in the panel.
+2. Click and drag on the artboard. Drags shorter than about 3 px are ignored.
 
-## Create at center
+| Key while dragging | Effect |
+|---|---|
+| **Shift** | Keep proportions (square, circle, regular star) |
+| **Alt** | Draw from the centre outwards |
 
-Shape tools also support inserting a default-sized shape centered on the current artboard directly, without dragging — useful when you want a shape to nudge into place afterward rather than draw it freehand.
+You can also insert a shape at the centre of the artboard straight from the panel, and then move it into place.
 
-## Which artboard?
+## Editing
 
-A shape is added to whichever artboard contains the center point of your drag; if your drag falls fully outside every artboard, it goes to the currently active one instead.
+Every shape can be moved, **resized by dragging its handles** and rotated with the Select tool — stars and custom shapes included. In the inspector you can change:
+
+- position, size, rotation and opacity;
+- fill and stroke (colour or [gradient](../objects/color-gradients.md)), stroke width and style;
+- **rectangles:** corner radius, the same for all corners or each one separately;
+- **ellipses:** full ellipse, arc or pie (start/end angle, inner radius for rings);
+- **polygons and stars:** number of sides or points, inner radius.
+
+To edit a shape point by point, convert it to a path and use [node editing](pen-bezier.md#editing-nodes).

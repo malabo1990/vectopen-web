@@ -1,23 +1,77 @@
 # Installation
 
-Vectopen is a Godot project, not (yet) a one-click installer for end users. There are two ways to run it.
+Download the package for your system from the **[download page](https://malabo1990.github.io/vectopen-web/#download)** or directly from **[GitHub Releases](https://github.com/malabo1990/-Vectopen/releases)**. You don't need to install Godot.
 
-## Option A — Prebuilt binary
+!!! warning "Alpha builds are not signed yet"
+    Windows and macOS will warn that the app comes from an *unknown developer*. That is expected for now — see the steps for your system below. Signed installers are planned.
 
-Check the project's [GitHub Releases page](https://github.com/malabo1990/-Vectopen/releases) for a packaged build (Windows, Linux, macOS or Web, depending on what has been exported for the current version). If a build is available for your platform, download and run it directly — no Godot installation needed.
+## Windows (10 / 11, 64-bit)
 
-## Option B — Run from source
+1. Download `Vectopen-…-windows-x64.zip`.
+2. Right-click the file → **Extract All…**, and choose a folder (for example `Documents\Vectopen`).
+3. Open the folder and double-click **Vectopen.exe**.
+4. If Windows shows **"Windows protected your PC"**, click **More info** → **Run anyway**. This only happens the first time.
 
-This is the most reliable path while the project is under active development.
+To uninstall, delete the folder.
 
-1. Install **[Godot 4.7](https://godotengine.org/download)** (the standard/GL Compatibility build — Vectopen does not require .NET/C# support).
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/malabo1990/-Vectopen.git
-   ```
-3. Open Godot, choose **Import**, and select the cloned folder's `project.godot`.
-4. Press **Run** (F5) in the editor. The main scene loads the canvas and UI directly.
+## macOS (Intel and Apple Silicon)
+
+1. Download `Vectopen-…-macos-universal.dmg` (or the `.zip`, if you prefer).
+2. Open the `.dmg` and drag **Vectopen** into **Applications**.
+3. The first time, **right-click** Vectopen in Applications → **Open** → **Open**. After that it opens normally.
+
+!!! note
+    The macOS build has not been tested on a real Mac yet. If it doesn't start, please tell us on [Telegram](https://t.me/vectopen) or [GitHub](https://github.com/malabo1990/-Vectopen/issues) with your macOS version.
+
+To uninstall, move Vectopen from Applications to the Trash.
+
+## Linux (x86_64)
+
+=== "Debian / Ubuntu / Mint"
+
+    ```bash
+    sudo apt install ./vectopen_*_amd64.deb
+    ```
+    Vectopen appears in your applications menu, or run `vectopen` in a terminal.
+    Uninstall with `sudo apt remove vectopen`.
+
+=== "Fedora / openSUSE"
+
+    ```bash
+    sudo dnf install ./vectopen-*.x86_64.rpm
+    ```
+    Uninstall with `sudo dnf remove vectopen`.
+
+=== "Any distribution (portable)"
+
+    ```bash
+    tar xzf Vectopen-*-linux-x86_64.tar.gz
+    ./Vectopen-*/vectopen.x86_64
+    ```
+    Nothing is installed; delete the folder to remove it.
+
+## What works where
+
+| Feature | Windows | macOS | Linux |
+|---|:-:|:-:|:-:|
+| Drawing, text, layers, effects, filters, shaders, scripts | ✓ | ✓ | ✓ |
+| Export (SVG, PDF, PNG, …) | ✓ | ✓ | ✓ |
+| **Vectorize** (image → vector) | — | — | ✓ |
+
+Vectorize depends on a component (ONNX Runtime) that isn't available for the Windows and macOS builds yet. It's planned.
 
 ## System requirements
 
-Vectopen targets the **GL Compatibility** renderer (`rendering_method=mobile` in the project settings), which keeps hardware requirements low — it runs comfortably on integrated GPUs. There is no separate installer for dependencies: everything needed ships inside the Godot project.
+- **Windows** 10 or 11 (64-bit) · **macOS** 10.15 or later (Intel) or 11 or later (Apple Silicon) · **Linux** x86_64 with glibc 2.28 or later.
+- Any graphics card with **Vulkan** or **OpenGL 3.3** support; integrated GPUs are fine.
+- About **200 MB** of disk space.
+
+## Settings and your files
+
+Your preferences (theme, interface, layer panel options, shortcuts) are stored in your user folder and kept between updates. Your drawings are saved wherever you choose, as `.vtc` files — see [Project Format](../files/project-format.md).
+
+## Run from source (developers)
+
+1. Install **[Godot 4.7](https://godotengine.org/download)** (standard build, no .NET needed).
+2. `git clone https://github.com/malabo1990/-Vectopen.git`
+3. In Godot, **Import** the folder's `project.godot` and press **Run** (F5).

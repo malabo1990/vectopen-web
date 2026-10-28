@@ -1,19 +1,29 @@
 # Text
 
-With the Text tool active:
+## Creating text
 
-- **Click** on empty space on the artboard to create a new text block, ready to type into immediately.
-- **Double-click** an existing text block to edit its content.
-- **Click outside** the text block you're editing to save your changes; clicking outside also switches you back to the Selection tool with that text block selected.
+- **Point text:** with the Text tool (**T**), click on the artboard and type. The box grows with the text.
+- **Paragraph text:** with the Paragraph tool (**P**), drag a frame. Text wraps inside the frame, and frames can be **linked** so text flows from one to the next.
+- **Double-click** a text to edit it. Click outside to finish; you're returned to the Select tool with the text selected.
 
-## Resizing the font by dragging
+Hold **Ctrl** (**Cmd** on macOS) and drag vertically on a text to scale its size interactively.
 
-Hold **Ctrl** (or **Cmd** on macOS) and drag vertically on a text block to scale its font size interactively — drag up to grow it, down to shrink it (font size is clamped between 8 and 300). Release to confirm the new size.
+## Typography
 
-## Formatting
+With a text selected, the typography controls are in the inspector (Modern), in the **Text** tab (Pro) or in the text panel (Smart):
 
-Font family, weight, italics, size, line spacing, letter spacing, text color, and alignment are all editable from the **Inspector** once a text block is selected, the same way any other shape property is edited.
+- font family (including **Google Fonts**), weight and style;
+- size, line spacing, letter spacing;
+- bold, italic, underline; case (UPPER, Title, lower);
+- alignment, text colour (solid or gradient) and stroke;
+- **advanced letters** — styles and effects per letter.
 
-## Performance at extreme zoom
+**Ctrl+Alt+.** and **Ctrl+Alt+,** make the selected text heavier or lighter.
 
-Vectopen renders text as a crisp vector outline once you zoom in far enough (rather than an upscaled, blurry bitmap), and culls off-screen text automatically — so projects with hundreds of text blocks stay responsive.
+## Text effects
+
+Shadows, outlines, 3D and the other [effects](../objects/effects-filters-shaders.md) work on text too. When exporting to SVG you can convert text to curves, so it looks right even where the font isn't installed.
+
+## Performance
+
+Text is drawn as crisp vector outlines when you zoom in, and off-screen text is skipped, so documents with hundreds of text blocks stay fast.

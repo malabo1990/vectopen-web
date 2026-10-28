@@ -1,19 +1,29 @@
 # Texto
 
-Con la herramienta de texto activa:
+## Crear texto
 
-- **Clic** en espacio vacío del artboard para crear un bloque de texto nuevo, listo para escribir de inmediato.
-- **Doble clic** en un bloque de texto existente para editar su contenido.
-- **Clic fuera** del bloque que estás editando para guardar los cambios; clic fuera también te cambia a la herramienta de Selección con ese bloque seleccionado.
+- **Texto de punto:** con la herramienta Texto (**T**), haz clic en la mesa de trabajo y escribe. La caja crece con el texto.
+- **Texto de párrafo:** con la herramienta Párrafo (**P**), arrastra un marco. El texto se ajusta dentro del marco, y los marcos se pueden **enlazar** para que el texto pase de uno a otro.
+- **Doble clic** en un texto para editarlo. Haz clic fuera para terminar; vuelves a la herramienta Selección con el texto seleccionado.
 
-## Redimensionar la fuente arrastrando
+Mantén **Ctrl** (**Cmd** en macOS) y arrastra en vertical sobre un texto para cambiar su tamaño de forma interactiva.
 
-Mantén **Ctrl** (o **Cmd** en macOS) y arrastra verticalmente sobre un bloque de texto para escalar su tamaño de fuente de forma interactiva — arrastra hacia arriba para agrandarlo, hacia abajo para achicarlo (el tamaño de fuente queda acotado entre 8 y 300). Suelta para confirmar el nuevo tamaño.
+## Tipografía
 
-## Formato
+Con un texto seleccionado, los controles de tipografía están en el inspector (Modern), en la pestaña **Texto** (Pro) o en el panel de texto (Smart):
 
-Familia tipográfica, peso, cursiva, tamaño, interlineado, espaciado entre letras, color de texto y alineación son editables desde el **Inspector** una vez seleccionado un bloque de texto, igual que cualquier otra propiedad de figura.
+- familia de fuente (incluidas **Google Fonts**), peso y estilo;
+- tamaño, interlineado, espaciado entre letras;
+- negrita, cursiva, subrayado; mayúsculas (MAYÚSCULAS, Título, minúsculas);
+- alineación, color del texto (sólido o degradado) y trazo;
+- **letras avanzadas** — estilos y efectos por letra.
 
-## Rendimiento en zoom extremo
+**Ctrl+Alt+.** y **Ctrl+Alt+,** hacen el texto seleccionado más grueso o más fino.
 
-Vectopen renderiza el texto como un contorno vectorial nítido al hacer zoom suficiente (en vez de un bitmap ampliado y borroso), y descarta automáticamente el texto fuera de pantalla — así que proyectos con cientos de bloques de texto siguen respondiendo bien.
+## Efectos de texto
+
+Las sombras, contornos, 3D y demás [efectos](../objects/effects-filters-shaders.md) también funcionan con texto. Al exportar a SVG puedes convertir el texto en curvas, para que se vea bien aunque la fuente no esté instalada.
+
+## Rendimiento
+
+El texto se dibuja como contornos vectoriales nítidos al acercar el zoom, y el texto fuera de pantalla no se dibuja, así que los documentos con cientos de textos siguen siendo rápidos.

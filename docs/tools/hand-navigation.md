@@ -1,6 +1,6 @@
 # Hand & Navigation
 
-Panning and zooming the canvas doesn't depend on the active tool — these work no matter which tool you have selected:
+Panning and zooming the canvas work from any tool.
 
 ## Pan
 
@@ -8,15 +8,19 @@ Panning and zooming the canvas doesn't depend on the active tool — these work 
 |---|---|
 | **Space + drag** | Pan the canvas |
 | **Middle mouse button + drag** | Pan the canvas |
+| **Hand** tool (**W**) + drag | Pan the canvas |
 
 ## Zoom
 
 | Shortcut | Effect |
 |---|---|
-| Scroll wheel | Zoom in/out under the cursor |
-| **Ctrl+=** | Zoom in (step) |
-| **Ctrl+-** | Zoom out (step) |
-| **5** | Reset zoom to 100% |
+| Scroll wheel | Zoom under the cursor |
+| **Ctrl+=** / **Ctrl+-** | Zoom in / out in steps |
+| Hold **Z** and drag | Continuous zoom |
+| **5** | Reset to 100 % |
 
-!!! note
-    The **Hand** toolbar button is reserved for a future dedicated navigation mode; for now, use the shortcuts above from whatever tool you're already using — see the note on **[Tools Overview](index.md)**.
+In Modern the zoom controls are also in the bottom bar; in Smart, in the pill at the top-right.
+
+## Scrolling panels
+
+Drag with the **middle mouse button** over the inspector or the Layers panel to scroll it.

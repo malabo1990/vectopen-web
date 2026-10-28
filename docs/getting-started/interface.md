@@ -1,42 +1,60 @@
 # The Interface
 
-Vectopen's window is organized around a central canvas, with tool and inspection panels docked around it.
+Vectopen has **three interfaces**. They share the same canvas, tools and files — only the layout of the panels changes. Pick the one you like; you can switch at any time and nothing in your document changes.
 
-## Canvas
+| | Smart | Modern | Pro |
+|---|---|---|---|
+| Best for | Getting started, a big clean canvas | Everyday design | Long sessions, everything visible |
+| Tools | In the Layers panel's side column | Bar at the bottom | Column on the left |
+| Object properties | Floating panels | One inspector on the right | Docked panels on the right |
+| Switch from | **Preferences → Theme** | **⚙** (top-right) | **Smart / Modern / Pro** buttons (top-right) |
 
-The large central area where artboards live. Rulers run along the top and left edges, showing world coordinates; you can toggle them from **Preferences → Rulers**.
+Each interface owns its panels: when you switch, the floating panels of the previous one close.
 
-- **Pan**: use the Hand tool, or hold **Space** while dragging.
-- **Zoom**: **Ctrl+=** / **Ctrl+-** to step in/out, **5** to reset zoom, scroll wheel to zoom under the cursor.
-- Multiple **artboards** can exist in the same project; the active one receives new shapes.
+## Smart
 
-## Toolbar
+![Smart interface](https://malabo1990.github.io/vectopen-web/media/shots/smart_light.webp)
 
-Down the left side: the drawing tools (Selection, Move, Pen, Bézier, Rectangle, Ellipse, Text, Hand, Brush). See **[Tools](../tools/index.md)** for what each one does. The active tool is highlighted.
+A large canvas with floating panels. The **Layers** panel (with the tools in its side column) floats on the right and can be resized by dragging its left edge. The small buttons at the bottom-left open export, the keyboard shortcuts and the mouse settings; the pill at the top-right has view options and zoom.
 
-## Layers panel
+## Modern
 
-On the right: a searchable tree of every shape on the active artboard, matching the actual stacking order on the canvas. From here you can:
+![Modern interface](https://malabo1990.github.io/vectopen-web/media/shots/modern_light.webp)
 
-- Search/filter layers (including special filters like `is:hidden`, `is:group`).
-- Add, delete, duplicate, merge, or group layers.
-- Toggle a layer's visibility or lock state.
-- Click a layer to select the matching shape on the canvas (selection is synced both ways).
+- **Top bar** — document name and save state, preview, undo/redo, **Export** and **⚙ settings**.
+- **Left** — Layers · Pages · Resources. Drag the panel's right edge to resize it.
+- **Right** — the **inspector**: everything about the selection, in collapsible sections (alignment, layout, appearance, typography, fill, stroke, effects, filters, vectorize, export).
+- **Bottom** — the toolbar and zoom. Tools with options (shapes, Bézier, brush, text) open their options in the inspector.
 
-## Inspector
+## Pro
 
-Selecting one or more shapes exposes their properties for direct editing: position, size, rotation, fill/stroke color, stroke width, corner radius, opacity, and — for text — font, size, alignment, and content. Editing a value here is a single undoable action, and editing multiple selected shapes at once applies the change to all of them.
+![Pro interface](https://malabo1990.github.io/vectopen-web/media/shots/pro_dark.webp)
 
-## Preferences
+- **Top toolbar** — undo/redo, align and distribute, arrange, boolean operations, flip, and the interface buttons.
+- **Left** — tools column and Layers.
+- **Right** — docked tabs: **Color · Swatches · Stroke** on top; **Transform · Text · Effects** below. The Text tab has the full typography controls; Effects also holds filters and vectorize.
 
-Opened from the small icon in the top-left corner (where the two rulers meet). It's organized into tabs:
+## Common to all three
 
-- **Window** — window mode, size, interface scale.
-- **Rulers** — ruler visibility and units.
-- **Theme** — light/dark mode, accent colors, default fill/stroke/text color and size, interface language, and the **[MCP server toggle](../integrations/mcp-server.md)**.
-- **Snap** — smart snapping behavior (edge/center alignment guides while dragging).
-- **Panels** — show/hide individual UI panels.
+### Canvas
 
-## Undo history
+- **Pan:** hold **Space** and drag, or drag with the **middle mouse button**.
+- **Zoom:** scroll wheel (under the cursor), **Ctrl+=** / **Ctrl+-**, **5** resets to 100 %.
+- **Rulers:** along the top and left. Drag from a ruler to create a guide.
+- Several **artboards** can live in one document; new shapes go to the artboard you draw on.
 
-Nearly every mutation — creating, moving, resizing, recoloring, or deleting a shape — is a single step in the undo stack (**Ctrl+Z** / **Ctrl+Shift+Z**). See **[Keyboard Shortcuts](../keyboard-shortcuts.md)** for the full list of wired shortcuts.
+### Scrolling long panels
+
+Drag with the **middle mouse button** over the inspector (or the Layers panel) to scroll it.
+
+### Theme and language
+
+Light or dark theme, and 10 languages — English, Spanish, French, German, Portuguese, Russian, Chinese, Japanese, Arabic and Hindi. Change them in **Preferences → Theme**. The first time, Vectopen uses your system language.
+
+### Preferences
+
+Open Preferences from the small icon where the two rulers meet (Smart/Pro) or from **⚙** (Modern). Tabs: **Window**, **Rulers**, **Theme** (theme, language, interface, default colours, [MCP server](../integrations/mcp-server.md)), **Snap** and **Panels**.
+
+### Keyboard shortcuts
+
+See [Keyboard Shortcuts](../keyboard-shortcuts.md). Every shortcut can be changed from the keyboard panel.

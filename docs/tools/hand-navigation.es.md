@@ -1,22 +1,26 @@
 # Mano y navegación
 
-Navegar (pan) y hacer zoom en el lienzo no depende de la herramienta activa — esto funciona sin importar cuál tengas seleccionada:
+Desplazar y hacer zoom en el lienzo funciona con cualquier herramienta activa.
 
-## Navegar (pan)
+## Desplazar
 
 | Entrada | Efecto |
 |---|---|
-| **Espacio + arrastre** | Navega el lienzo |
-| **Botón central del ratón + arrastre** | Navega el lienzo |
+| **Espacio + arrastrar** | Desplaza el lienzo |
+| **Botón central + arrastrar** | Desplaza el lienzo |
+| Herramienta **Mano** (**W**) + arrastrar | Desplaza el lienzo |
 
 ## Zoom
 
 | Atajo | Efecto |
 |---|---|
-| Rueda del ratón | Zoom in/out bajo el cursor |
-| **Ctrl+=** | Zoom in (por pasos) |
-| **Ctrl+-** | Zoom out (por pasos) |
-| **5** | Restablece el zoom al 100% |
+| Rueda del ratón | Zoom bajo el cursor |
+| **Ctrl+=** / **Ctrl+-** | Acercar / alejar por pasos |
+| Mantener **Z** y arrastrar | Zoom continuo |
+| **5** | Vuelve al 100 % |
 
-!!! note
-    El botón **Mano** de la barra de herramientas está reservado para un futuro modo de navegación dedicado; por ahora, usa los atajos de arriba desde la herramienta que ya tengas activa — ver la nota en **[Visión general de herramientas](index.md)**.
+En Modern, el zoom también está en la barra de abajo; en Smart, en la cápsula de arriba a la derecha.
+
+## Desplazar paneles
+
+Arrastra con el **botón central** sobre el inspector o el panel Capas para desplazarlo.
