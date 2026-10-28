@@ -3,6 +3,7 @@ site_description: Manual de usuario de Vectopen, el editor vectorial libre hecho
 site_url: https://malabo1990.github.io/vectopen-web/docs/
 repo_url: https://github.com/malabo1990/-Vectopen
 repo_name: malabo1990/Vectopen
+copyright: "&copy; 2025&ndash;2026 Casimiro Ondo Obiang (Malabo1990) &middot; MIT License"
 edit_uri: https://github.com/malabo1990/vectopen-web/edit/main/docs/
 
 docs_dir: docs
