@@ -74,7 +74,7 @@ window.VECTOPEN_I18N.strings.pt = {
   "road.prog4": "Precisão da câmara com zoom extremo (origem flutuante)",
   "road.prog5": "Cache de recursos &amp; geometria em vários níveis",
   "road.plan1": "<b>Versão web</b> que funciona no navegador",
-  "road.plan2": "<b>SVG nos dois sentidos</b> com curvas bézier reais na importação",
+  "road.plan2": "Separadores <b>Shader</b> e <b>Script</b> no painel direito de Modern e Pro",
   "road.plan3": "Alças de inclinação &middot; redimensionar formas rodadas nos seus próprios eixos",
   "road.plan4": "Instaladores assinados para Windows e macOS &middot; AppImage",
   "road.plan5": "Paginação do manifesto <b>.vtc</b> para ficheiros com mais de 100.000 páginas",

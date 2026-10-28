@@ -33,4 +33,4 @@ Every shape can be moved, **resized by dragging its handles** and rotated with t
 - **ellipses:** full ellipse, arc or pie (start/end angle, inner radius for rings);
 - **polygons and stars:** number of sides or points, inner radius.
 
-To edit a shape point by point, convert it to a path and use [node editing](pen-bezier.md#editing-nodes).
+Primitive shapes are edited through these parameters, not point by point — see [what can be edited node by node](pen-bezier.md#what-can-be-edited-node-by-node).

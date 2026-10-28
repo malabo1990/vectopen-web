@@ -74,7 +74,7 @@ window.VECTOPEN_I18N.strings.ja = {
   "road.prog4": "極端なズームでのカメラ精度（浮動原点）",
   "road.prog5": "階層型のリソース &amp; ジオメトリキャッシュ",
   "road.plan1": "ブラウザで動く <b>Web 版</b>",
-  "road.plan2": "読み込み時に本物のベジェ曲線を使う<b>双方向 SVG</b>",
+  "road.plan2": "Modern と Pro の右パネルに <b>Shader</b> と <b>Script</b> タブ",
   "road.plan3": "シアーハンドル &middot; 回転したシェイプを自身の軸でリサイズ",
   "road.plan4": "Windows と macOS 向けの署名付きインストーラー &middot; AppImage",
   "road.plan5": "10 万ページ超のファイル向け <b>.vtc</b> マニフェストのページング",

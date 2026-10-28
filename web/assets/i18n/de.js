@@ -74,7 +74,7 @@ window.VECTOPEN_I18N.strings.de = {
   "road.prog4": "Kamera-Präzision bei extremem Zoom (Floating Origin)",
   "road.prog5": "Mehrstufiger Ressourcen- &amp; Geometrie-Cache",
   "road.plan1": "<b>Web-Version</b>, die im Browser läuft",
-  "road.plan2": "<b>SVG in beide Richtungen</b> mit echten Bézierkurven beim Import",
+  "road.plan2": "<b>Shader</b>- und <b>Script</b>-Tabs im rechten Bedienfeld von Modern und Pro",
   "road.plan3": "Neigungsgriffe &middot; gedrehte Formen entlang ihrer eigenen Achsen skalieren",
   "road.plan4": "Signierte Installer für Windows und macOS &middot; AppImage",
   "road.plan5": "Paginierung des <b>.vtc</b>-Manifests für Dateien mit über 100.000 Seiten",

@@ -2,6 +2,14 @@
 
 Download the package for your system from the **[download page](https://malabo1990.github.io/vectopen-web/#download)** or directly from **[GitHub Releases](https://github.com/malabo1990/-Vectopen/releases)**. You don't need to install Godot.
 
+## Status by system
+
+| System | Status in 0.2.0-alpha |
+|---|---|
+| **Linux** | Tested — this is where Vectopen is developed |
+| **Windows** | Tested with Wine on Linux, not yet on a real Windows PC |
+| **macOS** | **Not tested on a real Mac yet.** It's built and packaged, but nobody has confirmed it starts |
+
 !!! warning "Alpha builds are not signed yet"
     Windows and macOS will warn that the app comes from an *unknown developer*. That is expected for now — see the steps for your system below. Signed installers are planned.
 
@@ -16,12 +24,12 @@ To uninstall, delete the folder.
 
 ## macOS (Intel and Apple Silicon)
 
+!!! danger "Untested on real Apple hardware"
+    The macOS build has **not been run on a real Mac yet**. It may not start, or parts of it may not work. If you try it, please tell us what happens — it works or not, and your macOS version and chip (Intel / Apple Silicon) — on [Telegram](https://t.me/vectopen) or [GitHub](https://github.com/malabo1990/-Vectopen/issues).
+
 1. Download `Vectopen-…-macos-universal.dmg` (or the `.zip`, if you prefer).
 2. Open the `.dmg` and drag **Vectopen** into **Applications**.
 3. The first time, **right-click** Vectopen in Applications → **Open** → **Open**. After that it opens normally.
-
-!!! note
-    The macOS build has not been tested on a real Mac yet. If it doesn't start, please tell us on [Telegram](https://t.me/vectopen) or [GitHub](https://github.com/malabo1990/-Vectopen/issues) with your macOS version.
 
 To uninstall, move Vectopen from Applications to the Trash.
 

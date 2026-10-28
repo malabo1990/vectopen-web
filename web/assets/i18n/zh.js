@@ -74,7 +74,7 @@ window.VECTOPEN_I18N.strings.zh = {
   "road.prog4": "极端缩放下的相机精度（浮动原点）",
   "road.prog5": "分级资源 &amp; 几何缓存",
   "road.plan1": "可在浏览器中运行的 <b>Web 版本</b>",
-  "road.plan2": "导入时使用真正贝塞尔曲线的<b>双向 SVG</b>",
+  "road.plan2": "在 Modern 和 Pro 的右侧面板中加入 <b>Shader</b> 和 <b>Script</b> 标签页",
   "road.plan3": "倾斜控制柄 &middot; 沿自身轴缩放已旋转的形状",
   "road.plan4": "Windows 和 macOS 的签名安装包 &middot; AppImage",
   "road.plan5": "面向 10 万页以上文件的 <b>.vtc</b> 清单分页",

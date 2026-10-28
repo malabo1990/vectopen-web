@@ -7,9 +7,19 @@ Vectopen tiene **tres interfaces**. Comparten el mismo lienzo, las mismas herram
 | Ideal para | Empezar, un lienzo grande y despejado | El diseño del día a día | Sesiones largas, todo a la vista |
 | Herramientas | En la columna lateral del panel Capas | Barra abajo | Columna a la izquierda |
 | Propiedades del objeto | Paneles flotantes | Un inspector a la derecha | Paneles acoplados a la derecha |
-| Cambiar desde | **Preferencias → Tema** | **⚙** (arriba a la derecha) | Botones **Smart / Modern / Pro** (arriba a la derecha) |
+| Abrir Preferencias desde | El icono donde se cruzan las reglas (arriba a la izquierda) | **⚙** en la barra superior | **⚙** en la barra superior |
 
-Cada interfaz es dueña de sus paneles: al cambiar, se cierran los paneles flotantes de la anterior.
+## Cambiar de interfaz
+
+Los mismos pasos sirven en las tres:
+
+1. Abre **Preferencias** (ver la última fila de la tabla).
+2. Ve a la pestaña **Tema**.
+3. En la primera fila, **UI Mode**, elige **Smart**, **Modern** o **Pro**.
+
+En **Pro** hay además un atajo: los botones **Smart / Modern / Pro** a la derecha de la barra superior.
+
+El cambio es inmediato y se recuerda para la próxima vez. Cada interfaz es dueña de sus paneles: al cambiar, se cierran los paneles flotantes de la anterior.
 
 ## Smart
 
@@ -53,7 +63,7 @@ Tema claro u oscuro, y 10 idiomas — español, inglés, francés, alemán, port
 
 ### Preferencias
 
-Se abren desde el iconito donde se cruzan las dos reglas (Smart/Pro) o desde **⚙** (Modern). Pestañas: **Ventana**, **Reglas**, **Tema** (tema, idioma, interfaz, colores por defecto, [servidor MCP](../integrations/mcp-server.md)), **Imán** y **Paneles**.
+Se abren desde **⚙** en la barra superior (Modern y Pro) o desde el iconito donde se cruzan las dos reglas (Smart). Pestañas: **Ventana**, **Reglas**, **Tema** (UI Mode, tema, idioma, colores por defecto, [servidor MCP](../integrations/mcp-server.md)), **Imán** y **Paneles**.
 
 ### Atajos de teclado
 

@@ -33,4 +33,4 @@ Cualquier forma se puede mover, **redimensionar arrastrando sus tiradores** y gi
 - **elipses:** elipse completa, arco o tarta (ángulo inicial/final, radio interior para anillos);
 - **polígonos y estrellas:** número de lados o puntas, radio interior.
 
-Para editar una forma punto a punto, conviértela en trazado y usa la [edición de nodos](pen-bezier.md#editar-nodos).
+Las formas primitivas se editan con estos parámetros, no punto a punto — ver [qué se puede editar punto a punto](pen-bezier.md#que-se-puede-editar-punto-a-punto).

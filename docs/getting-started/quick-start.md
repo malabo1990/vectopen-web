@@ -4,7 +4,7 @@ Five minutes: draw a shape, colour it, add a gradient, save and export. The step
 
 ## 1. Open Vectopen
 
-A new document starts with one artboard, ready to draw on. To choose the interface, open the **⚙ settings** button (top-right) and pick **Smart**, **Modern** or **Pro** — you can change it any time.
+A new document starts with one artboard, ready to draw on. To choose the interface, open **Preferences → Theme → UI Mode** and pick **Smart**, **Modern** or **Pro** — you can change it any time (see [Switching interface](interface.md#switching-interface)).
 
 ## 2. Draw a shape
 

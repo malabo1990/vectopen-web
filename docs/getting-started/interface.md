@@ -7,9 +7,19 @@ Vectopen has **three interfaces**. They share the same canvas, tools and files �
 | Best for | Getting started, a big clean canvas | Everyday design | Long sessions, everything visible |
 | Tools | In the Layers panel's side column | Bar at the bottom | Column on the left |
 | Object properties | Floating panels | One inspector on the right | Docked panels on the right |
-| Switch from | **Preferences → Theme** | **⚙** (top-right) | **Smart / Modern / Pro** buttons (top-right) |
+| Open Preferences from | The icon where the two rulers meet (top-left) | **⚙** in the top bar | **⚙** in the top bar |
 
-Each interface owns its panels: when you switch, the floating panels of the previous one close.
+## Switching interface
+
+The same steps work in all three:
+
+1. Open **Preferences** (see the last row of the table above).
+2. Go to the **Theme** tab.
+3. In the first row, **UI Mode**, choose **Smart**, **Modern** or **Pro**.
+
+In **Pro** there's also a shortcut: the **Smart / Modern / Pro** buttons at the right of the top bar.
+
+The change is immediate and remembered next time. Each interface owns its panels: when you switch, the floating panels of the previous one close.
 
 ## Smart
 
@@ -53,7 +63,7 @@ Light or dark theme, and 10 languages — English, Spanish, French, German, Port
 
 ### Preferences
 
-Open Preferences from the small icon where the two rulers meet (Smart/Pro) or from **⚙** (Modern). Tabs: **Window**, **Rulers**, **Theme** (theme, language, interface, default colours, [MCP server](../integrations/mcp-server.md)), **Snap** and **Panels**.
+Open Preferences from **⚙** in the top bar (Modern and Pro) or the small icon where the two rulers meet (Smart). Tabs: **Window**, **Rulers**, **Theme** (UI mode, theme, language, default colours, [MCP server](../integrations/mcp-server.md)), **Snap** and **Panels**.
 
 ### Keyboard shortcuts
 

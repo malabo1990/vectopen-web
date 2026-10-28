@@ -4,7 +4,7 @@ Cinco minutos: dibujar una forma, darle color, añadir un degradado, guardar y e
 
 ## 1. Abre Vectopen
 
-Un documento nuevo empieza con una mesa de trabajo lista para dibujar. Para elegir la interfaz, abre el botón **⚙ ajustes** (arriba a la derecha) y elige **Smart**, **Modern** o **Pro** — puedes cambiarla cuando quieras.
+Un documento nuevo empieza con una mesa de trabajo lista para dibujar. Para elegir la interfaz, abre **Preferencias → Tema → UI Mode** y elige **Smart**, **Modern** o **Pro** — puedes cambiarla cuando quieras (ver [Cambiar de interfaz](interface.md#cambiar-de-interfaz)).
 
 ## 2. Dibuja una forma
 
