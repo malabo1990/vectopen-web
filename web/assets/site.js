@@ -36,6 +36,8 @@
     var base = I18N.strings.en || {};
     var dict = I18N.strings[lang] || {};
     document.documentElement.lang = lang;
+    // Árabe (y otros de derecha a izquierda): toda la página en RTL.
+    document.documentElement.dir = ["ar", "he", "fa", "ur"].indexOf(lang) >= 0 ? "rtl" : "ltr";
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var k = el.getAttribute("data-i18n");
       var v = dict[k] != null ? dict[k] : base[k];
