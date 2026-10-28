@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.hi = {
   "dl.get": "डाउनलोड",
   "dl.portable": "पोर्टेबल",
   "dl.soon": "जल्द आ रहा है",
-  "dl.alphanote": "अल्फ़ा संस्करण: अभी हस्ताक्षरित नहीं। Windows &ldquo;Windows ने आपके PC को सुरक्षित रखा&rdquo; दिखा सकता है (अधिक जानकारी &rarr; फिर भी चलाएँ); macOS पर पहली बार ऐप पर राइट-क्लिक &rarr; खोलें। इस अल्फ़ा में वेक्टराइज़ टैब केवल Linux पर है।",
+  "dl.alphanote": "अल्फ़ा संस्करण: अभी हस्ताक्षरित नहीं। Windows &ldquo;Windows ने आपके PC को सुरक्षित रखा&rdquo; दिखा सकता है (अधिक जानकारी &rarr; फिर भी चलाएँ); macOS पर पहली बार ऐप पर राइट-क्लिक &rarr; खोलें। इस अल्फ़ा में वेक्टराइज़ टैब केवल Linux पर है। कोई गड़बड़ी मिली? <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> या <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a> पर बताएँ।",
   "dl.note": "सोर्स से चलाना चाहते हैं? <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility) इंस्टॉल करें, रिपॉज़िटरी क्लोन करें और <code>project.godot</code> खोलें। मुख्य सीन <code>scenes/canvas/canvas.tscn</code> है।",
 
   "road.eyebrow": "आगे की दिशा",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.hi = {
   "donate.h": "Vectopen मुफ़्त है। इसे आगे बढ़ाना मुफ़्त नहीं।",
   "donate.lead": "यह एक व्यक्ति का प्रोजेक्ट है, जिसके पीछे कोई कंपनी नहीं। अगर Vectopen आपके काम आता है, तो छोटा नियमित या एक बार का योगदान विकास का केंद्रित समय देता है &mdash; और यही एकमात्र फ़ंडिंग है।",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "मासिक या एक बार, सीधे GitHub से।",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "एक बार की टिप, बिना खाते के।",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "नियमित, गैर-लाभकारी, बिना शुल्क।",
   "donate.note": "दान नहीं कर सकते? रिपॉज़िटरी को स्टार देना, अच्छी बग रिपोर्ट भेजना या ऐप का अनुवाद करना भी उतना ही मदद करता है।",
 
   "oss.h": "MIT लाइसेंस। कोई खाता नहीं, कोई टेलीमेट्री नहीं, कोई चाल नहीं।",

@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.ar = {
   "dl.get": "تنزيل",
   "dl.portable": "محمول",
   "dl.soon": "قريبًا",
-  "dl.alphanote": "إصدار ألفا: غير موقّع بعد. قد يعرض Windows رسالة «قام Windows بحماية الكمبيوتر» (مزيد من المعلومات &larr; التشغيل على أي حال)؛ وعلى macOS في المرة الأولى انقر بزر الفأرة الأيمن على التطبيق &larr; فتح. تبويب «التحويل إلى متجه» متاح على Linux فقط في إصدار ألفا هذا.",
+  "dl.alphanote": "إصدار ألفا: غير موقّع بعد. قد يعرض Windows رسالة «قام Windows بحماية الكمبيوتر» (مزيد من المعلومات &larr; التشغيل على أي حال)؛ وعلى macOS في المرة الأولى انقر بزر الفأرة الأيمن على التطبيق &larr; فتح. تبويب «التحويل إلى متجه» متاح على Linux فقط في إصدار ألفا هذا. وجدت خطأً؟ أخبرنا على <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> أو <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
   "dl.note": "تفضّل التشغيل من الشيفرة؟ ثبّت <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility)، انسخ المستودع وافتح <code>project.godot</code>. المشهد الرئيسي هو <code>scenes/canvas/canvas.tscn</code>.",
 
   "road.eyebrow": "إلى أين يتجه",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.ar = {
   "donate.h": "Vectopen مجاني، لكن استمراره ليس كذلك.",
   "donate.lead": "إنه مشروع فردي بلا شركة وراءه. إن كان Vectopen مفيدًا لك، فمساهمة صغيرة دورية أو لمرة واحدة تمنح وقت تطوير مركّز &mdash; وهي التمويل الوحيد الموجود.",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "شهريًا أو لمرة واحدة، مباشرة من GitHub.",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "إكرامية لمرة واحدة، دون حساب.",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "دوري، غير ربحي، بلا رسوم.",
   "donate.note": "لا تستطيع التبرع؟ نجمة للمستودع، أو بلاغ جيد عن خطأ، أو ترجمة التطبيق تساعد بالقدر نفسه.",
 
   "oss.h": "رخصة MIT. بلا حساب، بلا قياس عن بُعد، بلا خدعة.",

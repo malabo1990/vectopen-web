@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.fr = {
   "dl.get": "Télécharger",
   "dl.portable": "portable",
   "dl.soon": "Bientôt",
-  "dl.alphanote": "Version alpha : pas encore signée. Windows peut afficher &laquo;&nbsp;Windows a protégé votre ordinateur&nbsp;&raquo; (Informations complémentaires &rarr; Exécuter quand même) ; sur macOS, la première fois, clic droit sur l'app &rarr; Ouvrir. L'onglet Vectoriser n'est disponible que sous Linux dans cette alpha.",
+  "dl.alphanote": "Version alpha : pas encore signée. Windows peut afficher &laquo;&nbsp;Windows a protégé votre ordinateur&nbsp;&raquo; (Informations complémentaires &rarr; Exécuter quand même) ; sur macOS, la première fois, clic droit sur l'app &rarr; Ouvrir. L'onglet Vectoriser n'est disponible que sous Linux dans cette alpha. Un bug ? Signalez-le sur <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> ou <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
   "dl.note": "Vous préférez le code source ? Installez <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clonez le dépôt et ouvrez <code>project.godot</code>. La scène principale est <code>scenes/canvas/canvas.tscn</code>.",
 
   "road.eyebrow": "Où il va",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.fr = {
   "donate.h": "Vectopen est gratuit. Le faire avancer ne l'est pas.",
   "donate.lead": "C'est un projet solo sans entreprise derrière. Si Vectopen vous est utile, une petite contribution régulière ou ponctuelle finance du temps de développement &mdash; c'est le seul financement qui existe.",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Mensuel ou ponctuel, directement depuis GitHub.",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "Un pourboire ponctuel, sans compte.",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "Récurrent, à but non lucratif, sans frais.",
   "donate.note": "Pas en mesure de donner ? Mettre une étoile au dépôt, signaler un bug précis ou traduire l'application aide tout autant.",
 
   "oss.h": "Licence MIT. Sans compte, sans télémétrie, sans piège.",

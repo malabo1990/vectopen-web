@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.de = {
   "dl.get": "Download",
   "dl.portable": "portabel",
   "dl.soon": "Demnächst",
-  "dl.alphanote": "Alpha-Version: noch nicht signiert. Windows zeigt eventuell &bdquo;Der Computer wurde durch Windows geschützt&ldquo; (Weitere Informationen &rarr; Trotzdem ausführen); unter macOS beim ersten Mal Rechtsklick auf die App &rarr; Öffnen. Der Tab Vektorisieren gibt es in dieser Alpha nur unter Linux.",
+  "dl.alphanote": "Alpha-Version: noch nicht signiert. Windows zeigt eventuell &bdquo;Der Computer wurde durch Windows geschützt&ldquo; (Weitere Informationen &rarr; Trotzdem ausführen); unter macOS beim ersten Mal Rechtsklick auf die App &rarr; Öffnen. Der Tab Vektorisieren gibt es in dieser Alpha nur unter Linux. Einen Fehler gefunden? Melde ihn auf <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> oder <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
   "dl.note": "Lieber aus dem Quellcode? Installiere <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), klone das Repo und öffne <code>project.godot</code>. Die Hauptszene ist <code>scenes/canvas/canvas.tscn</code>.",
 
   "road.eyebrow": "Wohin es geht",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.de = {
   "donate.h": "Vectopen ist kostenlos. Es weiterzuentwickeln nicht.",
   "donate.lead": "Es ist ein Ein-Personen-Projekt ohne Firma dahinter. Wenn Vectopen dir nützt, finanziert ein kleiner regelmäßiger oder einmaliger Beitrag konzentrierte Entwicklungszeit &mdash; und es ist die einzige Finanzierung, die es gibt.",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Monatlich oder einmalig, direkt über GitHub.",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "Einmaliges Trinkgeld, ohne Konto.",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "Wiederkehrend, gemeinnützig, ohne Gebühren.",
   "donate.note": "Spenden ist gerade nicht drin? Ein Stern für das Repo, ein guter Fehlerbericht oder eine Übersetzung der App helfen genauso.",
 
   "oss.h": "MIT-lizenziert. Kein Konto, keine Telemetrie, kein Haken.",

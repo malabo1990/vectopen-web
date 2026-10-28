@@ -15,6 +15,11 @@ descargar y abrir sin instalar Godot.
 **[Descargar 0.2.0-alpha &rarr;](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.0-alpha)**
 &nbsp;Windows (.zip) · macOS universal (.dmg / .zip) · Linux (.deb, .rpm, .tar.gz)
 
+> **Es una alfa: encontrarás fallos.** Cuando veas uno, cuéntamelo — en
+> [Telegram (t.me/vectopen)](https://t.me/vectopen) para comentarlo rápido, o
+> como [issue en GitHub](https://github.com/malabo1990/-Vectopen/issues) con
+> los pasos para repetirlo. Cada aviso se convierte en una prueba.
+
 ![Vectopen 0.2.0-alpha — la interfaz Modern](../media/shots/modern_light.webp)
 
 ## Tres interfaces, un editor
@@ -62,6 +67,55 @@ redimensionar arrastrando**. La captura de la transformación solo guardaba el
 tamaño de algunos tipos de forma, así que el redimensionado no hacía nada, en
 silencio. Arreglado, y ahora una prueba arrastra cada tipo de forma y falla si
 alguno no responde.
+
+## Efectos, filtros, shaders y complementos: ¿en qué se diferencian?
+
+Los cuatro cambian cómo se ven las cosas o lo que puede hacer la app, así que
+es fácil confundirlos. Una guía rápida, de lo más sencillo a lo más potente.
+Ninguno destruye tu dibujo: puedes desactivarlos o quitarlos cuando quieras y
+la forma original sigue ahí.
+
+**Efectos** — *los toques de acabado de siempre.* Sombra paralela, sombra
+interior, contorno, desenfoque, superposición de color o de degradado,
+resplandor interior, bisel, 3D y extrusión. Se apilan sobre un objeto y se
+ajustan con deslizadores: «dale a este botón una sombra suave» o «haz que este
+título parezca en relieve». Si has usado los estilos de capa de un programa de
+diseño, es la misma idea.
+
+**Filtros** — *un aspecto para todo el objeto, como un filtro de fotos.*
+Cristal esmerilado, grano de película, duotono, neón, aberración cromática,
+glitch, semitono (puntos de imprenta) y pixelado. Un efecto *añade* algo (una
+sombra detrás, una línea alrededor); un filtro *transforma los píxeles* del
+objeto al dibujarlo. Ideal para carteles, estilo retro o «de pantalla».
+
+**Shaders** — *escribe tu propio filtro.* Un shader es un pequeño programa que
+se ejecuta en la tarjeta gráfica y decide el color de cada píxel del objeto.
+La pestaña Shader tiene un editor de código que revisa lo que escribes, marca
+la línea con el error y puede actualizar el objeto en vivo. No hace falta
+empezar de cero: hay plantillas (invertir, escala de grises, onda, pixelado,
+holograma, brillo de borde, arcoíris animado, desenfoque) para abrir y
+retocar, y tus shaders se guardan en una biblioteca. Los shaders se guardan en
+el archivo `.vtc` junto con el dibujo.
+
+**Scripts y complementos** — *automatiza el propio Vectopen.* Un shader cambia
+cómo se *ve* un objeto; un script cambia *el documento*: crea, mueve,
+recolorea, renombra y agrupa objetos. La pestaña Script es una pequeña consola
+con la API de Vectopen: «haz una cuadrícula de 100 círculos», «reparte la
+selección en círculo» o «renombra todo lo seleccionado» son unas pocas líneas,
+y hay plantillas para todo eso. Cada ejecución es un solo paso de deshacer, así
+que si un script sale mal, basta un Ctrl+Z.
+
+Un **complemento** es un script empaquetado para reutilizarlo y compartirlo:
+añade sus propios botones y ajustes a Vectopen. El gestor de complementos los
+instala desde un `.zip`, una carpeta o un solo archivo, y permite activarlos,
+desactivarlos y recargarlos. Vienen tres de ejemplo: *Colores* (colores
+aleatorios, degradado en la selección, invertir, escala de grises), *Repetir*
+(copia la selección en cuadrícula o en círculo) y *Hola Vectopen*, el
+complemento más pequeño posible, para aprender.
+
+En resumen: los **efectos** y **filtros** se usan con deslizadores; los
+**shaders** y **scripts** se escriben (o se toman de una plantilla); los
+**complementos** son scripts que otra persona ya escribió por ti.
 
 ## Un panel de capas que se entiende
 
@@ -147,14 +201,13 @@ reales, y ahora mismo algunos frenan cosas que notarías directamente:
   de código para Windows quitarían los avisos de «desarrollador desconocido» en
   los dos sistemas.
 
-Si Vectopen te resulta útil, o te gustaría que exista:
-
-- [**GitHub Sponsors**](https://github.com/sponsors/malabo1990) — mensual o puntual
-- [**Ko-fi**](https://ko-fi.com/vectopen) — una propina puntual, sin cuenta
-- [**Liberapay**](https://liberapay.com/vectopen) — recurrente, sin ánimo de lucro, sin comisiones
+Si Vectopen te resulta útil, o te gustaría que exista, puedes apoyarlo en
+**[GitHub Sponsors](https://github.com/sponsors/malabo1990)** — mensual o
+puntual, con la cantidad que quieras.
 
 ¿No puedes donar? No pasa nada: ayuda igual probar la alfa y
-[contar lo que falla](https://github.com/malabo1990/-Vectopen/issues), poner
+contar lo que falla — en [Telegram](https://t.me/vectopen) o en
+[GitHub](https://github.com/malabo1990/-Vectopen/issues), poner
 una estrella al repositorio o ayudar a traducir la app.
 
 ## Lo siguiente

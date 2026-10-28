@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.ja = {
   "dl.get": "ダウンロード",
   "dl.portable": "ポータブル",
   "dl.soon": "近日公開",
-  "dl.alphanote": "アルファ版：まだ署名されていません。Windows では「Windows によって PC が保護されました」と表示される場合があります（詳細情報 &rarr; 実行）。macOS では初回、アプリを右クリック &rarr; 開く。このアルファ版では「ベクター化」タブは Linux のみです。",
+  "dl.alphanote": "アルファ版：まだ署名されていません。Windows では「Windows によって PC が保護されました」と表示される場合があります（詳細情報 &rarr; 実行）。macOS では初回、アプリを右クリック &rarr; 開く。このアルファ版では「ベクター化」タブは Linux のみです。 不具合を見つけたら、<a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> または <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a> でお知らせください。",
   "dl.note": "ソースから実行したい場合は、<a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a>（GL Compatibility）をインストールし、リポジトリをクローンして <code>project.godot</code> を開いてください。メインシーンは <code>scenes/canvas/canvas.tscn</code> です。",
 
   "road.eyebrow": "これから",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.ja = {
   "donate.h": "Vectopen は無料。でも開発を続けるには支えが必要です。",
   "donate.lead": "企業の後ろ盾のない個人プロジェクトです。Vectopen が役に立っているなら、少額の継続的または一回限りの支援が集中した開発時間になります &mdash; それが唯一の資金源です。",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "毎月または一回限り、GitHub から直接。",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "一回限りのチップ、アカウント不要。",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "継続支援、非営利、手数料なし。",
   "donate.note": "寄付が難しい場合は、リポジトリへのスター、わかりやすいバグ報告、アプリの翻訳も同じくらい助けになります。",
 
   "oss.h": "MIT ライセンス。アカウント不要、テレメトリなし、裏もなし。",

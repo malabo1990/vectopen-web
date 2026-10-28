@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.pt = {
   "dl.get": "Baixar",
   "dl.portable": "portátil",
   "dl.soon": "Em breve",
-  "dl.alphanote": "Versão alfa: ainda sem assinatura. O Windows pode mostrar &ldquo;O Windows protegeu o computador&rdquo; (Mais informações &rarr; Executar assim mesmo); no macOS, na primeira vez, clique com o botão direito no app &rarr; Abrir. A aba Vetorizar só existe no Linux nesta alfa.",
+  "dl.alphanote": "Versão alfa: ainda sem assinatura. O Windows pode mostrar &ldquo;O Windows protegeu o computador&rdquo; (Mais informações &rarr; Executar assim mesmo); no macOS, na primeira vez, clique com o botão direito no app &rarr; Abrir. A aba Vetorizar só existe no Linux nesta alfa. Encontrou um erro? Conte-nos no <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> ou no <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
   "dl.note": "Prefere rodar a partir do código? Instale o <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clone o repositório e abra <code>project.godot</code>. A cena principal é <code>scenes/canvas/canvas.tscn</code>.",
 
   "road.eyebrow": "Para onde vai",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.pt = {
   "donate.h": "O Vectopen é grátis. Mantê-lo em movimento, não.",
   "donate.lead": "É um projeto solo, sem empresa por trás. Se o Vectopen é útil para você, uma pequena contribuição mensal ou única paga tempo de desenvolvimento focado &mdash; e é o único financiamento que existe.",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Mensal ou única, direto pelo GitHub.",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "Uma gorjeta única, sem conta.",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "Recorrente, sem fins lucrativos, sem taxas.",
   "donate.note": "Não pode doar? Dar uma estrela no repositório, abrir um bom relato de bug ou traduzir o app ajudam do mesmo jeito.",
 
   "oss.h": "Licença MIT. Sem conta, sem telemetria, sem pegadinha.",

@@ -58,7 +58,7 @@ window.VECTOPEN_I18N = {
       "dl.get": "Download",
       "dl.portable": "portable",
       "dl.soon": "Coming soon",
-      "dl.alphanote": "Alpha build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. The Vectorize tab is Linux-only in this alpha.",
+      "dl.alphanote": "Alpha build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. The Vectorize tab is Linux-only in this alpha. Found a bug? Tell us on <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> or <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
       "dl.note": "Prefer to run from source? Install <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clone the repo and open <code>project.godot</code>. The main scene is <code>scenes/canvas/canvas.tscn</code>.",
 
       "road.eyebrow": "Where it's going",
@@ -101,8 +101,6 @@ window.VECTOPEN_I18N = {
       "donate.h": "Vectopen is free. Keeping it moving isn't.",
       "donate.lead": "It's a solo project with no company behind it. If Vectopen is useful to you, a small recurring or one-off contribution buys focused development time &mdash; and it's the only funding there is.",
       "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Monthly or one-time, right from GitHub.",
-      "donate.kofi.h": "Ko-fi", "donate.kofi.p": "One-off tip, no account needed.",
-      "donate.lp.h": "Liberapay", "donate.lp.p": "Recurring, non-profit, fee-free.",
       "donate.note": "Not in a position to donate? Starring the repo, filing a good bug report or translating the app all help just as much.",
 
       "oss.h": "MIT-licensed. No account, no telemetry, no catch.",
@@ -178,7 +176,7 @@ window.VECTOPEN_I18N = {
       "dl.get": "Descargar",
       "dl.portable": "portátil",
       "dl.soon": "Próximamente",
-      "dl.alphanote": "Versión alfa: aún sin firmar. Windows puede mostrar &laquo;Windows protegió su PC&raquo; (Más información &rarr; Ejecutar de todas formas); en macOS, la primera vez, clic derecho sobre la app &rarr; Abrir. La pestaña Vectorizar solo está en Linux en esta alfa.",
+      "dl.alphanote": "Versión alfa: aún sin firmar. Windows puede mostrar &laquo;Windows protegió su PC&raquo; (Más información &rarr; Ejecutar de todas formas); en macOS, la primera vez, clic derecho sobre la app &rarr; Abrir. La pestaña Vectorizar solo está en Linux en esta alfa. ¿Has visto un fallo? Cuéntalo en <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> o en <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
       "dl.note": "¿Prefieres ejecutarlo desde el código? Instala <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clona el repo y abre <code>project.godot</code>. La escena principal es <code>scenes/canvas/canvas.tscn</code>.",
 
       "road.eyebrow": "Hacia dónde va",
@@ -221,8 +219,6 @@ window.VECTOPEN_I18N = {
       "donate.h": "Vectopen es gratis. Mantenerlo en marcha no lo es.",
       "donate.lead": "Es un proyecto en solitario, sin ninguna empresa detrás. Si Vectopen te resulta útil, una pequeña aportación recurrente o puntual compra tiempo de desarrollo concentrado &mdash; y es la única financiación que hay.",
       "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Mensual o puntual, desde el propio GitHub.",
-      "donate.kofi.h": "Ko-fi", "donate.kofi.p": "Propina puntual, sin cuenta.",
-      "donate.lp.h": "Liberapay", "donate.lp.p": "Recurrente, sin ánimo de lucro, sin comisiones.",
       "donate.note": "¿No puedes donar? Poner una estrella al repo, abrir un buen informe de bug o traducir la app ayudan igual.",
 
       "oss.h": "Licencia MIT. Sin cuenta, sin telemetría, sin trampa.",

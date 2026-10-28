@@ -15,6 +15,11 @@ installing Godot.
 **[Download 0.2.0-alpha &rarr;](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.0-alpha)**
 &nbsp;Windows (.zip) · macOS universal (.dmg / .zip) · Linux (.deb, .rpm, .tar.gz)
 
+> **It's an alpha: you will find bugs.** When you do, please tell me — on
+> [Telegram (t.me/vectopen)](https://t.me/vectopen) for a quick chat, or as a
+> [GitHub issue](https://github.com/malabo1990/-Vectopen/issues) with steps
+> to reproduce. Every report becomes a test.
+
 ![Vectopen 0.2.0-alpha — the Modern interface](../media/shots/modern_light.webp)
 
 ## Three interfaces, one editor
@@ -60,6 +65,54 @@ A bug found on the way: stars and several other shapes **could not be resized
 by dragging**. The transform snapshot only stored `size` for some shape
 classes, so the resize silently did nothing. Fixed, and a test now drags every
 shape type and fails if any of them refuses.
+
+## Effects, filters, shaders and add-ons — what's the difference?
+
+All four change how things look or what the app can do, which makes them
+easy to mix up. A quick guide, from simplest to most powerful. None of them
+destroy your drawing: you can switch any of them off or remove it, and the
+original shape is still there.
+
+**Effects** — *the classic finishing touches.* Drop shadow, inner shadow,
+outline, blur, colour or gradient overlay, inner glow, bevel, 3D and
+extrusion. You stack them on an object and adjust them with sliders: "give
+this button a soft shadow" or "make this title look embossed". If you've
+used layer styles in a design app, this is the same idea.
+
+**Filters** — *a look for the whole object, like a photo filter.* Frosted
+glass, film grain, duotone, neon glow, chromatic aberration, glitch,
+halftone dots and pixelate. Where an effect *adds* something (a shadow
+behind, a line around), a filter *transforms the pixels* of the object as it
+is drawn. Great for posters, retro and "screen" styles.
+
+**Shaders** — *write your own filter.* A shader is a tiny program that runs
+on the graphics card and decides the colour of every pixel of the object.
+The Shader tab has a code editor that checks your code as you type, marks
+the line with the error and can update the object live. You don't need to
+start from zero: there are templates (invert, greyscale, wave, pixelate,
+hologram, rim light, animated rainbow, blur) to open and tweak, and your own
+shaders are saved in a library. Shaders are saved in the `.vtc` file with
+the drawing.
+
+**Scripts and add-ons** — *automate Vectopen itself.* While shaders change
+how one object *looks*, scripts change *the document*: create, move,
+recolour, rename and group objects. The Script tab is a small console with
+the Vectopen API — "make a grid of 100 circles", "spread the selection in a
+circle", "rename everything selected" are a few lines each, and there are
+templates for all of those. Every run is a single undo step, so a script
+that goes wrong is one Ctrl+Z away.
+
+An **add-on** is a script packaged to be reused and shared: it adds its own
+buttons and settings to Vectopen. The add-on manager installs them from a
+`.zip`, a folder or a single file, and lets you enable, disable and reload
+them. Three come built in as examples: *Colours* (random colours, gradients
+across a selection, invert, greyscale), *Repeat* (copy the selection in a
+grid or around a circle) and *Hello Vectopen*, the smallest possible add-on
+to learn from.
+
+In short: **effects** and **filters** you use with sliders; **shaders** and
+**scripts** you write (or borrow from a template); **add-ons** are scripts
+someone else already wrote for you.
 
 ## A layer panel you can read
 
@@ -142,14 +195,13 @@ costs, and right now some of them block things you'd notice directly:
 - **Signing.** An Apple Developer membership and a Windows code-signing
   certificate would remove the "unknown developer" warnings on both systems.
 
-If Vectopen is useful to you, or you'd like it to exist:
-
-- [**GitHub Sponsors**](https://github.com/sponsors/malabo1990) — monthly or one-time
-- [**Ko-fi**](https://ko-fi.com/vectopen) — a one-off tip, no account needed
-- [**Liberapay**](https://liberapay.com/vectopen) — recurring, non-profit, no fees
+If Vectopen is useful to you, or you'd like it to exist, you can support it on
+**[GitHub Sponsors](https://github.com/sponsors/malabo1990)** — monthly or
+one-time, any amount.
 
 Can't donate? That's fine, and it helps just as much to try the alpha and
-[report what breaks](https://github.com/malabo1990/-Vectopen/issues), star the
+report what breaks — on [Telegram](https://t.me/vectopen) or
+[GitHub](https://github.com/malabo1990/-Vectopen/issues), star the
 repository, or help translate the app.
 
 ## What's next

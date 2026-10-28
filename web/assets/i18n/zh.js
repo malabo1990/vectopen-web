@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.zh = {
   "dl.get": "下载",
   "dl.portable": "便携版",
   "dl.soon": "即将推出",
-  "dl.alphanote": "Alpha 版本：尚未签名。Windows 可能显示“Windows 已保护你的电脑”（更多信息 &rarr; 仍要运行）；在 macOS 上首次打开时，右键点击应用 &rarr; 打开。此 Alpha 版中“矢量化”标签页仅在 Linux 上可用。",
+  "dl.alphanote": "Alpha 版本：尚未签名。Windows 可能显示“Windows 已保护你的电脑”（更多信息 &rarr; 仍要运行）；在 macOS 上首次打开时，右键点击应用 &rarr; 打开。此 Alpha 版中“矢量化”标签页仅在 Linux 上可用。 发现问题？请在 <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> 或 <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a> 上告诉我们。",
   "dl.note": "想从源代码运行？安装 <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a>（GL Compatibility），克隆仓库并打开 <code>project.godot</code>。主场景是 <code>scenes/canvas/canvas.tscn</code>。",
 
   "road.eyebrow": "发展方向",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.zh = {
   "donate.h": "Vectopen 是免费的，但持续开发需要支持。",
   "donate.lead": "这是一个没有公司支持的个人项目。如果 Vectopen 对你有用，一笔小额的定期或一次性捐助就能换来专注的开发时间 &mdash; 这也是唯一的资金来源。",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "按月或一次性，直接通过 GitHub。",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "一次性打赏，无需账号。",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "定期捐助，非营利，无手续费。",
   "donate.note": "暂时无法捐助？给仓库点星、提交一份好的 bug 报告或翻译应用，同样很有帮助。",
 
   "oss.h": "MIT 许可。无需账号，没有遥测，没有套路。",

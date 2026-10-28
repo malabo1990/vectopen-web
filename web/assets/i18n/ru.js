@@ -52,7 +52,7 @@ window.VECTOPEN_I18N.strings.ru = {
   "dl.get": "Скачать",
   "dl.portable": "портативная",
   "dl.soon": "Скоро",
-  "dl.alphanote": "Альфа-версия: пока без подписи. Windows может показать &laquo;Система Windows защитила ваш компьютер&raquo; (Подробнее &rarr; Выполнить в любом случае); в macOS в первый раз нажмите правой кнопкой на приложение &rarr; Открыть. Вкладка «Векторизация» в этой альфе есть только в Linux.",
+  "dl.alphanote": "Альфа-версия: пока без подписи. Windows может показать &laquo;Система Windows защитила ваш компьютер&raquo; (Подробнее &rarr; Выполнить в любом случае); в macOS в первый раз нажмите правой кнопкой на приложение &rarr; Открыть. Вкладка «Векторизация» в этой альфе есть только в Linux. Нашли ошибку? Сообщите в <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> или на <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
   "dl.note": "Хотите запустить из исходников? Установите <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), клонируйте репозиторий и откройте <code>project.godot</code>. Главная сцена &mdash; <code>scenes/canvas/canvas.tscn</code>.",
 
   "road.eyebrow": "Куда движемся",
@@ -95,8 +95,6 @@ window.VECTOPEN_I18N.strings.ru = {
   "donate.h": "Vectopen бесплатен. Его развитие &mdash; нет.",
   "donate.lead": "Это проект одного человека без компании за спиной. Если Vectopen вам полезен, небольшой регулярный или разовый взнос оплачивает сосредоточенное время разработки &mdash; и это единственное финансирование.",
   "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Ежемесячно или разово, прямо через GitHub.",
-  "donate.kofi.h": "Ko-fi", "donate.kofi.p": "Разовые чаевые, без регистрации.",
-  "donate.lp.h": "Liberapay", "donate.lp.p": "Регулярно, некоммерчески, без комиссий.",
   "donate.note": "Нет возможности пожертвовать? Звезда репозиторию, хороший отчёт об ошибке или перевод приложения помогают не меньше.",
 
   "oss.h": "Лицензия MIT. Без аккаунта, без телеметрии, без подвоха.",

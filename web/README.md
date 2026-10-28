@@ -120,6 +120,6 @@ the docs cards.
 ## Donation links
 
 `index.html` → the **Support the project** section points at
-`github.com/sponsors/malabo1990`, `ko-fi.com/vectopen` and
-`liberapay.com/vectopen`. **Create/verify those accounts** (or change the URLs)
-before publishing — right now they may 404.
+`github.com/sponsors/malabo1990` only (Ko-fi and Liberapay were removed:
+those accounts don't exist). To add another platform, add a `.don` card and
+its `donate.*` keys in every language file.
