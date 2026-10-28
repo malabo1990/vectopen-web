@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vectopen — Open-Source Vector Editor</title>
-<meta name="description" content="Vectopen is an open-source vector graphics editor built on Godot 4.7. Bezier paths, multi-artboard, a professional layer system and a smart magnet — free, cross-platform, MIT.">
+<meta name="description" content="Vectopen is a free, open-source vector editor built on Godot. Bezier paths, multiple artboards, professional layers, gradients, effects, scripting and three interfaces — for Windows, macOS and Linux.">
 <meta property="og:title" content="Vectopen — Open-Source Vector Editor">
 <meta property="og:description" content="A lightweight, cross-platform vector editor built on Godot 4.7. Free and MIT-licensed.">
 <meta property="og:type" content="website">
@@ -177,6 +177,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
   @keyframes rise{to{opacity:1;transform:none}}
 }
 @media (max-width:560px){.hero{padding:52px 0 46px}}
+.dl a.dlb.soon{cursor:default;opacity:.6;pointer-events:none}
 </style>
 </head>
 <body>
@@ -215,7 +216,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
     <div>
       <span class="tag"><span class="dot"></span> <b data-dl-version>v0.2.0-alpha</b> &nbsp;&middot;&nbsp; Godot&nbsp;4.7 &nbsp;&middot;&nbsp; MIT</span>
       <h1 class="hero-h" data-i18n="hero.title">The vector editor<br>that's <em>actually</em> open.</h1>
-      <p class="sub" data-i18n="hero.sub">Bezier paths, multi-artboard documents, a professional layer system and a magnet that snaps to everything. Built on Godot &mdash; small, fast, cross-platform.</p>
+      <p class="sub" data-i18n="hero.sub">Bezier paths, multiple artboards, professional layers, gradients on fill and stroke, effects and scripting &mdash; with three interfaces to choose from. Built on Godot: light, fast and free.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#download">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1v8.6l2.3-2.3 1 1L8 12.6 3.7 8.3l1-1L7 9.6V1h1zM2 13h12v1.5H2V13z"/></svg>
@@ -223,7 +224,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
         </a>
         <a class="btn btn-ghost" href="https://github.com/malabo1990/-Vectopen" target="_blank" rel="noopener" data-i18n="hero.source">Browse the source</a>
       </div>
-      <p class="hero-meta" data-i18n="hero.meta"><span>GDScript ~98%</span> &nbsp;&middot;&nbsp; <span>285 tests</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Web</span></p>
+      <p class="hero-meta" data-i18n="hero.meta"><span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>750+ tests</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS</span></p>
     </div>
 
     <div class="mock rise" style="animation-delay:.1s">
@@ -261,52 +262,52 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
   <div class="wrap">
     <div class="sec-eyebrow" data-i18n="feat.eyebrow">What's inside</div>
     <h2 class="sec-h" data-i18n="feat.h">A real editor, not a toy canvas.</h2>
-    <p class="sec-lead" data-i18n="feat.lead">Everything a vector workflow needs &mdash; and the plumbing (undo, snapping, artboards) done properly so it holds up in long sessions.</p>
+    <p class="sec-lead" data-i18n="feat.lead">Everything vector work needs &mdash; on solid foundations: one undo history for the whole app, a smart magnet with rulers and guides, and more than 750 automated tests.</p>
     <div class="feat-grid">
       <div class="feat node">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18C10 18 11 6 18 6"/><rect x="2" y="16" width="4" height="4"/><rect x="16" y="4" width="4" height="4"/></svg></div>
-        <h3 data-i18n="feat.bezier.h">Bezier &amp; path tools</h3>
-        <p data-i18n="feat.bezier.p">Pen and bezier tools with editable control nodes, plus rectangle, ellipse, polygon, star and freehand. Text becomes real vector outlines.</p>
+        <h3 data-i18n="feat.bezier.h">Drawing &amp; node editing</h3>
+        <p data-i18n="feat.bezier.p">Pen, bezier and brush, with full node editing: add, delete and convert points, or grab them with G. Rectangle, ellipse, polygon, star and a shape library (heart, drop, arrow, cloud&hellip;).</p>
       </div>
       <div class="feat">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="8" height="8"/><rect x="13" y="9" width="8" height="11"/></svg></div>
-        <h3 data-i18n="feat.artboard.h">Multi-artboard</h3>
-        <p data-i18n="feat.artboard.p">Many artboards in one document, each its own coordinate space. A single manager owns placement, hit-testing and ownership &mdash; drag a shape across boards and it just works.</p>
+        <h3 data-i18n="feat.artboard.h">Many artboards, huge files</h3>
+        <p data-i18n="feat.artboard.p">As many artboards as you need in one document. Off-screen pages are stored and freed, and the <b>.vtc</b> format opens only what you see &mdash; 1,000 pages and 100,000 objects open in 1.4 s.</p>
       </div>
       <div class="feat node">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h13"/></svg></div>
         <h3 data-i18n="feat.layers.h">Professional layers</h3>
-        <p data-i18n="feat.layers.p">A layer tree that mirrors the real scene &mdash; drag-drop reparenting to any depth, per-row visibility / lock / clip, and stencil clip masks for groups <em>and</em> text.</p>
+        <p data-i18n="feat.layers.p">Layers that mirror the real document: drag to any depth, sub-layers, show / lock per row and clipping masks for groups <em>and</em> text. An icon per type, optional thumbnails and a compact view.</p>
       </div>
       <div class="feat">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3 data-i18n="feat.magnet.h">Smart magnet</h3>
-        <p data-i18n="feat.magnet.p">Snaps to edges, centers, equal spacing and distribution between neighbours &mdash; and to ruler guides you pull from the rulers. Full-width alignment lines and live pixel readouts.</p>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 6V4h14v2M12 4v16M9 20h6"/></svg></div>
+        <h3 data-i18n="feat.magnet.h">Text &amp; typography</h3>
+        <p data-i18n="feat.magnet.p">Point and paragraph text, linked text frames, Google Fonts and per-letter styles and effects. Turn text into curves when you export.</p>
       </div>
       <div class="feat">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16"/><path d="M4 4l16 16M20 4L4 20" stroke-width="1"/></svg></div>
-        <h3 data-i18n="feat.transform.h">Transform system</h3>
-        <p data-i18n="feat.transform.p">Move, resize, rotate, axis-locked drags and multi-select about a centroid &mdash; every gesture is one undo action with a full before/after snapshot. Escape cancels cleanly.</p>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 010 16z" fill="currentColor" stroke="none" opacity=".35"/></svg></div>
+        <h3 data-i18n="feat.transform.h">Colour &amp; gradients</h3>
+        <p data-i18n="feat.transform.p">Solid colour, linear and radial gradients on both fill <em>and</em> stroke, with stops you edit right on the canvas. Palettes, eyedropper and HSL picker.</p>
       </div>
       <div class="feat">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2" stroke-linecap="round"/></svg></div>
-        <h3 data-i18n="feat.effects.h">Effects pipeline</h3>
-        <p data-i18n="feat.effects.p">Drop &amp; inner shadow, glow, blur, colour and gradient overlay, outline and a faux-3D effect &mdash; stacked non-destructively per object.</p>
+        <h3 data-i18n="feat.effects.h">Effects, filters &amp; shaders</h3>
+        <p data-i18n="feat.effects.p">Shadows, glow, blur, colour overlays and outlines, plus image filters and a live shader editor &mdash; all non-destructive, per object.</p>
       </div>
       <div class="feat">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3a9 9 0 100 18M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
-        <h3 data-i18n="feat.themes.h">Themes &amp; languages</h3>
-        <p data-i18n="feat.themes.p">Light and dark, switched live from design tokens. Interface localised across many languages, retranslated on the fly.</p>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M15 9v11"/></svg></div>
+        <h3 data-i18n="feat.themes.h">Three interfaces</h3>
+        <p data-i18n="feat.themes.p"><b>Smart</b> to get started, <b>Modern</b> with one clean inspector on the right, <b>Pro</b> with a dense studio layout. Light or dark theme, 10 languages &mdash; switch any time.</p>
       </div>
       <div class="feat node">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 3v6l-6 6h6v6M15 3v6l6 6h-6v6"/></svg></div>
-        <h3 data-i18n="feat.plugins.h">Plugins</h3>
-        <p data-i18n="feat.plugins.p">Extend Vectopen with Godot editor plugins &mdash; import/export formats, tools and panels drop straight in.</p>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3 data-i18n="feat.plugins.h">Scripts &amp; add-ons</h3>
+        <p data-i18n="feat.plugins.p">A built-in GDScript console with the Vectopen API to automate anything &mdash; each run is one undo step. Install, enable and reload add-ons from the manager.</p>
       </div>
       <div class="feat">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M20 10a8 8 0 00-14-4M4 14a8 8 0 0014 4"/></svg></div>
-        <h3 data-i18n="feat.undo.h">Undo that holds</h3>
-        <p data-i18n="feat.undo.p">One history stack for the whole app &mdash; transforms, reparents, deletes and layer edits all record as complete transactions. Stress-tested to 100k+ objects.</p>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4v12m0 0l-3-3m3 3l3-3M17 20V8m0 0l-3 3m3-3l3 3"/></svg></div>
+        <h3 data-i18n="feat.undo.h">Import, export, vectorize</h3>
+        <p data-i18n="feat.undo.p">Export SVG, PDF, EPS, PNG, JPEG, WEBP and Godot scenes; import SVG and images. Vectorize turns a photo or a drawing into editable shapes.</p>
       </div>
     </div>
   </div>
@@ -353,7 +354,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
           <h4>Web</h4><span class="st">HTML5 &middot; WASM</span>
           <div class="btns">
-            <a class="dlb alt" href="https://github.com/malabo1990/-Vectopen" target="_blank" rel="noopener" data-i18n="dl.buildpreset">Build preset &rarr;</a>
+            <a class="dlb alt soon" aria-disabled="true" data-i18n="dl.soon">Coming soon</a>
           </div>
         </div>
       </div>
@@ -372,34 +373,34 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
       <div class="col">
         <div class="col-h"><span class="pip done"></span> <span data-i18n="road.done">Done</span></div>
         <ul>
-          <li data-i18n="road.done1"><b>Multi-artboard architecture</b> &mdash; one manager owns placement &amp; ownership</li>
-          <li data-i18n="road.done2"><b>Transform undo/redo</b> for move / resize / rotate / axis-move, one action per gesture</li>
-          <li data-i18n="road.done3"><b>Professional layers panel</b> &mdash; deep drag-drop, clip masks for groups &amp; text</li>
-          <li data-i18n="road.done4"><b>Smart magnet snap</b> &mdash; edges, centers, spacing, distribution, ruler guides</li>
-          <li data-i18n="road.done5"><b>NodeState</b> &mdash; formal non-geometric state capture for undo</li>
-          <li data-i18n="road.done6"><b>Inspector &amp; colour/gradient core</b> systems</li>
-          <li data-i18n="road.done7">Light/dark theme from tokens &middot; localisation &middot; plugin loader</li>
+          <li data-i18n="road.done1"><b>Three interfaces</b> &mdash; Smart, Modern and Pro, each with its own panels</li>
+          <li data-i18n="road.done2"><b>Full inspector</b> &mdash; text, effects, filters and vectorize in the right panel</li>
+          <li data-i18n="road.done3"><b>Gradients on strokes</b> &mdash; saved in the file and exported to SVG</li>
+          <li data-i18n="road.done4"><b>Layers</b> &mdash; sub-layers, type icons, thumbnails and compact view</li>
+          <li data-i18n="road.done5"><b>Multi-artboard</b> and the <b>.vtc</b> format with on-demand page loading</li>
+          <li data-i18n="road.done6"><b>Node editing</b> &middot; group / ungroup &middot; align / distribute</li>
+          <li data-i18n="road.done7">Export to SVG, PDF, EPS, PNG, JPEG and WEBP &middot; scripts and add-ons</li>
         </ul>
       </div>
       <div class="col">
         <div class="col-h"><span class="pip prog"></span> <span data-i18n="road.prog">In progress</span></div>
         <ul>
-          <li data-i18n="road.prog1"><b>Bounding-box bug-hunt</b> &mdash; the full handle &times; shape-type &times; zoom matrix</li>
-          <li data-i18n="road.prog2"><b>Font core</b> system &amp; the compact transform panel</li>
-          <li data-i18n="road.prog3"><b>Model / render separation</b> &mdash; route live edits through the data model</li>
-          <li data-i18n="road.prog4">Extreme-zoom camera precision (floating origin)</li>
+          <li data-i18n="road.prog1"><b>Bounding-box polish</b> &mdash; every handle &times; shape type &times; zoom</li>
+          <li data-i18n="road.prog2"><b>Vectorize</b> on Windows and macOS (Linux only today)</li>
+          <li data-i18n="road.prog3"><b>Model / render separation</b> &mdash; live edits through the data model</li>
+          <li data-i18n="road.prog4">Camera precision at extreme zoom (floating origin)</li>
           <li data-i18n="road.prog5">Tiered resource &amp; geometry cache</li>
         </ul>
       </div>
       <div class="col">
         <div class="col-h"><span class="pip plan"></span> <span data-i18n="road.plan">Planned</span></div>
         <ul>
-          <li data-i18n="road.plan1"><b>.vtc</b> document format &mdash; manifest paging / side index for huge files</li>
-          <li data-i18n="road.plan2"><b>Bidirectional SVG</b> with real bezier curves (not polyline)</li>
-          <li data-i18n="road.plan3">Group / ungroup with real hierarchy &middot; node editing (add/remove/convert points)</li>
-          <li data-i18n="road.plan4">Skew handles &middot; align / distribute in the toolbar</li>
-          <li data-i18n="road.plan5">Centralised command system &middot; image trace &middot; PDF / WEBP export</li>
-          <li data-i18n="road.plan6">Parallel bake / serialize / import via worker threads</li>
+          <li data-i18n="road.plan1"><b>Web version</b> that runs in the browser</li>
+          <li data-i18n="road.plan2"><b>Bidirectional SVG</b> with real bezier curves on import</li>
+          <li data-i18n="road.plan3">Skew handles &middot; resizing rotated shapes along their own axes</li>
+          <li data-i18n="road.plan4">Signed installers for Windows and macOS &middot; AppImage</li>
+          <li data-i18n="road.plan5"><b>.vtc</b> manifest paging for files with 100k+ pages</li>
+          <li data-i18n="road.plan6">Parallel bake / save / import on worker threads</li>
         </ul>
       </div>
     </div>
@@ -498,7 +499,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
     <div class="oss">
       <div>
         <h2 data-i18n="oss.h">MIT-licensed. No account, no telemetry, no catch.</h2>
-        <p data-i18n="oss.p">Vectopen is a solo open-source project. Issues, pull requests and ideas are all welcome &mdash; the codebase is ~98% GDScript with a growing gdUnit4 test suite, so it's approachable.</p>
+        <p data-i18n="oss.p">Vectopen is a one-person open-source project. Issues, pull requests and ideas are welcome &mdash; the code is mostly GDScript (Rust for text and vectorizing) with 750+ gdUnit4 tests, so it&rsquo;s easy to find your way around.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://github.com/malabo1990/-Vectopen" target="_blank" rel="noopener" data-i18n="oss.star">Star on GitHub</a>
           <a class="btn btn-ghost" href="https://t.me/vectopen" target="_blank" rel="noopener" data-i18n="oss.tg">Join the Telegram</a>
@@ -506,11 +507,11 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
       </div>
       <div class="stats">
         <div class="stat"><span data-i18n="oss.engine">Engine</span><span>Godot 4.7</span></div>
-        <div class="stat"><span data-i18n="oss.language">Language</span><span>GDScript ~98%</span></div>
+        <div class="stat"><span data-i18n="oss.language">Language</span><span>GDScript + Rust</span></div>
         <div class="stat"><span data-i18n="oss.licence">Licence</span><span>MIT</span></div>
         <div class="stat"><span data-i18n="oss.version">Version</span><span data-dl-version-plain>0.2.0-alpha</span></div>
-        <div class="stat"><span data-i18n="oss.tests">Tests</span><span>285 &middot; gdUnit4</span></div>
-        <div class="stat"><span data-i18n="oss.format">Format</span><span>.vectopen &rarr; .vtc</span></div>
+        <div class="stat"><span data-i18n="oss.tests">Tests</span><span>750+ &middot; gdUnit4</span></div>
+        <div class="stat"><span data-i18n="oss.format">Format</span><span>.vtc</span></div>
       </div>
     </div>
   </div>
