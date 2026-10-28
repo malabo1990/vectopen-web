@@ -43,9 +43,15 @@ window.VECTOPEN_I18N = {
 
       "dl.eyebrow": "Get it",
       "dl.h": "Free, forever. Every platform.",
-      "dl.lead": "Grab a build from GitHub Releases, or run it from source with Godot 4.7 &mdash; no build tools, no .NET, pure GDScript.",
+      "dl.lead": "Download it directly for your system, or run it from source with Godot 4.7.",
       "dl.releases": "Releases &rarr;",
       "dl.buildpreset": "Build preset &rarr;",
+      "dl.alpha": "Alpha",
+      "dl.allreleases": "All releases &rarr;",
+      "dl.you": "Your system",
+      "dl.get": "Download",
+      "dl.portable": "portable",
+      "dl.alphanote": "Alpha build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. The Vectorize tab is Linux-only in this alpha.",
       "dl.note": "Prefer to run from source? Install <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clone the repo and open <code>project.godot</code>. The main scene is <code>scenes/canvas/canvas.tscn</code>.",
 
       "road.eyebrow": "Where it's going",
@@ -150,9 +156,15 @@ window.VECTOPEN_I18N = {
 
       "dl.eyebrow": "Consíguelo",
       "dl.h": "Gratis, para siempre. Todas las plataformas.",
-      "dl.lead": "Descarga una compilación de GitHub Releases, o ejecútalo desde el código con Godot 4.7 &mdash; sin herramientas de build, sin .NET, GDScript puro.",
+      "dl.lead": "Descárgalo directamente para tu sistema, o ejecútalo desde el código con Godot 4.7.",
       "dl.releases": "Releases &rarr;",
       "dl.buildpreset": "Preset de build &rarr;",
+      "dl.alpha": "Alfa",
+      "dl.allreleases": "Todas las versiones &rarr;",
+      "dl.you": "Tu sistema",
+      "dl.get": "Descargar",
+      "dl.portable": "portátil",
+      "dl.alphanote": "Versión alfa: aún sin firmar. Windows puede mostrar &laquo;Windows protegió su PC&raquo; (Más información &rarr; Ejecutar de todas formas); en macOS, la primera vez, clic derecho sobre la app &rarr; Abrir. La pestaña Vectorizar solo está en Linux en esta alfa.",
       "dl.note": "¿Prefieres ejecutarlo desde el código? Instala <a href=\"https://godotengine.org/download/\" target=\"_blank\" rel=\"noopener\">Godot 4.7</a> (GL Compatibility), clona el repo y abre <code>project.godot</code>. La escena principal es <code>scenes/canvas/canvas.tscn</code>.",
 
       "road.eyebrow": "Hacia dónde va",
