@@ -13,6 +13,12 @@ window.VECTOPEN_I18N.strings.de = {
   "hero.source": "Quellcode ansehen",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>über 750 Tests</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS</span>",
 
+  "shots.eyebrow": "Ansehen",
+  "shots.h": "Ein Editor, drei Arten zu arbeiten.",
+  "shots.lead": "Wähle die Oberfläche, die zu dir passt &mdash; jederzeit über die obere Leiste umschaltbar. Die Bilder folgen dem hellen oder dunklen Design dieser Seite.",
+  "shots.smart": "<b>Smart</b> &mdash; eine aufgeräumte Arbeitsfläche mit schwebenden Bedienfeldern. Der einfachste Einstieg.",
+  "shots.modern": "<b>Modern</b> &mdash; Ebenen links, ein Inspektor rechts und Werkzeuge unten.",
+  "shots.pro": "<b>Pro</b> &mdash; ein dichtes Studio-Layout mit Farbe, Transformieren, Text und Effekten immer angedockt.",
   "feat.eyebrow": "Was drinsteckt",
   "feat.h": "Ein echter Editor, keine Spielzeug-Leinwand.",
   "feat.lead": "Alles, was Vektorarbeit braucht &mdash; auf solidem Fundament: ein Rückgängig-Verlauf für die ganze App, ein intelligenter Magnet mit Linealen und Hilfslinien und über 750 automatische Tests.",

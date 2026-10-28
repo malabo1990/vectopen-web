@@ -13,6 +13,12 @@ window.VECTOPEN_I18N.strings.ja = {
   "hero.source": "ソースを見る",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>750 件以上のテスト</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS</span>",
 
+  "shots.eyebrow": "画面を見る",
+  "shots.h": "1 つのエディター、3 つの使い方。",
+  "shots.lead": "自分に合ったインターフェースを選べます &mdash; 上部バーからいつでも切り替え可能。スクリーンショットはこのページのライト / ダークテーマに合わせて変わります。",
+  "shots.smart": "<b>Smart</b> &mdash; フローティングパネルのすっきりしたキャンバス。いちばん始めやすい画面です。",
+  "shots.modern": "<b>Modern</b> &mdash; 左にレイヤー、右にインスペクター、下にツール。",
+  "shots.pro": "<b>Pro</b> &mdash; カラー、変形、テキスト、エフェクトを常にドッキングした高密度のスタジオレイアウト。",
   "feat.eyebrow": "中身",
   "feat.h": "おもちゃのキャンバスではなく、本物のエディター。",
   "feat.lead": "ベクター作業に必要なものをすべて &mdash; 確かな土台の上に：アプリ全体で 1 つの取り消し履歴、定規とガイド付きのスマートマグネット、750 件以上の自動テスト。",

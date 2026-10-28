@@ -13,6 +13,12 @@ window.VECTOPEN_I18N.strings.zh = {
   "hero.source": "浏览源代码",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>750+ 项测试</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS</span>",
 
+  "shots.eyebrow": "看看效果",
+  "shots.h": "一个编辑器，三种工作方式。",
+  "shots.lead": "选择适合你的界面 &mdash; 随时可在顶部栏切换。截图会跟随本页的浅色或深色主题。",
+  "shots.smart": "<b>Smart</b> &mdash; 简洁的画布与浮动面板，最容易上手。",
+  "shots.modern": "<b>Modern</b> &mdash; 左侧图层，右侧检查器，底部工具栏。",
+  "shots.pro": "<b>Pro</b> &mdash; 紧凑的工作室布局，颜色、变换、文字和效果始终停靠在侧。",
   "feat.eyebrow": "包含什么",
   "feat.h": "真正的编辑器，而不是玩具画布。",
   "feat.lead": "矢量创作所需的一切 &mdash; 建立在扎实的基础上：整个应用共用一个撤销历史，带标尺和参考线的智能磁铁，以及 750 多项自动化测试。",
