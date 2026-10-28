@@ -1,5 +1,19 @@
 [
   {
+    "slug": "2026-10-vectopen-0-2-0-alpha",
+    "title": "Vectopen 0.2.0-alpha: three interfaces and the first downloads",
+    "date": "2026-10-28",
+    "summary": "The first build you can download for Windows, macOS and Linux. Smart, Modern and Pro interfaces, gradients on strokes, a much better layer panel, 750+ tests — and how you can help keep it going.",
+    "tags": [
+      "release",
+      "ui",
+      "layers",
+      "gradients",
+      "packaging"
+    ],
+    "draft": false
+  },
+  {
     "slug": "2026-09-artboards-layers-and-a-magnet",
     "title": "Artboards, layers, and a magnet",
     "date": "2026-09-03",
