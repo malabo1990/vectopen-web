@@ -64,7 +64,7 @@ To uninstall, move Vectopen from Applications to the Trash.
 |---|:-:|:-:|:-:|
 | Drawing, text, layers, effects, filters, shaders, scripts | ✓ | ✓ | ✓ |
 | Export (SVG, PDF, PNG, …) | ✓ | ✓ | ✓ |
-| **Vectorize** (image → vector) | — | — | ✓ |
+| **Vectorize** and the **AI tools** (background removal, ×4 upscale) | — | — | ✓ |
 
 Vectorize depends on a component (ONNX Runtime) that isn't available for the Windows and macOS builds yet. It's planned.
 

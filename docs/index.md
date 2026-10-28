@@ -12,7 +12,7 @@ This is the **user manual**: how to install Vectopen, how the three interfaces a
 - **New here?** [Installation](getting-started/installation.md) → [Quick Start](getting-started/quick-start.md).
 - **Choosing a layout?** [The Interface](getting-started/interface.md) explains Smart, Modern and Pro.
 - **Drawing:** [Tools](tools/index.md) — shapes, Bézier paths, node editing, brush and text.
-- **Working with objects:** [Layers](objects/layers.md) · [Colour & Gradients](objects/color-gradients.md) · [Effects, Filters & Shaders](objects/effects-filters-shaders.md) · [Vectorize](objects/vectorize.md)
+- **Working with objects:** [Layers](objects/layers.md) · [Colour & Gradients](objects/color-gradients.md) · [Effects, Filters & Shaders](objects/effects-filters-shaders.md) · [Vectorize & AI](objects/vectorize.md)
 - **Automating:** [Scripts & Add-ons](automation/scripts-addons.md) · [MCP Server (AI)](integrations/mcp-server.md)
 - **Files:** [Project Format](files/project-format.md) · [Export & Import](files/export-import.md)
 
@@ -23,6 +23,7 @@ This is the **user manual**: how to install Vectopen, how the three interfaces a
 - Gradients on **strokes**, not only fills.
 - A shape library: heart, drop, arrows, cross, moon, bolt, speech bubble, cloud.
 - Layers with type icons, thumbnails, a compact view and correct sub-layers.
+- **Vectorize images** with two offline AI tools: background removal and ×4 upscaling (Linux).
 - 10 interface languages.
 
 Read the full story on the [blog](https://malabo1990.github.io/vectopen-web/blog/post.html?p=2026-10-vectopen-0-2-0-alpha).

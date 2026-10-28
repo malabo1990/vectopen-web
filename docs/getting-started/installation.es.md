@@ -64,7 +64,7 @@ Para desinstalar, mueve Vectopen de Aplicaciones a la Papelera.
 |---|:-:|:-:|:-:|
 | Dibujo, texto, capas, efectos, filtros, shaders, scripts | ✓ | ✓ | ✓ |
 | Exportar (SVG, PDF, PNG, …) | ✓ | ✓ | ✓ |
-| **Vectorizar** (imagen → vector) | — | — | ✓ |
+| **Vectorizar** y las **herramientas de IA** (quitar fondo, mejorar ×4) | — | — | ✓ |
 
 Vectorizar depende de un componente (ONNX Runtime) que todavía no está disponible para las versiones de Windows y macOS. Está previsto.
 

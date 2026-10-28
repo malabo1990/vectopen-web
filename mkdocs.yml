@@ -68,7 +68,7 @@ plugins:
             Layers: Capas
             Colour & Gradients: Color y degradados
             Effects, Filters & Shaders: Efectos, filtros y shaders
-            Vectorize: Vectorizar
+            Vectorize & AI: Vectorizar e IA
             Automation: Automatización
             Scripts & Add-ons: Scripts y complementos
             MCP Server (AI): Servidor MCP (IA)
@@ -114,7 +114,7 @@ nav:
       - Layers: objects/layers.md
       - Colour & Gradients: objects/color-gradients.md
       - Effects, Filters & Shaders: objects/effects-filters-shaders.md
-      - Vectorize: objects/vectorize.md
+      - Vectorize & AI: objects/vectorize.md
   - Automation:
       - Scripts & Add-ons: automation/scripts-addons.md
       - MCP Server (AI): integrations/mcp-server.md

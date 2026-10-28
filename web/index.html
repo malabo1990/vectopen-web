@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vectopen — Open-Source Vector Editor</title>
-<meta name="description" content="Vectopen is a free, open-source vector editor built on Godot. Bezier paths, multiple artboards, professional layers, gradients, effects, scripting and three interfaces — for Windows, macOS and Linux.">
+<meta name="description" content="Vectopen is a free, open-source vector editor for Windows, macOS and Linux. Bézier paths, multiple artboards, professional layers, gradients, effects and shaders, scripting, three interfaces — and image vectorizing with offline AI background removal and ×4 upscaling.">
 <meta property="og:title" content="Vectopen — Open-Source Vector Editor">
 <meta property="og:description" content="A lightweight, cross-platform vector editor built on Godot 4.7. Free and MIT-licensed.">
 <meta property="og:type" content="website">
@@ -70,6 +70,19 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .shot-d{display:block!important}:root:not([data-theme="light"]) .shot-l{display:none!important}}
 :root[data-theme="dark"] .shot-d{display:block!important}
 :root[data-theme="dark"] .shot-l{display:none!important}
+
+/* ---------- AI vectorize ---------- */
+#ai .ai-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+#ai figure{margin:0;border:1px solid var(--line-2);border-radius:var(--radius-sm);background:#fff;overflow:hidden;box-shadow:var(--shadow-sm)}
+#ai figure img{display:block;width:100%;height:auto}
+#ai figcaption{background:var(--surface);border-top:1px solid var(--line);padding:10px 14px;font-size:13px;color:var(--ink-2)}
+#ai figcaption b{color:var(--ink)}
+#ai .ai-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+#ai .ai-cards .feat h3{display:flex;align-items:center;gap:8px}
+#ai .ai-pill{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-deep);background:var(--accent-wash);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+#ai .ai-note{margin-top:18px;font-size:14px;color:var(--ink-2);max-width:80ch}
+#ai .ai-note a{color:var(--ink);text-decoration:underline}
+@media (max-width:820px){#ai .ai-steps,#ai .ai-cards{grid-template-columns:1fr}}
 
 /* ---------- features ---------- */
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
@@ -193,6 +206,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 @media (max-width:560px){.hero{padding:52px 0 46px}}
 .dl a.dlb.soon{cursor:default;opacity:.6;pointer-events:none}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Vectopen", "applicationCategory": "DesignApplication", "operatingSystem": "Windows 10, Windows 11, macOS, Linux", "softwareVersion": "0.2.0-alpha", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://malabo1990.github.io/vectopen-web/", "downloadUrl": "https://github.com/malabo1990/-Vectopen/releases", "codeRepository": "https://github.com/malabo1990/-Vectopen", "softwareHelp": "https://malabo1990.github.io/vectopen-web/docs/", "description": "Free, open-source vector graphics editor built with Godot.", "featureList": ["Bézier paths and node editing", "Multiple artboards and large documents (.vtc)", "Professional layers with thumbnails and clipping masks", "Fill and stroke gradients", "Effects, image filters and a live shader editor", "GDScript scripting and add-ons", "MCP server for AI agents", "Image vectorizing (VTracer): Bézier, polygon or pixel output", "AI background removal (U²-Net), offline", "AI ×4 upscaling (Real-ESRGAN), offline", "Export to SVG, PDF, EPS, PNG, JPEG, WEBP", "Three interfaces: Smart, Modern and Pro", "10 interface languages"]}</script>
 </head>
 <body>
 
@@ -357,6 +371,28 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
     </div>
   </div>
 </section>
+
+<section id="ai">
+  <div class="wrap">
+    <div class="sec-eyebrow" data-i18n="ai.eyebrow">Vectorize with AI</div>
+    <h2 class="sec-h" data-i18n="ai.h">From pixels to clean vectors.</h2>
+    <p class="sec-lead" data-i18n="ai.lead">Turn a logo, an icon, a scan or a drawing into editable vector shapes &mdash; and use two AI tools for a cleaner result. Everything runs on your computer: the AI models ship inside Vectopen, nothing is uploaded and there&rsquo;s no account.</p>
+    <div class="ai-steps">
+      <figure><img src="media/vectorize/step0.webp" width="440" height="497" alt="" loading="lazy"><figcaption data-i18n="ai.cap1"><b>Original</b> &mdash; a 96&nbsp;px PNG logo</figcaption></figure>
+      <figure><img src="media/vectorize/step1.webp" width="440" height="497" alt="" loading="lazy"><figcaption data-i18n="ai.cap2"><b>Vectorized directly</b> &mdash; circles come out angular</figcaption></figure>
+      <figure><img src="media/vectorize/step2.webp" width="440" height="497" alt="" loading="lazy"><figcaption data-i18n="ai.cap3"><b>AI upscale ×4, then vectorized</b> &mdash; clean curves and text</figcaption></figure>
+    </div>
+    <div class="ai-cards">
+      <div class="feat"><h3 data-i18n="ai.v.h">Vectorize</h3><p data-i18n="ai.v.p">Traces the image into Bézier curves, polygons or pixels. Presets for logos, illustrations and photos; adjust detail, colours and corners, or use black &amp; white for logos and signatures.</p></div>
+      <div class="feat"><h3 data-i18n="ai.bg.h">Remove background <span class='ai-pill'>AI</span></h3><p data-i18n="ai.bg.p">Cuts the subject out of its background with the U&sup2;-Net model &mdash; on its own, or automatically before vectorizing.</p></div>
+      <div class="feat"><h3 data-i18n="ai.up.h">Upscale ×4 <span class='ai-pill'>AI</span></h3><p data-i18n="ai.up.p">Enlarges small or blurry images four times with Real-ESRGAN, so the traced curves come out smooth.</p></div>
+    </div>
+    <p class="ai-note" data-i18n="ai.tip"><b>Best results:</b> logos, icons, line art, scans and flat-colour illustrations. Photos and smooth gradients are simplified into areas of flat colour.</p>
+    <p class="ai-note" data-i18n="ai.note">Vectorize is available in the <b>Linux</b> build of 0.2.0-alpha; Windows and macOS are coming. <a href='docs/objects/vectorize/'>Read the guide &rarr;</a></p>
+  </div>
+</section>
+
+
 
 <div class="dl-wrap" id="download">
   <section>
