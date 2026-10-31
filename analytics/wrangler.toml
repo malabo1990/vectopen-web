@@ -1,0 +1,18 @@
+name = "vectopen-analytics"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# La base se crea una vez con:  wrangler d1 create vectopen-analytics
+# y se pega aquí el database_id que devuelve.
+[[d1_databases]]
+binding = "DB"
+database_name = "vectopen-analytics"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+# Orígenes que pueden enviar datos (CORS). Añadir el dominio propio si existe.
+ALLOWED_ORIGINS = "https://malabo1990.github.io,https://vectopen.app,http://localhost:8000,http://127.0.0.1:8000"
+
+# Secretos (no van aquí):
+#   wrangler secret put ANALYTICS_SALT   # sal para el hash del visitante
+#   wrangler secret put STATS_KEY        # clave para leer /stats
