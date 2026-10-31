@@ -7,7 +7,7 @@ compatibility_date = "2026-10-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "vectopen-analytics"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "e333ec37-1b2f-44a6-990c-e4ad1f45d014"
 
 [vars]
 # Orígenes que pueden enviar datos (CORS). Añadir el dominio propio si existe.
