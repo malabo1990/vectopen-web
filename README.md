@@ -5,6 +5,7 @@ The public website for [Vectopen](https://github.com/malabo1990/-Vectopen) — l
 ```
 vectopen-web/
 ├── web/            landing page + blog (static HTML/CSS/JS, see web/README.md)
+├── analytics/      colector de visitas (Cloudflare Worker + D1, sin cookies)
 ├── docs/           user manual content (Markdown, EN default + *.es.md translations)
 ├── mkdocs.yml      MkDocs Material config for the manual
 └── requirements.txt
@@ -14,6 +15,14 @@ Live layout once deployed:
 
 - `/` — the landing page (`web/`)
 - `/docs/` — the user manual, built with MkDocs (`/docs/es/` for Spanish)
+
+## Analytics
+
+`analytics/` contiene el colector propio de la web (Cloudflare Worker + D1):
+visitas, visitantes únicos, **país**, **tiempo en página** e interacciones
+(scroll, descargas, salidas), sin cookies ni IPs almacenadas.
+
+Ver [analytics/README.md](analytics/README.md) para despliegue y consultas.
 
 ## Working on the landing page / blog
 
