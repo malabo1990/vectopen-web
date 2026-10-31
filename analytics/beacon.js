@@ -1,12 +1,12 @@
 /**
- * Vectopen Analytics — beacon (~1,3 KB, sin cookies, sin dependencias).
+ * Vectopen Analytics — beacon (~2 KB, sin cookies, sin dependencias).
  *
  * Uso:
  *   <script defer src="assets/va.js"
  *           data-endpoint="https://vectopen-analytics.TUCUENTA.workers.dev"></script>
  *
- * Mide: pageview, tiempo en página (al salir/ocultar), scroll 50/90 %,
- * clics en descargas y salidas externas. Respeta DNT y la clave
+ * Mide: pageview, tiempo en página (latido cada 15 s + al salir), scroll
+ * 50/90 %, clics en descargas y salidas externas. Respeta DNT y la clave
  * localStorage 'vectopen-no-analytics'.
  */
 (function () {
@@ -56,45 +56,71 @@
         mode: "cors",
       });
     } catch (e) {
-      /* sin red: no pasa nada */
+      /* sin red */
     }
   }
 
   enviar("pv");
 
+  // ── tiempo en página ─────────────────────────────────────────────────────
+  // Se envía el tiempo ACUMULADO (segundos): el servidor usa el máximo por
+  // sesión, así el latido y el cierre no inflan la media.
   var inicio = Date.now();
-  var cerrado = false;
-  function salir() {
-    if (cerrado) return;
-    cerrado = true;
-    enviar("lv", null, Math.round((Date.now() - inicio) / 1000));
+  var ultimo = 0;
+  function segundos() {
+    var t = Math.round((Date.now() - inicio) / 1000);
+    return t > ultimo ? t : 0;
   }
-  addEventListener("pagehide", salir);
+  function latir() {
+    var t = segundos();
+    if (t <= ultimo) return;
+    ultimo = t;
+    enviar("lv", null, t);
+  }
+  setInterval(latir, 15000);
+  addEventListener("pagehide", latir);
+  addEventListener("beforeunload", latir);
   addEventListener("visibilitychange", function () {
-    if (document.visibilityState === "hidden") salir();
+    if (document.visibilityState === "hidden") latir();
   });
 
+  // ── scroll ───────────────────────────────────────────────────────────────
   var marcas = {};
-  function porcentaje() {
-    var h = document.documentElement;
-    var total = h.scrollHeight - h.clientHeight;
+  function porcentaje(e) {
+    var t = e && e.target;
+    // scroll en un contenedor interno (muchas landings) o en el documento
+    if (t && t.nodeType === 1 && t !== document.documentElement && t !== document.body && t.scrollHeight > t.clientHeight) {
+      var r = t.scrollHeight - t.clientHeight;
+      return r > 0 ? Math.min(100, Math.round((t.scrollTop / r) * 100)) : 100;
+    }
+    var alto = Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0
+    );
+    var visible = window.innerHeight || document.documentElement.clientHeight;
+    var total = alto - visible;
     if (total <= 0) return 100;
-    return Math.min(100, Math.round((h.scrollTop / total) * 100));
+    var y = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+    return Math.min(100, Math.round((y / total) * 100));
   }
+  // capture: los eventos scroll no burbujean, pero sí pasan por la fase de captura
   addEventListener(
     "scroll",
-    function () {
-      var p = porcentaje();
-      [50, 90].forEach(function (hito) {
-        if (p >= hito && !marcas[hito]) {
-          marcas[hito] = true;
-          enviar("ev", "scroll" + hito, hito);
-        }
-      });
+    function (e) {
+      var p = porcentaje(e);
+      if (p >= 50 && !marcas[50]) {
+        marcas[50] = true;
+        enviar("ev", "scroll50", 50);
+      }
+      if (p >= 90 && !marcas[90]) {
+        marcas[90] = true;
+        enviar("ev", "scroll90", 90);
+      }
     },
-    { passive: true }
+    { passive: true, capture: true }
   );
 
+  // ── clics ────────────────────────────────────────────────────────────────
   document.addEventListener(
     "click",
     function (e) {
