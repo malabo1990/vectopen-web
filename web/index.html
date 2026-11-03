@@ -105,6 +105,15 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 .dl .st{font-size:12px;color:var(--ink-3);font-family:"IBM Plex Mono",monospace}
 .dl a{margin-top:auto;color:var(--accent-deep);font-weight:600;font-size:13.5px;display:inline-flex;align-items:center;gap:5px}
 .dl a:hover{gap:8px}
+.cli{margin-top:26px;border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--surface)}
+.cli h4{margin:0 0 12px;font-size:15px}
+.cli-row{display:flex;align-items:center;gap:12px;margin:8px 0;flex-wrap:wrap}
+.cli-os{min-width:150px;font-size:13px;color:var(--ink-2)}
+.cli-row code{flex:1;min-width:0;overflow-x:auto;white-space:nowrap;font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:var(--ink)}
+.cli-copy{font:inherit;font-size:12px;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink-2);cursor:pointer}
+.cli-copy:hover{color:var(--ink)}
+.cli-note{margin:10px 0 0;font-size:12.5px;color:var(--ink-3)}
+.cli-note code{font-family:"IBM Plex Mono",monospace}
 .dl-note{margin-top:22px;font-size:13px;color:var(--ink-3)}
 .dl-note code{font-family:"IBM Plex Mono",monospace;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:var(--ink-2)}
 .dl-ver{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;color:var(--ink-2)}
@@ -206,7 +215,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 @media (max-width:560px){.hero{padding:52px 0 46px}}
 .dl a.dlb.soon{cursor:default;opacity:.6;pointer-events:none}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Vectopen", "applicationCategory": "DesignApplication", "operatingSystem": "Windows 10, Windows 11, macOS, Linux", "softwareVersion": "0.2.1-beta", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://malabo1990.github.io/vectopen-web/", "downloadUrl": "https://github.com/malabo1990/-Vectopen/releases", "codeRepository": "https://github.com/malabo1990/-Vectopen", "softwareHelp": "https://malabo1990.github.io/vectopen-web/docs/", "description": "Free, open-source vector graphics editor built with Godot.", "featureList": ["Bézier paths and node editing", "Multiple artboards and large documents (.vtc)", "Professional layers with thumbnails and clipping masks", "Fill and stroke gradients", "Effects, image filters and a live shader editor", "GDScript scripting and add-ons", "MCP server for AI agents", "Image vectorizing (VTracer): Bézier, polygon or pixel output", "AI background removal (U²-Net), offline", "AI ×4 upscaling (Real-ESRGAN), offline", "Export to SVG, PDF, EPS, PNG, JPEG, WEBP", "Three interfaces: Smart, Modern and Pro", "10 interface languages"], "author": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "creator": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "copyrightHolder": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "copyrightYear": "2025", "dateCreated": "2025-05-19", "datePublished": "2026-10-28"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Vectopen", "applicationCategory": "DesignApplication", "operatingSystem": "Windows 10, Windows 11, macOS, Linux", "softwareVersion": "0.2.2-beta", "license": "https://opensource.org/licenses/MIT", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "url": "https://malabo1990.github.io/vectopen-web/", "downloadUrl": "https://github.com/malabo1990/-Vectopen/releases", "codeRepository": "https://github.com/malabo1990/-Vectopen", "softwareHelp": "https://malabo1990.github.io/vectopen-web/docs/", "description": "Free, open-source vector graphics editor built with Godot.", "featureList": ["Bézier paths and node editing", "Multiple artboards and large documents (.vtc)", "Professional layers with thumbnails and clipping masks", "Fill and stroke gradients", "Effects, image filters and a live shader editor", "GDScript scripting and add-ons", "MCP server for AI agents", "Image vectorizing (VTracer): Bézier, polygon or pixel output", "AI background removal (U²-Net), offline", "AI ×4 upscaling (Real-ESRGAN), offline", "Export to SVG, PDF, EPS, PNG, JPEG, WEBP", "Three interfaces: Smart, Modern and Pro", "10 interface languages"], "author": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "creator": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "copyrightHolder": {"@type": "Person", "name": "Casimiro Ondo Obiang", "alternateName": "Malabo1990", "url": "https://github.com/malabo1990"}, "copyrightYear": "2025", "dateCreated": "2025-05-19", "datePublished": "2026-10-28"}</script>
 </head>
 <body>
 
@@ -242,7 +251,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="tag"><span class="dot"></span> <b data-dl-version>v0.2.1-beta</b> &nbsp;&middot;&nbsp; Godot&nbsp;4.7 &nbsp;&middot;&nbsp; MIT</span>
+      <span class="tag"><span class="dot"></span> <b data-dl-version>v0.2.2-beta</b> &nbsp;&middot;&nbsp; Godot&nbsp;4.7 &nbsp;&middot;&nbsp; MIT</span>
       <h1 class="hero-h" data-i18n="hero.title">The vector editor<br>that's <em>actually</em> open.</h1>
       <p class="sub" data-i18n="hero.sub">Bezier paths, multiple artboards, professional layers, gradients on fill and stroke, effects and scripting &mdash; with three interfaces to choose from. Built on Godot: light, fast and free.</p>
       <div class="cta-row">
@@ -388,7 +397,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
       <div class="feat"><h3 data-i18n="ai.up.h">Upscale ×4 <span class='ai-pill'>AI</span></h3><p data-i18n="ai.up.p">Enlarges small or blurry images four times with Real-ESRGAN, so the traced curves come out smooth.</p></div>
     </div>
     <p class="ai-note" data-i18n="ai.tip"><b>Best results:</b> logos, icons, line art, scans and flat-colour illustrations. Photos and smooth gradients are simplified into areas of flat colour.</p>
-    <p class="ai-note" data-i18n="ai.note">Vectorize is available on <b>Linux</b>, <b>Windows</b> and <b>Apple Silicon Macs</b> since 0.2.1-beta (not yet on Intel Macs). <a href='docs/objects/vectorize/'>Read the guide &rarr;</a></p>
+    <p class="ai-note" data-i18n="ai.note">Vectorize is available on <b>Linux</b>, <b>Windows</b> and <b>Apple Silicon Macs</b> since 0.2.2-beta (not yet on Intel Macs). <a href='docs/objects/vectorize/'>Read the guide &rarr;</a></p>
   </div>
 </section>
 
@@ -400,14 +409,14 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
       <div class="sec-eyebrow" data-i18n="dl.eyebrow">Get it</div>
       <h2 class="sec-h" data-i18n="dl.h">Free, forever. Every platform.</h2>
       <p class="sec-lead" data-i18n="dl.lead">Grab a build from GitHub Releases, or run it from source with Godot 4.7 &mdash; no build tools, no .NET, pure GDScript.</p>
-      <div class="dl-ver"><span class="pill" data-i18n="dl.alpha">Beta</span> <b data-dl-version>v0.2.1-beta</b> <a href="https://github.com/malabo1990/-Vectopen/releases" target="_blank" rel="noopener" data-i18n="dl.allreleases">All releases &rarr;</a></div>
+      <div class="dl-ver"><span class="pill" data-i18n="dl.alpha">Beta</span> <b data-dl-version>v0.2.2-beta</b> <a href="https://github.com/malabo1990/-Vectopen/releases" target="_blank" rel="noopener" data-i18n="dl.allreleases">All releases &rarr;</a></div>
       <div class="dl-grid">
         <div class="dl" data-os="windows">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5l7.5-1v7.3H3V5.5zm0 13l7.5 1v-7.2H3v6.2zm8.5 1.1L21 21v-8.6h-9.5v7.2zM11.5 4.4L21 3v8.6h-9.5V4.4z"/></svg>
           <span class="you-tag" data-i18n="dl.you">Your system</span>
           <h4>Windows</h4><span class="st">10 / 11 &middot; x64</span>
           <div class="btns">
-            <a class="dlb" data-asset="windows-x64.zip" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/Vectopen-0.2.1-beta-windows-x64.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg><span data-i18n="dl.get">Download</span>&nbsp;.zip</a>
+            <a class="dlb" data-asset="windows-x64.zip" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/Vectopen-0.2.2-beta-windows-x64.zip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg><span data-i18n="dl.get">Download</span>&nbsp;.zip</a>
           </div>
         </div>
         <div class="dl" data-os="mac">
@@ -415,20 +424,20 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
           <span class="you-tag" data-i18n="dl.you">Your system</span>
           <h4>macOS</h4><span class="st">Intel &amp; Apple&nbsp;Silicon</span>
           <div class="btns">
-            <a class="dlb" data-asset="macos-universal.dmg" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/Vectopen-0.2.1-beta-macos-universal.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg><span data-i18n="dl.get">Download</span>&nbsp;.dmg</a>
-            <span class="more"><a data-asset="macos-universal.zip" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/Vectopen-0.2.1-beta-macos-universal.zip">.zip</a></span>
+            <a class="dlb" data-asset="macos-universal.dmg" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/Vectopen-0.2.2-beta-macos-universal.dmg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg><span data-i18n="dl.get">Download</span>&nbsp;.dmg</a>
+            <span class="more"><a data-asset="macos-universal.zip" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/Vectopen-0.2.2-beta-macos-universal.zip">.zip</a></span>
           </div>
         </div>
         <div class="dl" data-os="linux">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2 0-3 2-3 4 0 1 .3 2 .3 3-1 1-3 4-3 7 0 1-1 2-1 3 0 1 1 1 2 1 .5 1 2 1.5 3 1.5s3-.5 3.5-1.5c1 0 2 0 2-1 0-1-1-2-1-3 0-3-2-6-3-7 0-1 .3-2 .3-3 0-2-1-4-3-4z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><defs><mask id="tux-m" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24"><path fill="#fff" d="M12 1.6c-2.5 0-4 1.9-4 4.6 0 1.2.3 2.2.6 3-1.9 1.6-3.6 4.3-3.6 7.3 0 1.4.4 2.6 1.2 3.4h11.6c.8-.8 1.2-2 1.2-3.4 0-3-1.7-5.7-3.6-7.3.3-.8.6-1.8.6-3 0-2.7-1.5-4.6-4-4.6z"/><ellipse fill="#000" cx="12" cy="7.2" rx="2.75" ry="3.25"/><ellipse fill="#000" cx="12" cy="15.7" rx="3.7" ry="4.75"/><g fill="#fff"><ellipse cx="10.95" cy="6.4" rx=".7" ry=".95"/><ellipse cx="13.05" cy="6.4" rx=".7" ry=".95"/><path d="M10.25 8.45Q10.4 8.1 12 7.95Q13.6 8.1 13.75 8.45Q13.4 9.2 12 9.95Q10.6 9.2 10.25 8.45Z"/><path d="M3.6 20.3c0-1 1-1.8 2.6-1.9 1.4-.1 2.8.6 3.2 1.6.3.8-.4 1.7-1.8 2-1.6.4-4 .2-4-1.7z"/><path d="M20.4 20.3c0-1-1-1.8-2.6-1.9-1.4-.1-2.8.6-3.2 1.6-.3.8.4 1.7 1.8 2 1.6.4 4 .2 4-1.7z"/></g></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#tux-m)"/></svg>
           <span class="you-tag" data-i18n="dl.you">Your system</span>
           <h4>Linux</h4><span class="st">x64</span>
           <div class="btns">
             <div class="row">
-              <a class="dlb" data-asset="_amd64.deb" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/vectopen_0.2.1.beta-1_amd64.deb" title="Debian / Ubuntu / Mint">.deb</a>
-              <a class="dlb" data-asset=".x86_64.rpm" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/vectopen-0.2.1-1.beta.x86_64.rpm" title="Fedora / openSUSE">.rpm</a>
+              <a class="dlb" data-asset="_amd64.deb" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/vectopen_0.2.2.beta-1_amd64.deb" title="Debian / Ubuntu / Mint">.deb</a>
+              <a class="dlb" data-asset=".x86_64.rpm" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/vectopen-0.2.2-1.beta.x86_64.rpm" title="Fedora / openSUSE">.rpm</a>
             </div>
-            <a class="dlb alt" data-asset="linux-x86_64.tar.gz" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.1-beta/Vectopen-0.2.1-beta-linux-x86_64.tar.gz">.tar.gz &middot; <span data-i18n="dl.portable">portable</span></a>
+            <a class="dlb alt" data-asset="linux-x86_64.tar.gz" href="https://github.com/malabo1990/-Vectopen/releases/download/v0.2.2-beta/Vectopen-0.2.2-beta-linux-x86_64.tar.gz">.tar.gz &middot; <span data-i18n="dl.portable">portable</span></a>
           </div>
         </div>
         <div class="dl" data-os="web">
@@ -439,7 +448,13 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
           </div>
         </div>
       </div>
-      <p class="dl-note" data-i18n="dl.alphanote">Alpha build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. The Vectorize tab is Linux-only in this alpha. Found a bug? Tell us on <a href="https://t.me/vectopen" target="_blank" rel="noopener">Telegram</a> or <a href="https://github.com/malabo1990/-Vectopen/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+      <div class="cli" id="install-cli">
+        <h4 data-i18n="dl.cli.h">Install from the terminal</h4>
+        <div class="cli-row"><span class="cli-os">Linux &middot; macOS</span><code>curl -fsSL https://malabo1990.github.io/vectopen-web/install.sh | sh</code><button class="cli-copy" type="button" data-i18n="dl.cli.copy">Copy</button></div>
+        <div class="cli-row"><span class="cli-os">Windows &middot; PowerShell</span><code>irm https://malabo1990.github.io/vectopen-web/install.ps1 | iex</code><button class="cli-copy" type="button" data-i18n="dl.cli.copy">Copy</button></div>
+        <p class="cli-note" data-i18n="dl.cli.note">They download the latest release from GitHub and check its SHA-256. On Linux they use dnf or apt when available; add <code>-s -- --portable</code> after <code>sh</code> to install into ~/.local without sudo.</p>
+      </div>
+      <p class="dl-note" data-i18n="dl.alphanote">Beta build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. The Vectorize tab is Linux-only in this alpha. Found a bug? Tell us on <a href="https://t.me/vectopen" target="_blank" rel="noopener">Telegram</a> or <a href="https://github.com/malabo1990/-Vectopen/issues" target="_blank" rel="noopener">GitHub</a>.</p>
       <p class="dl-note" data-i18n="dl.note">Prefer to run from source? Install <a href="https://godotengine.org/download/" target="_blank" rel="noopener">Godot 4.7</a> (GL Compatibility), clone the repo and open <code>project.godot</code>. The main scene is <code>scenes/canvas/canvas.tscn</code>.</p>
     </div>
   </section>
@@ -578,7 +593,7 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
         <div class="stat"><span data-i18n="oss.engine">Engine</span><span>Godot 4.7</span></div>
         <div class="stat"><span data-i18n="oss.language">Language</span><span>GDScript + Rust</span></div>
         <div class="stat"><span data-i18n="oss.licence">Licence</span><span>MIT</span></div>
-        <div class="stat"><span data-i18n="oss.version">Version</span><span data-dl-version-plain>0.2.1-beta</span></div>
+        <div class="stat"><span data-i18n="oss.version">Version</span><span data-dl-version-plain>0.2.2-beta</span></div>
         <div class="stat"><span data-i18n="oss.tests">Tests</span><span>750+ &middot; gdUnit4</span></div>
         <div class="stat"><span data-i18n="oss.format">Format</span><span>.vtc</span></div>
       </div>
@@ -640,5 +655,8 @@ h1.hero-h em{font-style:normal;background:var(--accent);color:var(--paper);paddi
 </script>
   <!-- Analítica propia: sin cookies. Rellenar data-endpoint tras desplegar analytics/ -->
   <script defer src="assets/va.js" data-endpoint="https://vectopen-analytics.ihtml-license-server.workers.dev"></script>
+<script>
+document.addEventListener("click",function(e){var b=e.target.closest(".cli-copy");if(!b)return;var c=b.parentNode.querySelector("code");if(!c||!navigator.clipboard)return;navigator.clipboard.writeText(c.textContent).then(function(){var t=b.textContent;b.textContent="\u2713";setTimeout(function(){b.textContent=t},1200)})});
+</script>
 </body>
 </html>
