@@ -1,15 +1,16 @@
 [
   {
     "slug": "2026-11-vectopen-0-2-1-beta",
-    "title": "Vectopen 0.2.1-beta: ten real jobs, and the app now updates itself",
+    "title": "Vectopen 0.2.1-beta: a deep interface review, ten real jobs, and the app now updates itself",
     "date": "2026-11-03",
-    "summary": "We used Vectopen the way a designer would: a book, a magazine, an A1 poster, a logo, a business card… 26 defects came up; 19 are already fixed. Plus: update alerts with one-click download and install, a Reddit community, and automatic releases for Windows, macOS and Linux.",
+    "summary": "99 changes since 0.2.0-alpha: open Affinity files, text that edits like Office, two complete reviews of the Smart, Modern and Pro interfaces (31 issues), zero debugger errors, ten real designer jobs, and update alerts with one-click download and install.",
     "tags": [
       "release",
+      "ui",
+      "text",
+      "import",
       "testing",
-      "export",
-      "updates",
-      "community"
+      "updates"
     ],
     "draft": false
   },

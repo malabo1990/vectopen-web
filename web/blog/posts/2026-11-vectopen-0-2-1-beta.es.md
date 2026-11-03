@@ -1,28 +1,112 @@
 ---
-title: "Vectopen 0.2.1-beta: diez encargos reales y la app se actualiza sola"
+title: "Vectopen 0.2.1-beta: interfaz revisada a fondo, diez encargos reales y la app se actualiza sola"
 date: 2026-11-03
-summary: "Probamos Vectopen como lo usaría un diseñador: un libro, una revista, un cartel A1, un logo, una tarjeta de visita… Salieron 26 defectos: 19 ya están arreglados. Además: avisos de actualización con descarga e instalación en un clic, comunidad en Reddit y publicaciones automáticas para Windows, macOS y Linux."
-tags: [release, testing, export, updates, community]
+summary: "99 cambios desde la 0.2.0-alpha: importar archivos de Affinity, texto como en Office, dos revisiones completas de la interfaz en Smart, Modern y Pro (31 incidencias), cero errores en los depuradores, diez encargos reales de diseñador y avisos de actualización con descarga e instalación en un clic."
+tags: [release, ui, text, import, testing, updates]
 draft: false
 ---
 
-Después de la [0.2.0-alpha](./post.html?p=2026-10-vectopen-0-2-0-alpha) la
-pregunta ya no era *¿funciona cada botón?* sino *¿puede un diseñador terminar un
-trabajo de verdad con Vectopen?* Para responderla dejé de probar funciones
-sueltas y empecé a hacer **encargos completos**, de principio a fin, como los
-haría un profesional. El resultado es **0.2.1-beta**.
+La [0.2.0-alpha](./post.html?p=2026-10-vectopen-0-2-0-alpha) fue la primera
+versión descargable. Desde entonces han entrado **99 cambios** en cuatro etapas:
+formatos, texto, una revisión a fondo de la interfaz en los tres modos y, por
+último, diez encargos reales de principio a fin. El resultado es **0.2.1-beta**.
 
 **[Descargar 0.2.1-beta &rarr;](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.1-beta)**
 &nbsp;Windows (.zip) · macOS universal (.dmg / .zip) · Linux (.deb, .rpm, .tar.gz)
 
 ![Pantalla de arranque de la 0.2.1-beta](../media/shots/splash_0_2_1.webp)
 
-## Diez encargos, de principio a fin
+## 1. Abrir archivos de Affinity
 
-Cada encargo es un trabajo real hecho en su interfaz principal (Smart, Modern o
-Pro), con clics de verdad donde se puede: formato exacto, capas, texto,
-exportar a PNG/SVG/PDF y comparar con la pantalla, deshacer 20 pasos, guardar,
-cerrar y volver a abrir sin perder nada, tema claro y oscuro.
+Importar y exportar tiene ahora una base nativa nueva escrita en Rust
+(`vectopen_io`), que funciona en Windows, macOS y Linux y está protegida: si un
+archivo está dañado o es enorme, Vectopen avisa en lugar de cerrarse, y antes de
+operar guarda una copia de seguridad.
+
+Encima de esa base hay un **lector propio de documentos de Affinity**
+(`.af`, `.afdesign`, `.afphoto`, `.afpub`), comprobado con 33 documentos reales
+de Affinity 1, 2 y 3. Trae curvas, rectángulos con sus esquinas, elipses,
+estrellas y engranajes, colores RGB/CMYK/gris, degradados, trazos, texto con
+sus tramos (fuente, tamaño, color, contorno), párrafos, imágenes, recortes,
+efectos de capa (sombras, resplandores, desenfoque, contorno), documentos
+incrustados, páginas maestras y artboards. Si una fuente del documento no está
+instalada, te lo dice.
+
+## 2. Texto que se edita como en Office
+
+- **Moverse por el texto como en Word:** Ctrl+← / → salta por palabras,
+  Ctrl+↑ / ↓ por párrafos, AvPág / RePág por páginas.
+- **El formato solo afecta a la selección.** Fuente, peso, cursiva, subrayado,
+  tachado, tamaño, color, contorno, espaciado y línea base se aplican solo a
+  las letras seleccionadas, como en Word o InDesign, con deshacer.
+- **Mayúsculas, minúsculas, tipo título o tipo frase** también por selección
+  (antes Pro cambiaba todo el texto).
+- **Convertir a curvas** (Ctrl+Mayús+O): cada letra pasa a ser una forma con
+  su color y posición.
+- Ctrl+Z mientras escribes deshace lo escrito sin salir del texto.
+
+## 3. Revisión de la interfaz en Smart, Modern y Pro
+
+Esta fue la parte más larga. Revisé la app en sus tres interfaces, en tema
+claro y oscuro, en dos rondas. **Cada incidencia se cerró con una prueba
+automática que maneja la interfaz como lo haría una persona** (clics, teclado,
+arrastres) y que falla si el defecto vuelve. Las pruebas de interfaz pasaron
+de 41 a **88**.
+
+**Primera ronda (7 incidencias).** La más grave era crítica: con 300–1000
+trazos de pincel, o al seleccionar unos 400 elementos, **la app se bloqueaba**.
+Ya no. Además:
+
+- el panel de tipografía ya no corta la edición de un párrafo;
+- un texto creado arrastrando queda del tamaño que se previsualizaba;
+- panel de **Páginas** nuevo, con vistas Simple, Pliegos (como un libro) y
+  Rejilla;
+- el anillo de 360° ya no dibuja una línea suelta;
+- Script y Complementos funcionan también en Modern y Pro;
+- el Inspector cubre todas las propiedades de cada objeto.
+
+**Segunda ronda (24 incidencias).** Muchas salieron de vuestros comentarios
+probando la alfa:
+
+- **Trazos invisibles en Modern:** los trazos nuevos heredaban el color de la
+  selección y podían nacer blancos sobre una página blanca. Ahora un trazo
+  nuevo nunca nace sin contraste.
+- **La máscara de recorte** sigue la curva aunque las Bézier se crucen o el
+  trazado esté abierto.
+- **Escribir en el Inspector** ya no cambia de herramienta: las letras que
+  escribías en un campo actuaban como atajos. Escape devuelve el teclado al
+  lienzo.
+- **El tema de Vectopen en todas partes:** el Inspector y el panel de Pro
+  mostraban barras gris claro con texto blanco (el tema por defecto de Godot);
+  ahora usan el mismo diseño que Capas, en claro y en oscuro.
+- **Siempre el selector de color de Vectopen** (nunca el de Godot), con su
+  paleta visible y utilizable en los tres modos, degradados guardables en las
+  muestras y borrado con clic derecho.
+- **Panel de Trazo completo también en Modern**, con parámetros nuevos:
+  desfase de guiones, patrón propio («12 4 2 4») y trazo detrás del relleno.
+- **Pinceles con su textura real** (lápiz granulado, aerógrafo difuminado,
+  caligráfico…) y muestras que son trazos de verdad.
+- **Pro más flexible:** pestañas que se reordenan y se pueden sacar como
+  ventanas flotantes; Inspector redimensionable arrastrando su borde; iconos de
+  Shader, Script, Vectorizar y Complementos junto a Exportar; panel «Página»
+  (color y tamaño) que faltaba.
+- **Ventana de tamaños de página** rediseñada como una cuadrícula con
+  miniaturas (papel, pantallas, móviles, redes sociales).
+- X, Supr y Retroceso borran en todos los contextos; el menú del clic derecho
+  ya no se sale de la pantalla ni queda bajo la regla.
+
+**Depuradores a cero.** Al final de la revisión, la pestaña Depurador de Godot
+y la consola de diagnóstico de Vectopen mostraban errores repetidos (85 de un
+solo tipo) y 79 avisos de código. Ahora: **cero errores y cero avisos** en los
+300 scripts.
+
+## 4. Diez encargos reales, de principio a fin
+
+Con la interfaz limpia, la pregunta pasó de *¿funciona cada botón?* a *¿puede
+un diseñador terminar un trabajo de verdad?* Hice diez encargos completos, cada
+uno en su interfaz principal: formato exacto, capas, texto, exportar a
+PNG/SVG/PDF y comparar con la pantalla, deshacer 20 pasos, guardar, cerrar y
+volver a abrir sin perder nada, tema claro y oscuro.
 
 | # | Encargo | Interfaz | Resultado |
 |---:|---|---|---|
@@ -37,88 +121,65 @@ cerrar y volver a abrir sin perder nada, tema claro y oscuro.
 | 9 | Enciclopedia visual (12 fichas) | Pro | Aprobado |
 | 10 | UI kit de aplicación | Modern | Pendiente de dos funciones nuevas |
 
-Cada encargo se queda como prueba automática: si algo se rompe mañana, el
-encargo falla y lo veo antes que tú.
+Salieron **26 defectos** que las pruebas por función no veían: **19 ya están
+arreglados**, 5 son detalles leves que siguen en la lista y 2 son funciones
+nuevas. Los más importantes:
 
-## Lo que encontraron (y ya está arreglado)
-
-Los encargos destaparon **26 defectos** que las pruebas de funciones sueltas no
-veían: **19 ya están arreglados**, 5 son detalles leves que siguen en la lista y
-2 son funciones nuevas (más abajo). Los más importantes:
-
-- **El PDF salía un 33 % más grande.** Se usaban píxeles como si fueran puntos:
-  un A4 no medía un A4. Ahora el PDF y el EPS tienen el tamaño físico exacto.
-- **Sangrado para imprenta.** El PDF de una tarjeta de visita salía al tamaño
-  de corte. Ahora lleva el sangrado de la página y las cajas de corte
-  (`TrimBox`/`BleedBox`) que espera una imprenta.
-- **Logos macizos.** Al convertir en trazado una resta con agujero (la «O» de un
-  logo), el agujero desaparecía. Ahora se conserva en pantalla, al exportar y al
-  volver a abrir.
-- **Máscaras en SVG/PDF.** Una foto dentro de un círculo-máscara desaparecía al
-  exportar a vectores. Ahora sale recortada por el círculo.
-- **Flechas que se perdían.** Las puntas de flecha de los trazos no llegaban a
-  SVG, PDF ni EPS.
-- **Sombras invisibles.** Algunos programas no mostraban los objetos con sombra
-  de un SVG exportado; ahora la sombra se escribe de la forma que todos
-  entienden.
-- **Duplicar páginas** cambiaba el tamaño de los títulos de la copia y dejaba los
-  párrafos en una sola línea.
-- **La vista Rejilla** de Páginas ordenaba las miniaturas pero no el lienzo:
-  doce fichas seguían en una fila interminable. Ahora el lienzo también se
-  ordena en filas.
-- **Textos borrosos** al exportar a PNG a 3× si no estaban a la vista.
-- **Centrar un texto en un botón** no lo centraba: se usaba la caja de edición
-  del texto en lugar de lo que se ve.
+- **El PDF salía un 33 % más grande** (píxeles escritos como puntos: un A4 no
+  medía un A4). Ahora PDF y EPS tienen el tamaño físico exacto.
+- **Sangrado para imprenta:** el PDF lleva el sangrado de la página y las cajas
+  de corte que espera una imprenta.
+- **Logos macizos:** al convertir en trazado una resta con agujero, el agujero
+  desaparecía. Ahora se conserva.
+- **Máscaras, flechas y sombras al exportar:** una foto dentro de un
+  círculo-máscara, las puntas de flecha y algunas sombras se perdían en
+  SVG/PDF.
+- **Duplicar páginas** encogía los títulos de la copia; la vista **Rejilla**
+  ordena ahora también el lienzo; los textos fuera de pantalla ya no salen
+  borrosos en PNG a 3×; centrar un texto en un botón lo centra de verdad.
 - Número de página automático (`{pág}` / `{total}`), retícula de página
-  (márgenes, columnas, medianil, sangrado) que se guarda con el documento,
-  tamaños A0–A2 y más.
+  (márgenes, columnas, medianil, sangrado) y tamaños A0–A2.
 
 ![Doce fichas en la vista Rejilla, ordenadas también en el lienzo](../media/shots/fichas_rejilla.webp)
 
+Cada encargo queda como prueba automática: si algo se rompe mañana, el encargo
+falla y lo veo antes que tú.
+
 ## Vectopen te avisa cuando hay versión nueva
 
-Al hacer clic en el logo de Vectopen se abre una ventana nueva con la versión
-que tienes, los créditos, la comunidad y las **actualizaciones**:
-
-- Al arrancar (una vez al día, y puedes desactivarlo) Vectopen mira si hay una
-  versión nueva en GitHub. Si la hay, aparece un **punto rojo** en el logo.
-- **Descargar e instalar** baja el paquete de tu sistema con una barra de
-  progreso. En Linux (Fedora, Ubuntu…) lo instala pidiendo tu contraseña con la
-  ventana del sistema y te ofrece **reiniciar**; en Windows y macOS abre el
-  instalador.
+Al hacer clic en el logo se abre una ventana nueva con la versión, los
+créditos, la comunidad y las **actualizaciones**. Al arrancar (una vez al día,
+y se puede desactivar) Vectopen mira si hay una versión nueva en GitHub; si la
+hay, aparece un **punto rojo** en el logo. **Descargar e instalar** baja el
+paquete de tu sistema con una barra de progreso; en Linux lo instala pidiendo
+tu contraseña y te ofrece reiniciar, y en Windows y macOS abre el archivo
+descargado.
 
 ![Ventana del logo: comunidad y actualizaciones](../media/shots/about_update_dark.webp)
 
-Detrás hay un *GitHub Action* que, cada vez que publico una etiqueta de versión,
-compila Vectopen en Windows, macOS y Linux, lo empaqueta y crea la publicación.
-Así cada versión sale igual en los tres sistemas, y la app la encuentra sola.
+Detrás hay un *GitHub Action* que compila Vectopen en Windows, macOS y Linux
+cada vez que publico una versión, la empaqueta y crea la publicación. Esta es
+también la primera versión con **Vectorizar en Windows y en Mac con Apple
+Silicon** (en Mac Intel aún no: la librería de IA que usa no existe para
+Intel).
 
 ## Comunidad: ahora también en Reddit
 
 Además de [Telegram](https://t.me/vectopen) y
 [GitHub](https://github.com/malabo1990/-Vectopen), Vectopen tiene comunidad en
-**[Reddit: r/Vectopen_editor](https://www.reddit.com/r/Vectopen_editor/)**.
-Es el mejor sitio para enseñar lo que haces, pedir funciones y comentar
-versiones.
+**[Reddit: r/Vectopen_editor](https://www.reddit.com/r/Vectopen_editor/)**:
+el mejor sitio para enseñar lo que haces, pedir funciones y comentar versiones.
 
-## Lo que todavía falta
+## Lo siguiente (0.2.2)
 
-El décimo encargo, un **UI kit de aplicación**, dejó claro lo que falta para el
-diseño de interfaces:
-
-- **Componentes vinculados:** cambias el botón maestro y se actualizan todas sus
-  copias. Hoy, la pestaña Recursos coloca copias independientes.
+- **Componentes vinculados:** cambias el botón maestro y se actualizan todas
+  sus copias.
 - **Estilos de texto con nombre** (título, cuerpo, pie) que se aplican y
   actualizan de una vez.
-
-Son las dos novedades principales de la **0.2.2**.
-
-Otras notas de esta beta:
-
-- En **Mac Intel**, Vectopen funciona pero sin el vectorizador con IA (la
-  librería que usa no existe para Intel). En Apple Silicon va completo.
-- Sigue sin firmar: Windows y macOS mostrarán el aviso de «desarrollador
-  desconocido».
+- Los encargos 11 a 30: wireframes, iconos, ilustración con pinceles, mapas,
+  packaging, tipografía, shaders, scripts y vectorizar fotos.
+- Instalador para Windows y binarios firmados (hoy Windows y macOS muestran el
+  aviso de «desarrollador desconocido»).
 
 ## Ayuda a que siga adelante
 
@@ -128,6 +189,7 @@ sin versión de pago. Puedes apoyarlo en
 de mucho probando la beta y contando lo que falla en
 [Reddit](https://www.reddit.com/r/Vectopen_editor/),
 [Telegram](https://t.me/vectopen) o
-[GitHub](https://github.com/malabo1990/-Vectopen/issues).
+[GitHub](https://github.com/malabo1990/-Vectopen/issues). Buena parte de esta
+versión salió precisamente de esos avisos.
 
 Gracias por leer — y si haces algo con Vectopen, enséñalo en r/Vectopen_editor.
