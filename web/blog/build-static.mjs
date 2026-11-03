@@ -48,6 +48,14 @@ const listHtml = posts.map((p) =>
   ((p.tags || []).length ? `<div class="tags">${p.tags.map((t) => `<span class="tag-chip">${esc(t)}</span>`).join("")}</div>` : "") +
   `</a>`).join("\n");
 index = index.replace(/<div id="posts">[\s\S]*?<\/div>(\s*<p id="empty")/, `<div id="posts">\n${listHtml}\n</div>$1`);
+// Con artículos, fuera los textos de reserva ocultos («No posts yet»…): quien
+// lee el HTML sin JS los tomaba por el contenido. blog.js los rellena (i18n)
+// si de verdad hicieran falta.
+if (posts.length) {
+  index = index
+    .replace(/<p id="empty" hidden data-i18n="blog.empty">[^<]*<\/p>/, '<p id="empty" hidden data-i18n="blog.empty"></p>')
+    .replace(/<p id="loaderr" hidden>[^<]*<\/p>/, '<p id="loaderr" hidden data-i18n="blog.loaderr"></p>');
+}
 await writeFile(join(BLOG, "index.html"), index);
 
 // 2) One static page per post (also the drafts that only redirect: they keep working)
