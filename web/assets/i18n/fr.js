@@ -1,6 +1,13 @@
 /* Vectopen site — Français. Mêmes clés que le bloc `en` de i18n.js. */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).fr = "Français";
 window.VECTOPEN_I18N.strings.fr = {
+  "dl.cli.h": "Installer depuis le terminal",
+  "dl.cli.copy": "Copier",
+  "dl.cli.note": "Ils téléchargent la dernière version depuis GitHub et vérifient son SHA-256. Sous Linux, ils utilisent dnf ou apt s&rsquo;ils sont présents ; ajoutez <code>-s -- --portable</code> après <code>sh</code> pour installer dans ~/.local sans sudo.",
+  "oss.reddit": "Rejoindre r/Vectopen_editor",
+  "oss.x": "Suivre @malabo_6",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "Fonctionnalités",
   "nav.download": "Télécharger",
   "nav.docs": "Docs",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.fr = {
   "feat.bezier.h": "Dessin &amp; édition des nœuds",
   "feat.bezier.p": "Plume, Bézier et pinceau, avec une édition complète des nœuds : ajouter, supprimer et convertir des points, ou les saisir avec G. Rectangle, ellipse, polygone, étoile et une bibliothèque de formes (cœur, goutte, flèche, nuage&hellip;).",
   "feat.artboard.h": "Plans de travail multiples",
-  "feat.artboard.p": "Autant de plans de travail que nécessaire dans un même document. Les pages hors écran sont enregistrées et libérées, et le format <b>.vtc</b> n&rsquo;ouvre que ce que vous voyez &mdash; 1 000 pages et 100 000 objets s&rsquo;ouvrent en 1,4 s.",
+  "feat.artboard.p": "Autant de plans de travail que nécessaire dans un même document. Les pages hors écran sont enregistrées et libérées, et le format <b>.vtp</b> n&rsquo;ouvre que ce que vous voyez &mdash; 1 000 pages et 100 000 objets s&rsquo;ouvrent en 1,4 s.",
   "feat.layers.h": "Calques professionnels",
   "feat.layers.p": "Des calques fidèles au document : glisser à n&rsquo;importe quelle profondeur, sous-calques, afficher / verrouiller par ligne et masques d&rsquo;écrêtage pour groupes <em>et</em> texte. Une icône par type, vignettes en option et vue compacte.",
   "feat.magnet.h": "Texte &amp; typographie",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.fr = {
   "road.done2": "<b>Inspecteur complet</b> &mdash; texte, effets, filtres et vectorisation dans le panneau de droite",
   "road.done3": "<b>Dégradés sur les contours</b> &mdash; enregistrés dans le fichier et exportés en SVG",
   "road.done4": "<b>Calques</b> &mdash; sous-calques, icônes par type, vignettes et vue compacte",
-  "road.done5": "<b>Plans de travail multiples</b> et format <b>.vtc</b> avec chargement des pages à la demande",
+  "road.done5": "<b>Plans de travail multiples</b> et format <b>.vtp</b> avec chargement des pages à la demande",
   "road.done6": "<b>Édition des nœuds</b> &middot; grouper / dégrouper &middot; aligner / répartir",
   "road.done7": "Export SVG, PDF, EPS, PNG, JPEG et WEBP &middot; scripts et extensions",
   "road.prog1": "<b>Finition de la boîte englobante</b> &mdash; chaque poignée &times; type de forme &times; zoom",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.fr = {
   "road.plan2": "Onglets <b>Shader</b> et <b>Script</b> dans le panneau de droite de Modern et Pro",
   "road.plan3": "Poignées d&rsquo;inclinaison &middot; redimensionner une forme pivotée selon ses propres axes",
   "road.plan4": "Installateurs signés pour Windows et macOS &middot; AppImage",
-  "road.plan5": "Pagination du manifeste <b>.vtc</b> pour les fichiers de plus de 100 000 pages",
+  "road.plan5": "Pagination du manifeste <b>.vtp</b> pour les fichiers de plus de 100 000 pages",
   "road.plan6": "Calcul / enregistrement / import en parallèle sur plusieurs threads",
   "road.foot": "Tous les détails dans <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 

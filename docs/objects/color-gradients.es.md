@@ -23,7 +23,7 @@ Arriba del selector, cambia de **Sólido** a **Lineal** o **Radial**:
 
 ### Degradados en los trazos
 
-Los trazos también pueden llevar degradado: selecciona **Trazo** antes de elegir el degradado. El degradado del trazo sigue el trazado de principio a fin. Se guarda en el archivo `.vtc` y se exporta a SVG como un degradado real, así que se ve igual en un navegador.
+Los trazos también pueden llevar degradado: selecciona **Trazo** antes de elegir el degradado. El degradado del trazo sigue el trazado de principio a fin. Se guarda en el archivo `.vtp` y se exporta a SVG como un degradado real, así que se ve igual en un navegador.
 
 ## Opciones del trazo
 

@@ -1,6 +1,13 @@
 /* Vectopen site — Português. Mesmas chaves do bloco `en` em i18n.js. */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).pt = "Português";
 window.VECTOPEN_I18N.strings.pt = {
+  "dl.cli.h": "Instalar pelo terminal",
+  "dl.cli.copy": "Copiar",
+  "dl.cli.note": "Baixam a versão mais recente do GitHub e verificam o SHA-256. No Linux usam dnf ou apt se existirem; adicione <code>-s -- --portable</code> depois de <code>sh</code> para instalar em ~/.local sem sudo.",
+  "oss.reddit": "Entrar em r/Vectopen_editor",
+  "oss.x": "Seguir @malabo_6",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "Recursos",
   "nav.download": "Baixar",
   "nav.docs": "Docs",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.pt = {
   "feat.bezier.h": "Desenho &amp; edição de nós",
   "feat.bezier.p": "Caneta, bézier e pincel, com edição completa de nós: adicionar, apagar e converter pontos, ou agarrá-los com G. Retângulo, elipse, polígono, estrela e uma biblioteca de formas (coração, gota, seta, nuvem&hellip;).",
   "feat.artboard.h": "Muitas pranchetas",
-  "feat.artboard.p": "Quantas pranchetas precisar num só documento. As páginas fora do ecrã são guardadas e libertadas, e o formato <b>.vtc</b> só abre o que você vê &mdash; 1.000 páginas e 100.000 objetos abrem em 1,4 s.",
+  "feat.artboard.p": "Quantas pranchetas precisar num só documento. As páginas fora do ecrã são guardadas e libertadas, e o formato <b>.vtp</b> só abre o que você vê &mdash; 1.000 páginas e 100.000 objetos abrem em 1,4 s.",
   "feat.layers.h": "Camadas profissionais",
   "feat.layers.p": "Camadas que refletem o documento real: arraste para qualquer nível, subcamadas, mostrar / bloquear por linha e máscaras de recorte para grupos <em>e</em> texto. Um ícone por tipo, miniaturas opcionais e vista compacta.",
   "feat.magnet.h": "Texto &amp; tipografia",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.pt = {
   "road.done2": "<b>Inspetor completo</b> &mdash; texto, efeitos, filtros e vetorizar no painel direito",
   "road.done3": "<b>Degradês nos contornos</b> &mdash; guardados no ficheiro e exportados para SVG",
   "road.done4": "<b>Camadas</b> &mdash; subcamadas, ícones por tipo, miniaturas e vista compacta",
-  "road.done5": "<b>Várias pranchetas</b> e o formato <b>.vtc</b> com carregamento de páginas sob demanda",
+  "road.done5": "<b>Várias pranchetas</b> e o formato <b>.vtp</b> com carregamento de páginas sob demanda",
   "road.done6": "<b>Edição de nós</b> &middot; agrupar / desagrupar &middot; alinhar / distribuir",
   "road.done7": "Exportar para SVG, PDF, EPS, PNG, JPEG e WEBP &middot; scripts e complementos",
   "road.prog1": "<b>Afinar a caixa delimitadora</b> &mdash; cada alça &times; tipo de forma &times; zoom",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.pt = {
   "road.plan2": "Separadores <b>Shader</b> e <b>Script</b> no painel direito de Modern e Pro",
   "road.plan3": "Alças de inclinação &middot; redimensionar formas rodadas nos seus próprios eixos",
   "road.plan4": "Instaladores assinados para Windows e macOS &middot; AppImage",
-  "road.plan5": "Paginação do manifesto <b>.vtc</b> para ficheiros com mais de 100.000 páginas",
+  "road.plan5": "Paginação do manifesto <b>.vtp</b> para ficheiros com mais de 100.000 páginas",
   "road.plan6": "Cálculo / gravação / importação em paralelo com várias threads",
   "road.foot": "Todos os detalhes em <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 

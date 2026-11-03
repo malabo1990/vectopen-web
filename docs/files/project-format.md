@@ -1,27 +1,27 @@
-# Project Format (.vtc)
+# Project Format (.vtp)
 
-Vectopen saves documents as **`.vtc`** files. **Ctrl+S** saves (the first time it asks where), **Ctrl+N** starts a new document; Open and Save As are in the file menu.
+Vectopen saves documents as **`.vtp`** files (up to 0.2.0-alpha the extension was `.vtc`; those files still open). **Ctrl+S** saves (the first time it asks where), **Ctrl+N** starts a new document; Open and Save As are in the file menu.
 
-- **One file, one document.** A `.vtc` holds every artboard, layer and object, with their colours, gradients (fill and stroke), effects, filters and shaders — the file to back up or send to someone.
+- **One file, one document.** A `.vtp` holds every artboard, layer and object, with their colours, gradients (fill and stroke), effects, filters and shaders — the file to back up or send to someone.
 - **Built for big documents.** Each artboard is stored and compressed separately. Opening a file reads only the list of pages; a page loads when you scroll to it, and saving rewrites only the pages you changed. A test document with 1,000 pages and 100,000 objects opens in about 1.4 seconds.
 - **Undo history is not saved.** Reopening a document starts with an empty history.
 - Images placed in the document are stored inside the file.
 
 ## Safety and damaged files
 
-- **Keep a backup of important work.** Saving rewrites the `.vtc` file in place; if the computer loses power or crashes *during* a save, the file can be left incomplete.
+- **Keep a backup of important work.** Saving rewrites the `.vtp` file in place; if the computer loses power or crashes *during* a save, the file can be left incomplete.
 - If the file's **header or page list** is damaged, Vectopen won't open it — nothing is half-loaded.
 - If only **one page** is damaged, the rest of the document opens, but that page opens **empty**. Don't save over the original in that case: use **Save As** with a new name and report the file on [GitHub](https://github.com/malabo1990/-Vectopen/issues) or [Telegram](https://t.me/vectopen).
 
 ## Compatibility
 
-- Vectopen reads the **current** format and the **older** ones: the first `.vtc` (a single compressed JSON document), plain JSON projects, and content saved with version 1 of the object format.
+- Vectopen reads the **current** format and the **older** ones: `.vtc` files from earlier versions (including the first one, a single compressed JSON document), plain JSON projects, and content saved with version 1 of the object format.
 - Files are always **saved in the current format**. An older Vectopen may not open a file saved by a newer one.
 - While Vectopen is in **alpha**, the format can still change. The aim is that every new version keeps opening files from earlier versions; a formal compatibility guarantee will come with version 1.0.
 
 ## Technical details
 
-For developers and tools that want to read `.vtc` files. All numbers are little-endian.
+For developers and tools that want to read `.vtp` files. All numbers are little-endian.
 
 | Bytes | Content |
 |---|---|
@@ -51,4 +51,4 @@ Wherever you choose — **Save As** opens the normal file dialog, and **Save** w
 
 ## Older projects
 
-Older projects (the first `.vtc` format and `.vectopen` / JSON files) still open; save them again to convert them to the current `.vtc`.
+Older projects (`.vtc` and `.vectopen` / JSON files) still open; save them again to convert them to the current `.vtp`.

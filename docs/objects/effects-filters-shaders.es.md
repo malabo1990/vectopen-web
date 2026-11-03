@@ -56,7 +56,7 @@ Un **shader** es un pequeño programa que se ejecuta en la tarjeta gráfica y de
 - **plantillas** para empezar: invertir, escala de grises, onda, pixelado, holograma, brillo de borde, arcoíris animado, desenfoque;
 - una **biblioteca** con tus shaders: guardar, cargar, renombrar, duplicar, borrar.
 
-Los shaders usan el lenguaje de shaders de Godot (parecido a GLSL). Aplicar un shader es un paso de deshacer, y se guarda en el archivo `.vtc`.
+Los shaders usan el lenguaje de shaders de Godot (parecido a GLSL). Aplicar un shader es un paso de deshacer, y se guarda en el archivo `.vtp`.
 
 !!! note
     Los parámetros de tipo *textura* de un shader todavía no se guardan en el archivo.

@@ -1,6 +1,13 @@
 /* Vectopen site — 中文（简体）。与 i18n.js 中 `en` 块的键相同。 */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).zh = "中文";
 window.VECTOPEN_I18N.strings.zh = {
+  "dl.cli.h": "从终端安装",
+  "dl.cli.copy": "复制",
+  "dl.cli.note": "它们会从 GitHub 下载最新版本并校验 SHA-256。在 Linux 上若有 dnf 或 apt 就使用它们；在 <code>sh</code> 后加 <code>-s -- --portable</code> 可无需 sudo 安装到 ~/.local。",
+  "oss.reddit": "加入 r/Vectopen_editor",
+  "oss.x": "关注 @malabo_6",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "功能",
   "nav.download": "下载",
   "nav.docs": "文档",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.zh = {
   "feat.bezier.h": "绘图 &amp; 节点编辑",
   "feat.bezier.p": "钢笔、贝塞尔和画笔，支持完整的节点编辑：添加、删除、转换锚点，或按 G 抓取移动。矩形、椭圆、多边形、星形，以及形状库（心形、水滴、箭头、云朵&hellip;）。",
   "feat.artboard.h": "多画板、大文件",
-  "feat.artboard.p": "一个文档可容纳任意数量的画板。屏幕外的页面会被保存并释放，<b>.vtc</b> 格式只打开你看到的内容 &mdash; 1000 页、10 万个对象 1.4 秒即可打开。",
+  "feat.artboard.p": "一个文档可容纳任意数量的画板。屏幕外的页面会被保存并释放，<b>.vtp</b> 格式只打开你看到的内容 &mdash; 1000 页、10 万个对象 1.4 秒即可打开。",
   "feat.layers.h": "专业图层",
   "feat.layers.p": "与真实文档一致的图层：可拖放到任意层级，支持子图层、每行显示 / 锁定，以及对编组<em>和</em>文字使用剪切蒙版。每种类型都有图标，可选缩略图和紧凑视图。",
   "feat.magnet.h": "文字 &amp; 排版",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.zh = {
   "road.done2": "<b>完整的检查器</b> &mdash; 文字、效果、滤镜和矢量化都在右侧面板",
   "road.done3": "<b>描边渐变</b> &mdash; 保存在文件中并可导出为 SVG",
   "road.done4": "<b>图层</b> &mdash; 子图层、类型图标、缩略图和紧凑视图",
-  "road.done5": "<b>多画板</b>以及按需加载页面的 <b>.vtc</b> 格式",
+  "road.done5": "<b>多画板</b>以及按需加载页面的 <b>.vtp</b> 格式",
   "road.done6": "<b>节点编辑</b> &middot; 编组 / 取消编组 &middot; 对齐 / 分布",
   "road.done7": "导出 SVG、PDF、EPS、PNG、JPEG 和 WEBP &middot; 脚本和插件",
   "road.prog1": "<b>完善边界框</b> &mdash; 每个控制柄 &times; 形状类型 &times; 缩放",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.zh = {
   "road.plan2": "在 Modern 和 Pro 的右侧面板中加入 <b>Shader</b> 和 <b>Script</b> 标签页",
   "road.plan3": "倾斜控制柄 &middot; 沿自身轴缩放已旋转的形状",
   "road.plan4": "Windows 和 macOS 的签名安装包 &middot; AppImage",
-  "road.plan5": "面向 10 万页以上文件的 <b>.vtc</b> 清单分页",
+  "road.plan5": "面向 10 万页以上文件的 <b>.vtp</b> 清单分页",
   "road.plan6": "通过工作线程并行计算 / 保存 / 导入",
   "road.foot": "完整细节见 <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>。",
 

@@ -56,7 +56,7 @@ A **shader** is a small program that runs on the graphics card and decides the c
 - **templates** to start from: invert, greyscale, wave, pixelate, hologram, rim light, animated rainbow, blur;
 - a **library** of your own shaders: save, load, rename, duplicate, delete.
 
-Shaders use Godot's shading language (similar to GLSL). Applying a shader is one undo step, and it's saved in the `.vtc` file.
+Shaders use Godot's shading language (similar to GLSL). Applying a shader is one undo step, and it's saved in the `.vtp` file.
 
 !!! note
     Shader parameters of type *texture* are not saved in the file yet.

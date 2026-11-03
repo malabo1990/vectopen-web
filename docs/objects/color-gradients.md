@@ -23,7 +23,7 @@ At the top of the picker, switch from **Solid** to **Linear** or **Radial**:
 
 ### Gradients on strokes
 
-Strokes can have gradients too — select **Stroke** before choosing the gradient. A stroke gradient follows the path from start to end. It's saved in the `.vtc` file and exported to SVG as a real gradient, so it looks the same in a browser.
+Strokes can have gradients too — select **Stroke** before choosing the gradient. A stroke gradient follows the path from start to end. It's saved in the `.vtp` file and exported to SVG as a real gradient, so it looks the same in a browser.
 
 ## Stroke options
 

@@ -1,6 +1,13 @@
 /* Vectopen site — 日本語。i18n.js の `en` ブロックと同じキー。 */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).ja = "日本語";
 window.VECTOPEN_I18N.strings.ja = {
+  "dl.cli.h": "ターミナルからインストール",
+  "dl.cli.copy": "コピー",
+  "dl.cli.note": "GitHub から最新版をダウンロードし SHA-256 を確認します。Linux では dnf か apt があれば使います。<code>sh</code> の後に <code>-s -- --portable</code> を付けると sudo なしで ~/.local にインストールします。",
+  "oss.reddit": "r/Vectopen_editor に参加",
+  "oss.x": "@malabo_6 をフォロー",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "機能",
   "nav.download": "ダウンロード",
   "nav.docs": "ドキュメント",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.ja = {
   "feat.bezier.h": "描画 &amp; ノード編集",
   "feat.bezier.p": "ペン、ベジェ、ブラシに加え、完全なノード編集：ポイントの追加・削除・変換、G キーでつかんで移動。長方形、楕円、多角形、星形、そしてシェイプライブラリ（ハート、しずく、矢印、雲&hellip;）。",
   "feat.artboard.h": "複数アートボードと大容量ファイル",
-  "feat.artboard.p": "1 つのドキュメントに必要なだけのアートボード。画面外のページは保存して解放され、<b>.vtc</b> 形式は見えている部分だけを開きます &mdash; 1,000 ページ・10 万オブジェクトが 1.4 秒で開きます。",
+  "feat.artboard.p": "1 つのドキュメントに必要なだけのアートボード。画面外のページは保存して解放され、<b>.vtp</b> 形式は見えている部分だけを開きます &mdash; 1,000 ページ・10 万オブジェクトが 1.4 秒で開きます。",
   "feat.layers.h": "プロ仕様のレイヤー",
   "feat.layers.p": "実際のドキュメントを反映するレイヤー：任意の深さへドラッグ、サブレイヤー、行ごとの表示 / ロック、グループ<em>と</em>テキストのクリッピングマスク。種類ごとのアイコン、サムネイル表示、コンパクト表示。",
   "feat.magnet.h": "テキスト &amp; タイポグラフィ",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.ja = {
   "road.done2": "<b>完全なインスペクター</b> &mdash; テキスト、エフェクト、フィルター、ベクター化を右パネルに",
   "road.done3": "<b>線のグラデーション</b> &mdash; ファイルに保存され SVG にも書き出し",
   "road.done4": "<b>レイヤー</b> &mdash; サブレイヤー、種類アイコン、サムネイル、コンパクト表示",
-  "road.done5": "<b>複数アートボード</b>と、ページを必要時に読み込む <b>.vtc</b> 形式",
+  "road.done5": "<b>複数アートボード</b>と、ページを必要時に読み込む <b>.vtp</b> 形式",
   "road.done6": "<b>ノード編集</b> &middot; グループ化 / 解除 &middot; 整列 / 分布",
   "road.done7": "SVG、PDF、EPS、PNG、JPEG、WEBP への書き出し &middot; スクリプトとアドオン",
   "road.prog1": "<b>バウンディングボックスの仕上げ</b> &mdash; ハンドル &times; シェイプの種類 &times; ズーム",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.ja = {
   "road.plan2": "Modern と Pro の右パネルに <b>Shader</b> と <b>Script</b> タブ",
   "road.plan3": "シアーハンドル &middot; 回転したシェイプを自身の軸でリサイズ",
   "road.plan4": "Windows と macOS 向けの署名付きインストーラー &middot; AppImage",
-  "road.plan5": "10 万ページ超のファイル向け <b>.vtc</b> マニフェストのページング",
+  "road.plan5": "10 万ページ超のファイル向け <b>.vtp</b> マニフェストのページング",
   "road.plan6": "ワーカースレッドによる計算 / 保存 / 読み込みの並列化",
   "road.foot": "詳細は <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a> にあります。",
 

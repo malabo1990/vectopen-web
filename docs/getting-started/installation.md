@@ -76,7 +76,7 @@ Vectorize depends on a component (ONNX Runtime) that isn't available for the Win
 
 ## Settings and your files
 
-Your preferences (theme, interface, layer panel options, shortcuts) are stored in your user folder and kept between updates. Your drawings are saved wherever you choose, as `.vtc` files — see [Project Format](../files/project-format.md).
+Your preferences (theme, interface, layer panel options, shortcuts) are stored in your user folder and kept between updates. Your drawings are saved wherever you choose, as `.vtp` files — see [Project Format](../files/project-format.md).
 
 ## Run from source (developers)
 

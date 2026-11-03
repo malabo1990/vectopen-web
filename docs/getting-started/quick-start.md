@@ -32,7 +32,7 @@ In the inspector, click the **Fill** swatch. Choose a colour, or switch to **lin
 
 ## 6. Save
 
-**Ctrl+S** saves a `.vtc` file (you choose where the first time). See [Project Format](../files/project-format.md).
+**Ctrl+S** saves a `.vtp` file (you choose where the first time). See [Project Format](../files/project-format.md).
 
 ## 7. Export
 

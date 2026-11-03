@@ -1,6 +1,13 @@
 /* Vectopen site — Deutsch. Gleiche Schlüssel wie der `en`-Block in i18n.js. */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).de = "Deutsch";
 window.VECTOPEN_I18N.strings.de = {
+  "dl.cli.h": "Im Terminal installieren",
+  "dl.cli.copy": "Kopieren",
+  "dl.cli.note": "Sie laden die neueste Version von GitHub und prüfen ihre SHA-256. Unter Linux nutzen sie dnf oder apt, falls vorhanden; mit <code>-s -- --portable</code> nach <code>sh</code> wird ohne sudo in ~/.local installiert.",
+  "oss.reddit": "r/Vectopen_editor beitreten",
+  "oss.x": "@malabo_6 folgen",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "Funktionen",
   "nav.download": "Download",
   "nav.docs": "Doku",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.de = {
   "feat.bezier.h": "Zeichnen &amp; Knotenbearbeitung",
   "feat.bezier.p": "Zeichenstift, Bézier und Pinsel mit vollständiger Knotenbearbeitung: Punkte hinzufügen, löschen und umwandeln oder mit G greifen. Rechteck, Ellipse, Polygon, Stern und eine Formenbibliothek (Herz, Tropfen, Pfeil, Wolke&hellip;).",
   "feat.artboard.h": "Viele Zeichenflächen",
-  "feat.artboard.p": "So viele Zeichenflächen wie nötig in einem Dokument. Seiten außerhalb des Bildschirms werden gespeichert und freigegeben, das <b>.vtc</b>-Format öffnet nur, was du siehst &mdash; 1.000 Seiten und 100.000 Objekte in 1,4 s.",
+  "feat.artboard.p": "So viele Zeichenflächen wie nötig in einem Dokument. Seiten außerhalb des Bildschirms werden gespeichert und freigegeben, das <b>.vtp</b>-Format öffnet nur, was du siehst &mdash; 1.000 Seiten und 100.000 Objekte in 1,4 s.",
   "feat.layers.h": "Professionelle Ebenen",
   "feat.layers.p": "Ebenen, die das echte Dokument abbilden: Ziehen in jede Tiefe, Unterebenen, Anzeigen / Sperren pro Zeile und Schnittmasken für Gruppen <em>und</em> Text. Ein Symbol pro Typ, optionale Vorschaubilder und eine kompakte Ansicht.",
   "feat.magnet.h": "Text &amp; Typografie",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.de = {
   "road.done2": "<b>Vollständiger Inspektor</b> &mdash; Text, Effekte, Filter und Vektorisieren im rechten Bedienfeld",
   "road.done3": "<b>Verläufe auf Konturen</b> &mdash; in der Datei gespeichert und als SVG exportiert",
   "road.done4": "<b>Ebenen</b> &mdash; Unterebenen, Typ-Symbole, Vorschaubilder und kompakte Ansicht",
-  "road.done5": "<b>Mehrere Zeichenflächen</b> und das <b>.vtc</b>-Format mit Laden der Seiten bei Bedarf",
+  "road.done5": "<b>Mehrere Zeichenflächen</b> und das <b>.vtp</b>-Format mit Laden der Seiten bei Bedarf",
   "road.done6": "<b>Knotenbearbeitung</b> &middot; gruppieren / aufheben &middot; ausrichten / verteilen",
   "road.done7": "Export als SVG, PDF, EPS, PNG, JPEG und WEBP &middot; Skripte und Add-ons",
   "road.prog1": "<b>Feinschliff am Begrenzungsrahmen</b> &mdash; jeder Griff &times; Formtyp &times; Zoom",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.de = {
   "road.plan2": "<b>Shader</b>- und <b>Script</b>-Tabs im rechten Bedienfeld von Modern und Pro",
   "road.plan3": "Neigungsgriffe &middot; gedrehte Formen entlang ihrer eigenen Achsen skalieren",
   "road.plan4": "Signierte Installer für Windows und macOS &middot; AppImage",
-  "road.plan5": "Paginierung des <b>.vtc</b>-Manifests für Dateien mit über 100.000 Seiten",
+  "road.plan5": "Paginierung des <b>.vtp</b>-Manifests für Dateien mit über 100.000 Seiten",
   "road.plan6": "Paralleles Berechnen / Speichern / Importieren mit Worker-Threads",
   "road.foot": "Alle Details in <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 

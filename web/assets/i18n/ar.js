@@ -1,6 +1,13 @@
 /* Vectopen site — العربية (من اليمين إلى اليسار). نفس مفاتيح كتلة `en` في i18n.js. */
 (window.VECTOPEN_I18N.names = window.VECTOPEN_I18N.names || {}).ar = "العربية";
 window.VECTOPEN_I18N.strings.ar = {
+  "dl.cli.h": "التثبيت من الطرفية",
+  "dl.cli.copy": "نسخ",
+  "dl.cli.note": "تنزّل أحدث إصدار من GitHub وتتحقق من SHA-256. في لينكس تستخدم dnf أو apt إن وُجدا؛ أضف <code>-s -- --portable</code> بعد <code>sh</code> للتثبيت في ~/.local دون sudo.",
+  "oss.reddit": "انضم إلى r/Vectopen_editor",
+  "oss.x": "تابع @malabo_6",
+  "foot.reddit": "Reddit",
+  "foot.x": "X (@malabo_6)",
   "nav.features": "الميزات",
   "nav.download": "تنزيل",
   "nav.docs": "التوثيق",
@@ -25,7 +32,7 @@ window.VECTOPEN_I18N.strings.ar = {
   "feat.bezier.h": "الرسم وتحرير العُقد",
   "feat.bezier.p": "القلم وبيزيه والفرشاة، مع تحرير كامل للعُقد: إضافة النقاط وحذفها وتحويلها، أو الإمساك بها بالمفتاح G. مستطيل وقطع ناقص ومضلع ونجمة ومكتبة أشكال (قلب، قطرة، سهم، سحابة&hellip;).",
   "feat.artboard.h": "لوحات رسم كثيرة وملفات ضخمة",
-  "feat.artboard.p": "ما تشاء من لوحات الرسم في مستند واحد. تُحفظ الصفحات خارج الشاشة وتُحرَّر، وصيغة <b>.vtc</b> لا تفتح إلا ما تراه &mdash; 1000 صفحة و100 ألف عنصر تُفتح في 1.4 ثانية.",
+  "feat.artboard.p": "ما تشاء من لوحات الرسم في مستند واحد. تُحفظ الصفحات خارج الشاشة وتُحرَّر، وصيغة <b>.vtp</b> لا تفتح إلا ما تراه &mdash; 1000 صفحة و100 ألف عنصر تُفتح في 1.4 ثانية.",
   "feat.layers.h": "طبقات احترافية",
   "feat.layers.p": "طبقات تعكس المستند الحقيقي: سحب إلى أي عمق، وطبقات فرعية، وإظهار / قفل لكل صف، وأقنعة قص للمجموعات والنصوص. أيقونة لكل نوع، وصور مصغرة اختيارية، وعرض مضغوط.",
   "feat.magnet.h": "النص والطباعة",
@@ -79,7 +86,7 @@ window.VECTOPEN_I18N.strings.ar = {
   "road.done2": "<b>مفتش كامل</b> &mdash; النص والتأثيرات والمرشحات والتحويل إلى متجه في اللوحة اليمنى",
   "road.done3": "<b>تدرجات في الحدود</b> &mdash; تُحفظ في الملف وتُصدَّر إلى SVG",
   "road.done4": "<b>الطبقات</b> &mdash; طبقات فرعية وأيقونات للأنواع وصور مصغرة وعرض مضغوط",
-  "road.done5": "<b>لوحات رسم متعددة</b> وصيغة <b>.vtc</b> مع تحميل الصفحات عند الحاجة",
+  "road.done5": "<b>لوحات رسم متعددة</b> وصيغة <b>.vtp</b> مع تحميل الصفحات عند الحاجة",
   "road.done6": "<b>تحرير العُقد</b> &middot; تجميع / فك التجميع &middot; محاذاة / توزيع",
   "road.done7": "تصدير إلى SVG وPDF وEPS وPNG وJPEG وWEBP &middot; سكربتات وإضافات",
   "road.prog1": "<b>صقل مربع الإحاطة</b> &mdash; كل مقبض &times; نوع شكل &times; تكبير",
@@ -91,7 +98,7 @@ window.VECTOPEN_I18N.strings.ar = {
   "road.plan2": "تبويبا <b>Shader</b> و<b>Script</b> في اللوحة اليمنى لواجهتي Modern وPro",
   "road.plan3": "مقابض الإمالة &middot; تغيير حجم الأشكال المدوّرة على محاورها الخاصة",
   "road.plan4": "مثبّتات موقّعة لـ Windows وmacOS &middot; AppImage",
-  "road.plan5": "تقسيم بيان <b>.vtc</b> إلى صفحات للملفات التي تتجاوز 100 ألف صفحة",
+  "road.plan5": "تقسيم بيان <b>.vtp</b> إلى صفحات للملفات التي تتجاوز 100 ألف صفحة",
   "road.plan6": "حساب / حفظ / استيراد متوازٍ عبر خيوط عاملة",
   "road.foot": "كل التفاصيل في <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 

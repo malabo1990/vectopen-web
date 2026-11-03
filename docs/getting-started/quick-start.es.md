@@ -32,7 +32,7 @@ En el inspector, pulsa la muestra de **Relleno**. Elige un color, o cambia a deg
 
 ## 6. Guardar
 
-**Ctrl+S** guarda un archivo `.vtc` (la primera vez te pregunta dónde). Ver [Formato de proyecto](../files/project-format.md).
+**Ctrl+S** guarda un archivo `.vtp` (la primera vez te pregunta dónde). Ver [Formato de proyecto](../files/project-format.md).
 
 ## 7. Exportar
 

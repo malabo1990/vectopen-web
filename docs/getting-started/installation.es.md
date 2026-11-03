@@ -76,7 +76,7 @@ Vectorizar depende de un componente (ONNX Runtime) que todavía no está disponi
 
 ## Ajustes y archivos
 
-Tus preferencias (tema, interfaz, opciones del panel de capas, atajos) se guardan en tu carpeta de usuario y se mantienen entre actualizaciones. Tus dibujos se guardan donde tú elijas, como archivos `.vtc` — ver [Formato de proyecto](../files/project-format.md).
+Tus preferencias (tema, interfaz, opciones del panel de capas, atajos) se guardan en tu carpeta de usuario y se mantienen entre actualizaciones. Tus dibujos se guardan donde tú elijas, como archivos `.vtp` — ver [Formato de proyecto](../files/project-format.md).
 
 ## Ejecutar desde el código (desarrolladores)
 

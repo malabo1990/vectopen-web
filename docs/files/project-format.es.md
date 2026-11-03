@@ -1,27 +1,27 @@
-# Formato de proyecto (.vtc)
+# Formato de proyecto (.vtp)
 
-Vectopen guarda los documentos como archivos **`.vtc`**. **Ctrl+S** guarda (la primera vez pregunta dónde), **Ctrl+N** empieza un documento nuevo; Abrir y Guardar como están en el menú de archivo.
+Vectopen guarda los documentos como archivos **`.vtp`** (hasta la 0.2.0-alpha la extensión era `.vtc`; esos archivos se siguen abriendo). **Ctrl+S** guarda (la primera vez pregunta dónde), **Ctrl+N** empieza un documento nuevo; Abrir y Guardar como están en el menú de archivo.
 
-- **Un archivo, un documento.** Un `.vtc` contiene todas las mesas de trabajo, capas y objetos, con sus colores, degradados (de relleno y de trazo), efectos, filtros y shaders — es el archivo que guardas como copia o envías a otra persona.
+- **Un archivo, un documento.** Un `.vtp` contiene todas las mesas de trabajo, capas y objetos, con sus colores, degradados (de relleno y de trazo), efectos, filtros y shaders — es el archivo que guardas como copia o envías a otra persona.
 - **Pensado para documentos grandes.** Cada mesa de trabajo se guarda y comprime por separado. Al abrir solo se lee la lista de páginas; una página se carga cuando llegas a ella, y al guardar solo se reescriben las páginas que cambiaste. Un documento de prueba con 1.000 páginas y 100.000 objetos se abre en unos 1,4 segundos.
 - **El historial de deshacer no se guarda.** Al volver a abrir un documento, el historial empieza vacío.
 - Las imágenes colocadas en el documento se guardan dentro del archivo.
 
 ## Seguridad y archivos dañados
 
-- **Guarda una copia del trabajo importante.** Al guardar se reescribe el archivo `.vtc` en su sitio; si el ordenador se apaga o se cuelga *durante* el guardado, el archivo puede quedar incompleto.
+- **Guarda una copia del trabajo importante.** Al guardar se reescribe el archivo `.vtp` en su sitio; si el ordenador se apaga o se cuelga *durante* el guardado, el archivo puede quedar incompleto.
 - Si la **cabecera o la lista de páginas** del archivo está dañada, Vectopen no lo abre: no se carga a medias.
 - Si solo **una página** está dañada, el resto del documento se abre, pero esa página aparece **vacía**. En ese caso no guardes encima del original: usa **Guardar como** con otro nombre y envía el archivo en [GitHub](https://github.com/malabo1990/-Vectopen/issues) o [Telegram](https://t.me/vectopen).
 
 ## Compatibilidad
 
-- Vectopen lee el formato **actual** y los **anteriores**: el primer `.vtc` (un único JSON comprimido), los proyectos en JSON plano y el contenido guardado con la versión 1 del formato de objetos.
+- Vectopen lee el formato **actual** y los **anteriores**: los `.vtc` de versiones anteriores (incluido el primero, un único JSON comprimido), los proyectos en JSON plano y el contenido guardado con la versión 1 del formato de objetos.
 - Siempre se **guarda en el formato actual**. Un Vectopen más antiguo puede no abrir un archivo guardado por uno más nuevo.
 - Mientras Vectopen esté en **alfa**, el formato aún puede cambiar. El objetivo es que cada versión nueva siga abriendo los archivos de las anteriores; la garantía formal de compatibilidad llegará con la versión 1.0.
 
 ## Detalles técnicos
 
-Para desarrolladores y herramientas que quieran leer archivos `.vtc`. Todos los números son little-endian.
+Para desarrolladores y herramientas que quieran leer archivos `.vtp`. Todos los números son little-endian.
 
 | Bytes | Contenido |
 |---|---|
@@ -51,4 +51,4 @@ Donde tú elijas — **Guardar como** abre el diálogo normal de archivos, y **G
 
 ## Proyectos antiguos
 
-Los proyectos antiguos (el primer formato `.vtc` y los archivos `.vectopen` / JSON) se siguen abriendo; guárdalos de nuevo para convertirlos al `.vtc` actual.
+Los proyectos antiguos (los archivos `.vtc` y `.vectopen` / JSON) se siguen abriendo; guárdalos de nuevo para convertirlos al `.vtp` actual.
