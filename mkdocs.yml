@@ -74,7 +74,7 @@ plugins:
             Scripts & Add-ons: Scripts y complementos
             MCP Server (AI): Servidor MCP (IA)
             Files: Archivos
-            Project Format (.vtc): Formato de proyecto (.vtc)
+            Project Format (.vtp): Formato de proyecto (.vtp)
             Export & Import: Exportar e importar
             Keyboard Shortcuts: Atajos de teclado
 
@@ -126,6 +126,6 @@ nav:
       - Scripts & Add-ons: automation/scripts-addons.md
       - MCP Server (AI): integrations/mcp-server.md
   - Files:
-      - Project Format (.vtc): files/project-format.md
+      - Project Format (.vtp): files/project-format.md
       - Export & Import: files/export-import.md
   - Keyboard Shortcuts: keyboard-shortcuts.md
