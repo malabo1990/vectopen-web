@@ -5,7 +5,7 @@
 Este es el **manual de usuario**: cómo instalar Vectopen, cómo son las tres interfaces, qué hace cada herramienta y panel, y cómo guardar, exportar y automatizar tu trabajo.
 
 !!! info "Versión actual: 0.2.0-alpha"
-    Es una **alfa**: casi todo funciona, algunas cosas todavía no, y encontrarás fallos. Cada página dice claramente cuando algo está incompleto. Si algo falla, cuéntalo en **[Telegram](https://t.me/vectopen)** o abre un issue en **[GitHub](https://github.com/malabo1990/-Vectopen/issues)**.
+    Es una **alfa**: casi todo funciona, algunas cosas todavía no, y encontrarás fallos. Cada página dice claramente cuando algo está incompleto. Si algo falla, cuéntalo en **[Reddit](https://www.reddit.com/r/Vectopen_editor/)**, **[Telegram](https://t.me/vectopen)** o abre un issue en **[GitHub](https://github.com/malabo1990/-Vectopen/issues)**.
 
 ## Por dónde empezar
 

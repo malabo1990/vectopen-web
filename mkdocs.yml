@@ -96,6 +96,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/malabo1990/-Vectopen
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/Vectopen_editor/
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/vectopen
 
 nav:
   - Home: index.md

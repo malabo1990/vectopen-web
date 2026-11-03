@@ -124,12 +124,13 @@ window.VECTOPEN_I18N = {
       "oss.p": "Vectopen is a one-person open-source project. Issues, pull requests and ideas are welcome &mdash; the code is mostly GDScript (Rust for text and vectorizing) with 750+ gdUnit4 tests, so it&rsquo;s easy to find your way around.",
       "oss.star": "Star on GitHub",
       "oss.tg": "Join the Telegram",
+      "oss.reddit": "Join r/Vectopen_editor",
       "oss.engine": "Engine", "oss.language": "Language", "oss.licence": "Licence",
       "oss.version": "Version", "oss.tests": "Tests", "oss.format": "Format",
 
       "foot.brand": "Vectopen &mdash; open-source vector editor",
       "foot.gh": "GitHub", "foot.blog": "Blog", "foot.roadmap": "Roadmap",
-      "foot.licence": "MIT Licence", "foot.tg": "Telegram",
+      "foot.licence": "MIT Licence", "foot.tg": "Telegram", "foot.reddit": "Reddit",
 
       "blog.eyebrow": "Blog",
       "blog.h": "Notes from the workshop.",
@@ -259,12 +260,13 @@ window.VECTOPEN_I18N = {
       "oss.p": "Vectopen es un proyecto de código abierto hecho por una sola persona. Se agradecen issues, pull requests e ideas &mdash; el código es casi todo GDScript (Rust para texto y vectorizado) con más de 750 pruebas gdUnit4, así que es fácil orientarse.",
       "oss.star": "Estrella en GitHub",
       "oss.tg": "Únete a Telegram",
+      "oss.reddit": "Únete a r/Vectopen_editor",
       "oss.engine": "Motor", "oss.language": "Lenguaje", "oss.licence": "Licencia",
       "oss.version": "Versión", "oss.tests": "Pruebas", "oss.format": "Formato",
 
       "foot.brand": "Vectopen &mdash; editor vectorial open source",
       "foot.gh": "GitHub", "foot.blog": "Blog", "foot.roadmap": "Hoja de ruta",
-      "foot.licence": "Licencia MIT", "foot.tg": "Telegram",
+      "foot.licence": "Licencia MIT", "foot.tg": "Telegram", "foot.reddit": "Reddit",
 
       "blog.eyebrow": "Blog",
       "blog.h": "Notas del taller.",
