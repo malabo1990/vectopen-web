@@ -130,7 +130,7 @@ window.VECTOPEN_I18N = {
 
       "foot.brand": "Vectopen &mdash; open-source vector editor",
       "foot.gh": "GitHub", "foot.blog": "Blog", "foot.roadmap": "Roadmap",
-      "foot.licence": "MIT Licence", "foot.tg": "Telegram", "foot.reddit": "Reddit",
+      "foot.licence": "MIT Licence", "foot.tg": "Telegram", "foot.reddit": "Reddit", "foot.x": "X (@malabo_6)", "foot.x": "X (@malabo_6)",
 
       "blog.eyebrow": "Blog",
       "blog.h": "Notes from the workshop.",
