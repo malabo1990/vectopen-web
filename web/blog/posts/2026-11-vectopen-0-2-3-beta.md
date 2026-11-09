@@ -192,8 +192,25 @@ just enough and tells you).
 
 1. **Ultra-high performance at 50,000 elements**, with new algorithms.
 2. An interface for **tablets and Android**.
-3. A new, more compact context menu and inspector in Smart.
-4. Less memory per text (about 35 KB each today).
+3. **Vectopen Web**: a version that runs in the browser, with nothing to
+   install.
+4. A new, more compact context menu and inspector in Smart.
+5. Less memory per text (about 35 KB each today).
+
+## Support Vectopen
+
+Vectopen is made by one person, with no company, no account, no telemetry and
+no paid tier. **Donations let me put more hours into it** and get sooner to
+what's next: **Vectopen Web** in the browser, 50,000-element performance and a
+tablet interface.
+
+**[Support on GitHub Sponsors &rarr;](https://github.com/sponsors/malabo1990)**
+&nbsp;(monthly or one-time)
+
+If you can't donate, starring the
+[repository](https://github.com/malabo1990/-Vectopen), trying the beta and
+reporting what breaks helps just as much: a good part of this release came
+from those reports.
 
 ## Every change, one by one
 

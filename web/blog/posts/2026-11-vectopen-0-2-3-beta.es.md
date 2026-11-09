@@ -198,8 +198,24 @@ reduce la escala lo justo y avisa).
 
 1. **Rendimiento ultra alto con 50 000 elementos**, con algoritmos nuevos.
 2. Interfaz para **tabletas y Android**.
-3. Un menú contextual y un inspector nuevos en Smart, más compactos.
-4. Menos memoria por texto (ahora unos 35 KB cada uno).
+3. **Vectopen Web**: una versión que funcione en el navegador, sin instalar
+   nada.
+4. Un menú contextual y un inspector nuevos en Smart, más compactos.
+5. Menos memoria por texto (ahora unos 35 KB cada uno).
+
+## Apoya Vectopen
+
+Vectopen lo hace una sola persona, sin empresa detrás, sin cuentas, sin
+telemetría y sin versión de pago. **Las donaciones me permiten dedicarle más
+horas** y llegar antes a lo que viene: **Vectopen Web** en el navegador, el
+rendimiento con 50 000 elementos y la interfaz para tabletas.
+
+**[Apoyar en GitHub Sponsors &rarr;](https://github.com/sponsors/malabo1990)**
+&nbsp;(mensual o puntual)
+
+Si no puedes donar, ayuda igual poner una estrella al
+[repositorio](https://github.com/malabo1990/-Vectopen), probar la beta y
+contar lo que falle: buena parte de esta versión salió de esos avisos.
 
 ## Todos los cambios, uno por uno
 

@@ -72,6 +72,7 @@ window.VECTOPEN_I18N = {
       "dl.get": "Download",
       "dl.portable": "portable",
       "dl.soon": "Coming soon",
+      "dl.web.help": "Help build it &rarr;",
       "dl.android.st": "Experimental preview",
       "dl.alphanote": "Beta build: not signed yet. Windows may show &ldquo;Windows protected your PC&rdquo; (More info &rarr; Run anyway); on macOS right-click the app &rarr; Open the first time. Android is an experimental preview: the interface is not designed for touch and tablets yet. Found a bug? Tell us on <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> or <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
       "dl.cli.h": "Install from the terminal",
@@ -120,6 +121,7 @@ window.VECTOPEN_I18N = {
       "donate.lead": "It's a solo project with no company behind it. If Vectopen is useful to you, a small recurring or one-off contribution buys focused development time &mdash; and it's the only funding there is.",
       "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Monthly or one-time, right from GitHub.",
       "donate.note": "Not in a position to donate? Starring the repo, filing a good bug report or translating the app all help just as much.",
+      "donate.goal": "Your support pays for development time and the next big steps: <b>Vectopen Web</b>, which will run in the browser with nothing to install, very high performance with 50,000 elements and an interface for tablets.",
 
       "oss.h": "MIT-licensed. No account, no telemetry, no catch.",
       "oss.p": "Vectopen is a one-person open-source project. Issues, pull requests and ideas are welcome &mdash; the code is mostly GDScript (Rust for text and vectorizing) with 860+ gdUnit4 tests, so it&rsquo;s easy to find your way around.",
@@ -210,6 +212,7 @@ window.VECTOPEN_I18N = {
       "dl.get": "Descargar",
       "dl.portable": "portátil",
       "dl.soon": "Próximamente",
+      "dl.web.help": "Ayuda a crearla &rarr;",
       "dl.android.st": "Vista previa experimental",
       "dl.alphanote": "Versión beta: aún sin firmar. Windows puede mostrar &laquo;Windows protegió su PC&raquo; (Más información &rarr; Ejecutar de todas formas); en macOS, la primera vez, clic derecho sobre la app &rarr; Abrir. Android es una vista previa experimental: la interfaz aún no está diseñada para el tacto ni para tabletas. ¿Has visto un fallo? Cuéntalo en <a href=\"https://t.me/vectopen\" target=\"_blank\" rel=\"noopener\">Telegram</a> o en <a href=\"https://github.com/malabo1990/-Vectopen/issues\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
       "dl.cli.h": "Instalar desde la terminal",
@@ -258,6 +261,7 @@ window.VECTOPEN_I18N = {
       "donate.lead": "Es un proyecto en solitario, sin ninguna empresa detrás. Si Vectopen te resulta útil, una pequeña aportación recurrente o puntual compra tiempo de desarrollo concentrado &mdash; y es la única financiación que hay.",
       "donate.gh.h": "GitHub Sponsors", "donate.gh.p": "Mensual o puntual, desde el propio GitHub.",
       "donate.note": "¿No puedes donar? Poner una estrella al repo, abrir un buen informe de bug o traducir la app ayudan igual.",
+      "donate.goal": "Tu apoyo paga tiempo de desarrollo y los próximos grandes pasos: <b>Vectopen Web</b>, que funcionará en el navegador sin instalar nada, rendimiento muy alto con 50 000 elementos y una interfaz para tabletas.",
 
       "oss.h": "Licencia MIT. Sin cuenta, sin telemetría, sin trampa.",
       "oss.p": "Vectopen es un proyecto de código abierto hecho por una sola persona. Se agradecen issues, pull requests e ideas &mdash; el código es casi todo GDScript (Rust para texto y vectorizado) con más de 860 pruebas gdUnit4, así que es fácil orientarse.",
