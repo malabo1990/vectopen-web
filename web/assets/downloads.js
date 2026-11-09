@@ -1,5 +1,5 @@
 /* Vectopen site — descargas directas.
-   1) Resalta la tarjeta del sistema del visitante (Windows / macOS / Linux).
+   1) Resalta la tarjeta del sistema del visitante (Windows / macOS / Linux / Android).
    2) Pregunta a GitHub cuál es la versión más reciente (incluye alfas/betas)
       y cambia los enlaces y el número de versión. Si GitHub no responde, se
       quedan los enlaces fijos del HTML (que ya apuntan a una versión real). */
@@ -8,6 +8,8 @@
   var REPO = "malabo1990/-Vectopen";
 
   function detectOS() {
+    // Android también dice «Linux» en la plataforma: mirarlo antes.
+    if ((navigator.userAgent || "").toLowerCase().indexOf("android") >= 0) return "android";
     var p = ((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent || "").toLowerCase();
     if (p.indexOf("win") >= 0) return "windows";
     if (p.indexOf("mac") >= 0 || p.indexOf("iphone") >= 0 || p.indexOf("ipad") >= 0) return "mac";

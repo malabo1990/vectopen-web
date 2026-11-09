@@ -1,5 +1,19 @@
 [
   {
+    "slug": "2026-11-vectopen-0-2-3-beta",
+    "title": "Vectopen 0.2.3-beta: a new vector brush, text on a path, precise editing and 10,000-element documents",
+    "date": "2026-11-09",
+    "summary": "Six days and 64 changes since 0.2.2: a new brush engine (Krita-like pencil, shape and pattern brushes), text on a path with on-canvas handles, professional node editing and selection, zoom up to 190,000 %, smooth 10,000-element documents, five ad campaigns as tests, lower memory use and a first Android preview.",
+    "tags": [
+      "release",
+      "brush",
+      "text",
+      "performance",
+      "android"
+    ],
+    "draft": false
+  },
+  {
     "slug": "2026-11-vectopen-0-2-1-beta",
     "title": "Vectopen 0.2.1-beta → 0.2.2-beta",
     "date": "2026-11-03",

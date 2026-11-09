@@ -1,0 +1,48 @@
+name: Versión nueva de Vectopen
+
+# Cuando sale una versión de Vectopen, pone sus enlaces de descarga y su
+# número en la web (enlaces fijos del HTML) y la vuelve a publicar.
+#  · Lo lanza la release de -Vectopen (repository_dispatch «vectopen-release»)
+#    si ese repo tiene el secreto WEB_DISPATCH_TOKEN.
+#  · Y, por si acaso, se comprueba solo cada 3 horas y a mano.
+# (La página además lo actualiza con JavaScript al cargarse.)
+
+on:
+  repository_dispatch:
+    types: [vectopen-release]
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: release-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enlaces de la última versión
+        id: sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/sync_release.py
+
+      - name: Guardar y volver a publicar la web
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "vectopen-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/index.html
+          git commit -m "Descargas: Vectopen ${{ steps.sync.outputs.tag }}"
+          git push
+          # Un push hecho con GITHUB_TOKEN no lanza otros workflows: publicar a mano.
+          gh workflow run deploy-pages.yml --ref main
