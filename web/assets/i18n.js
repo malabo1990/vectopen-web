@@ -19,6 +19,12 @@ window.VECTOPEN_I18N = {
       "hero.source": "Browse the source",
       "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>860+ tests</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+      "video.eyebrow": "Video",
+
+      "video.h": "Vectopen in 30 seconds.",
+
+      "video.lead": "From a blank canvas to a finished poster: import an SVG, recolour it, edit nodes, paint with brushes, set text on a path, zoom in close and handle 10,000 elements.",
+
       "shots.eyebrow": "See it",
       "shots.h": "One editor, three ways to work.",
       "shots.lead": "Pick the interface that suits you &mdash; switch any time from the top bar. The screenshots follow this page&rsquo;s light or dark theme.",
@@ -158,6 +164,12 @@ window.VECTOPEN_I18N = {
       "hero.download": "Descargar",
       "hero.source": "Ver el código",
       "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>más de 860 pruebas</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
+
+      "video.eyebrow": "Vídeo",
+
+      "video.h": "Vectopen en 30 segundos.",
+
+      "video.lead": "De un lienzo vacío a un cartel terminado: importar un SVG, recolorearlo, editar nodos, pintar con pinceles, texto en trazado, zoom extremo y 10 000 elementos.",
 
       "shots.eyebrow": "Míralo",
       "shots.h": "Un editor, tres formas de trabajar.",

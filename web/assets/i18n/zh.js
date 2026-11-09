@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.zh = {
   "hero.source": "浏览源代码",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>860+ 项测试</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "视频",
+
+  "video.h": "30 秒了解 Vectopen。",
+
+  "video.lead": "从空白画布到完成的海报：导入 SVG、重新配色、编辑节点、用画笔绘制、路径文字、极限缩放，以及 10,000 个元素。",
+
   "shots.eyebrow": "看看效果",
   "shots.h": "一个编辑器，三种工作方式。",
   "shots.lead": "选择适合你的界面 &mdash; 随时可在顶部栏切换。截图会跟随本页的浅色或深色主题。",

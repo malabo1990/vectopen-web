@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.ar = {
   "hero.source": "تصفح الشيفرة",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>أكثر من 860 اختبارًا</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "فيديو",
+
+  "video.h": "Vectopen في 30 ثانية.",
+
+  "video.lead": "من لوحة فارغة إلى ملصق جاهز: استيراد SVG، وإعادة التلوين، وتحرير العُقد، والرسم بالفرش، ونص على مسار، وتكبير فائق، و10,000 عنصر.",
+
   "shots.eyebrow": "شاهده",
   "shots.h": "محرر واحد، ثلاث طرق للعمل.",
   "shots.lead": "اختر الواجهة التي تناسبك &mdash; ويمكنك تبديلها في أي وقت من الشريط العلوي. تتبع اللقطات السمة الفاتحة أو الداكنة لهذه الصفحة.",

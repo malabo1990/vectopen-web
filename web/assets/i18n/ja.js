@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.ja = {
   "hero.source": "ソースを見る",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>860 件以上のテスト</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "動画",
+
+  "video.h": "30 秒でわかる Vectopen。",
+
+  "video.lead": "白紙のキャンバスから完成したポスターまで：SVG の読み込み、配色の変更、ノード編集、ブラシ、パス上のテキスト、超拡大ズーム、そして 10,000 要素。",
+
   "shots.eyebrow": "画面を見る",
   "shots.h": "1 つのエディター、3 つの使い方。",
   "shots.lead": "自分に合ったインターフェースを選べます &mdash; 上部バーからいつでも切り替え可能。スクリーンショットはこのページのライト / ダークテーマに合わせて変わります。",

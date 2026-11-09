@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.hi = {
   "hero.source": "सोर्स देखें",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>860+ टेस्ट</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "वीडियो",
+
+  "video.h": "30 सेकंड में Vectopen।",
+
+  "video.lead": "खाली कैनवास से तैयार पोस्टर तक: SVG आयात, रंग बदलना, नोड संपादन, ब्रश से पेंटिंग, पाथ पर टेक्स्ट, बेहद क़रीबी ज़ूम और 10,000 तत्व।",
+
   "shots.eyebrow": "देखें",
   "shots.h": "एक एडिटर, काम करने के तीन तरीके।",
   "shots.lead": "अपने लिए सही इंटरफ़ेस चुनें &mdash; ऊपर की बार से कभी भी बदलें। स्क्रीनशॉट इस पेज की लाइट या डार्क थीम के साथ बदलते हैं।",

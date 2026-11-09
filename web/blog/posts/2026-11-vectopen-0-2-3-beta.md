@@ -15,7 +15,7 @@ even with huge documents. The result is **0.2.3-beta**.
 **[Download 0.2.3-beta &rarr;](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.3-beta)**
 &nbsp;Windows (.zip) · macOS universal (.dmg / .zip) · Linux (.deb, .rpm, .tar.gz) · Android (.apk, preview)
 
-![0.2.3-beta splash screen](../media/shots/023_splash.webp)
+<video controls preload="metadata" playsinline poster="../media/video/vectopen-promo-poster.webp" style="width:100%;border-radius:12px"><source src="../media/video/vectopen-promo-30s.mp4" type="video/mp4"></video>
 
 If you already have 0.2.2, the logo window will tell you there is a new version
 and install it with one click.

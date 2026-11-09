@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.pt = {
   "hero.source": "Ver o código",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>mais de 860 testes</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "Vídeo",
+
+  "video.h": "O Vectopen em 30 segundos.",
+
+  "video.lead": "De uma tela vazia a um cartaz pronto: importar um SVG, mudar as cores, editar nós, pintar com pincéis, texto no caminho, zoom extremo e 10 000 elementos.",
+
   "shots.eyebrow": "Veja",
   "shots.h": "Um editor, três formas de trabalhar.",
   "shots.lead": "Escolha a interface que lhe convém &mdash; mude quando quiser na barra superior. As capturas seguem o tema claro ou escuro desta página.",

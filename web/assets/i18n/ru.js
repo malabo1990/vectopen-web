@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.ru = {
   "hero.source": "Исходный код",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>860+ тестов</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "Видео",
+
+  "video.h": "Vectopen за 30 секунд.",
+
+  "video.lead": "От пустого холста до готового плаката: импорт SVG, перекраска, редактирование узлов, кисти, текст по контуру, сверхкрупный масштаб и 10 000 элементов.",
+
   "shots.eyebrow": "Как это выглядит",
   "shots.h": "Один редактор, три способа работы.",
   "shots.lead": "Выберите удобный интерфейс &mdash; его можно сменить в любой момент на верхней панели. Скриншоты следуют светлой или тёмной теме этой страницы.",

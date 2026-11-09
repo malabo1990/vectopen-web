@@ -20,6 +20,12 @@ window.VECTOPEN_I18N.strings.de = {
   "hero.source": "Quellcode ansehen",
   "hero.meta": "<span>GDScript + Rust</span> &nbsp;&middot;&nbsp; <span>über 860 Tests</span> &nbsp;&middot;&nbsp; <span>Windows / Linux / macOS / Android</span>",
 
+  "video.eyebrow": "Video",
+
+  "video.h": "Vectopen in 30 Sekunden.",
+
+  "video.lead": "Von der leeren Fläche zum fertigen Plakat: SVG importieren, umfärben, Knoten bearbeiten, mit Pinseln malen, Text auf Pfad, extremer Zoom und 10.000 Elemente.",
+
   "shots.eyebrow": "Ansehen",
   "shots.h": "Ein Editor, drei Arten zu arbeiten.",
   "shots.lead": "Wähle die Oberfläche, die zu dir passt &mdash; jederzeit über die obere Leiste umschaltbar. Die Bilder folgen dem hellen oder dunklen Design dieser Seite.",
