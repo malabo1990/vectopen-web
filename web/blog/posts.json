@@ -1,5 +1,19 @@
 [
   {
+    "slug": "2026-11-vectopen-0-2-4-beta",
+    "title": "Vectopen 0.2.4-beta: 2D lighting, blends, real tables, layout containers and the fastest editor yet",
+    "date": "2026-11-23",
+    "summary": "99 changes since 0.2.3: lights with real-time 2D shadows, blends between several objects, advanced corners, tables with their own panel, flex and grid containers, components, master pages, “Convert to Bézier path”, live Shift + drag stroke width and a Windows installer. And clicking a shape drops from 11 to 6 ms.",
+    "tags": [
+      "release",
+      "lighting",
+      "blend",
+      "layout",
+      "performance"
+    ],
+    "draft": false
+  },
+  {
     "slug": "2026-11-vectopen-0-2-3-beta",
     "title": "Vectopen 0.2.3-beta: a new vector brush, text on a path, precise editing and 10,000-element documents",
     "date": "2026-11-09",
