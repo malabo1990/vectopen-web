@@ -113,7 +113,7 @@ window.VECTOPEN_I18N = {
       "road.plan6": "<b>.vtp</b> manifest paging (100k+ pages) &middot; parallel save / import on worker threads",
       "road.prog": "In progress",
       "road.plan": "Planned",
-      "road.foot": "Full detail lives in <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
+      "road.foot": "Full detail lives in <a href=\"https://github.com/malabo1990/-Vectopen/blob/multi-artboard-lazy-loading/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 
       "docs.eyebrow": "Read the internals",
       "docs.h": "Documented as it's built.",
@@ -262,7 +262,7 @@ window.VECTOPEN_I18N = {
       "road.plan6": "Paginación del índice <b>.vtp</b> (más de 100 000 páginas) &middot; guardado e importación en paralelo",
       "road.prog": "En curso",
       "road.plan": "Planeado",
-      "road.foot": "El detalle completo está en <a href=\"https://github.com/malabo1990/-Vectopen/blob/main/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
+      "road.foot": "El detalle completo está en <a href=\"https://github.com/malabo1990/-Vectopen/blob/multi-artboard-lazy-loading/ROADMAP.md\" target=\"_blank\" rel=\"noopener\">ROADMAP.md</a>.",
 
       "docs.eyebrow": "Cómo funciona por dentro",
       "docs.h": "Documentado mientras se construye.",
