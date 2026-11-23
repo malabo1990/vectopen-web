@@ -137,6 +137,43 @@ grosor de 500 trazos seleccionados va a unos 30 ms por fotograma.
   patrón** con piezas de inicio, esquina y final.
 - Todo lo nuevo, traducido a los **10 idiomas**.
 
+## 9. Lo que viene en la próxima versión
+
+- **Rendimiento hasta 100 000 elementos** fluidos en un documento.
+- **Impresión**: imprimir directamente desde Vectopen.
+- **Nuevos tipos de nodo Bézier** (suave, simétrico, esquina…) y más formas
+  de expresar una curva.
+- **3D mejorado**.
+- **Iluminación 2D para grupos**: un grupo entero proyecta y recibe sombra.
+- **Complementos (plugins) más avanzados**.
+- **Interfaz**: seguir puliendo la interfaz en general.
+
+## 10. Se busca colaboración
+
+Vectopen lo hace una sola persona, sin empresa detrás, sin cuentas, sin
+telemetría y sin versión de pago. Hay tres cosas en las que **tu ayuda
+marcaría la diferencia**:
+
+- **Vectorizar en Windows y macOS**: el vectorizador con IA ya va incluido,
+  pero necesito personas con Windows y con Mac que lo prueben a fondo y
+  ayuden a mejorarlo (y, si sabes de ONNX Runtime, a llevarlo también a los
+  Mac con procesador Intel).
+- **Desarrollador/a de iOS**: busco a alguien con Mac y Xcode que pueda
+  **exportar Vectopen para iPad** y probarlo. Godot ya lo permite; falta quien
+  lo compile, lo firme y lo pruebe en un dispositivo real.
+- **Donaciones**: me permiten dedicar más horas al desarrollo y llegar antes a
+  todo lo de la lista anterior.
+
+**[Apoyar en GitHub Sponsors &rarr;](https://github.com/sponsors/malabo1990)**
+&nbsp;(mensual o puntual)
+
+Para colaborar, preguntar o proponer ideas, escríbeme en
+[Telegram](https://t.me/vectopen) o en
+[Reddit](https://www.reddit.com/r/Vectopen_editor/). Si no puedes donar,
+también ayuda poner una estrella al
+[repositorio](https://github.com/malabo1990/-Vectopen), probar la beta y
+contar lo que falle.
+
 La lista completa está en las
 [notas de la versión](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.4-beta)
 y en los

@@ -134,6 +134,41 @@ of 500 selected strokes runs at about 30 ms per frame.
   and end pieces.
 - Everything new is translated into all **10 languages**.
 
+## 9. Coming in the next version
+
+- **Performance up to 100,000 elements** running smoothly in one document.
+- **Printing**: print straight from Vectopen.
+- **New Bézier node types** (smooth, symmetric, corner…) and more ways to
+  express a curve.
+- **Better 3D**.
+- **2D lighting for groups**: a whole group casts and receives shadows.
+- **More advanced plugins**.
+- **Interface**: keep polishing the interface as a whole.
+
+## 10. Help wanted
+
+Vectopen is made by a single person, with no company behind it, no
+accounts, no telemetry and no paid edition. There are three areas where
+**your help would make a real difference**:
+
+- **Vectorizing on Windows and macOS**: the AI vectorizer now ships there,
+  but I need people on Windows and Mac to test it thoroughly and help improve
+  it (and, if you know ONNX Runtime, to bring it to Intel Macs too).
+- **An iOS developer**: I am looking for someone with a Mac and Xcode who can
+  **export Vectopen for iPad** and test it. Godot already supports it; it
+  needs someone to build, sign and test it on a real device.
+- **Donations**: they let me spend more hours on development and reach
+  everything in the list above sooner.
+
+**[Support on GitHub Sponsors &rarr;](https://github.com/sponsors/malabo1990)**
+&nbsp;(monthly or one-off)
+
+To collaborate, ask questions or suggest ideas, write to me on
+[Telegram](https://t.me/vectopen) or
+[Reddit](https://www.reddit.com/r/Vectopen_editor/). If you cannot donate,
+starring the [repository](https://github.com/malabo1990/-Vectopen), trying
+the beta and reporting what breaks also helps a lot.
+
 The full list is in the
 [release notes](https://github.com/malabo1990/-Vectopen/releases/tag/v0.2.4-beta)
 and in the
