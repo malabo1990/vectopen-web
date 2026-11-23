@@ -20,6 +20,25 @@ Con un texto seleccionado, los controles de tipografía están en el inspector (
 
 **Ctrl+Alt+.** y **Ctrl+Alt+,** hacen el texto seleccionado más grueso o más fino.
 
+## Texto en trazado
+
+Selecciona un texto y un trazado y haz clic derecho ▸ **Texto en trazado**. Las letras se apoyan en su línea base real y no se deforman con la curva.
+
+- Tiradores en el lienzo: **▶** dónde empieza el texto, **◀** dónde termina y **◆** lo desliza a lo largo de la curva.
+- **Encima, debajo o centrado** en el trazado, **invertir la dirección** y **espejo**.
+- El texto en trazado queda encima de su guía: **un clic en cualquier letra** lo selecciona y se arrastra como cualquier objeto.
+- Clic derecho ▸ **Separar texto del trazado** recupera el texto original.
+
+![Texto en un trazado Bézier](../assets/shots/texto_trazado.webp)
+
+## Estilos de texto
+
+Los estilos con nombre (Título, Cuerpo, Pie…) están en la fila **Estilo** del panel de texto. Redefinir un estilo actualiza todos los textos que lo usan, respetando los retoques. Al editar, el formato también se puede aplicar **solo a las letras seleccionadas**.
+
+## Texto a curvas
+
+Clic derecho ▸ **Convertir a curvas (Bézier)** (**Ctrl+Mayús+O**) convierte un texto en un trazado Bézier por letra; un doble clic en una letra edita sus nodos.
+
 ## Efectos de texto
 
 Las sombras, contornos, 3D y demás [efectos](../objects/effects-filters-shaders.md) también funcionan con texto. Al exportar a SVG puedes convertir el texto en curvas, para que se vea bien aunque la fuente no esté instalada.

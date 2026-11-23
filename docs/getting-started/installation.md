@@ -4,34 +4,51 @@ Download the package for your system from the **[download page](https://malabo19
 
 ## Status by system
 
-| System | Status in 0.2.0-alpha |
+| System | Status in 0.2.4-beta |
 |---|---|
 | **Linux** | Tested — this is where Vectopen is developed |
-| **Windows** | Tested with Wine on Linux, not yet on a real Windows PC |
-| **macOS** | **Not tested on a real Mac yet.** It's built and packaged, but nobody has confirmed it starts |
+| **Windows** | Built and packaged (installer and portable `.zip`); tested with Wine, feedback from real PCs welcome |
+| **macOS** | Universal build (Intel and Apple Silicon); **not yet confirmed on a real Mac** |
+| **Android** | Experimental preview (`.apk`) |
 
-!!! warning "Alpha builds are not signed yet"
+!!! warning "The builds are not signed yet"
     Windows and macOS will warn that the app comes from an *unknown developer*. That is expected for now — see the steps for your system below. Signed installers are planned.
 
 ## Windows (10 / 11, 64-bit)
 
-1. Download `Vectopen-…-windows-x64.zip`.
-2. Right-click the file → **Extract All…**, and choose a folder (for example `Documents\Vectopen`).
-3. Open the folder and double-click **Vectopen.exe**.
-4. If Windows shows **"Windows protected your PC"**, click **More info** → **Run anyway**. This only happens the first time.
+=== "Installer (recommended)"
 
-To uninstall, delete the folder.
+    1. Download `Vectopen-…-windows-x64-setup.exe`.
+    2. Double-click it. If Windows shows **"Windows protected your PC"**, click **More info** → **Run anyway**.
+    3. It installs **for your user only** — no administrator rights needed — in `%LOCALAPPDATA%\Programs\Vectopen`, with a Start menu shortcut (and an optional desktop shortcut).
 
-## macOS (Intel and Apple Silicon)
+    New versions can be installed **from inside the app** (see [Updates](#updates)). To uninstall: **Settings → Apps**, or *Uninstall Vectopen* in the Start menu.
+
+=== "Portable .zip"
+
+    1. Download `Vectopen-…-windows-x64.zip`.
+    2. Right-click the file → **Extract All…**, and choose a folder (for example `Documents\Vectopen`).
+    3. Open the folder and double-click **Vectopen.exe**.
+
+    To uninstall, delete the folder.
+
+## macOS (10.13+, Intel and Apple Silicon)
 
 !!! danger "Untested on real Apple hardware"
-    The macOS build has **not been run on a real Mac yet**. It may not start, or parts of it may not work. If you try it, please tell us what happens — it works or not, and your macOS version and chip (Intel / Apple Silicon) — on [Telegram](https://t.me/vectopen) or [GitHub](https://github.com/malabo1990/-Vectopen/issues).
+    The macOS build has **not been confirmed on a real Mac yet**. If you try it, please tell us what happens — and your macOS version and chip (Intel / Apple Silicon) — on [Telegram](https://t.me/vectopen), [Reddit](https://www.reddit.com/r/Vectopen_editor/) or [GitHub](https://github.com/malabo1990/-Vectopen/issues).
 
 1. Download `Vectopen-…-macos-universal.dmg` (or the `.zip`, if you prefer).
 2. Open the `.dmg` and drag **Vectopen** into **Applications**.
 3. The first time, **right-click** Vectopen in Applications → **Open** → **Open**. After that it opens normally.
 
 To uninstall, move Vectopen from Applications to the Trash.
+
+## Android (preview)
+
+1. Download `Vectopen-…-android.apk` on your phone or tablet.
+2. Open it and allow installing apps from that source when Android asks.
+
+The Android version is an **experimental preview**: it includes the native text and import libraries, but not the AI vectorizer, and the interface is still the desktop one.
 
 ## Linux (x86_64)
 
@@ -60,17 +77,21 @@ To uninstall, move Vectopen from Applications to the Trash.
 
 ## What works where
 
-| Feature | Windows | macOS | Linux |
-|---|:-:|:-:|:-:|
-| Drawing, text, layers, effects, filters, shaders, scripts | ✓ | ✓ | ✓ |
-| Export (SVG, PDF, PNG, …) | ✓ | ✓ | ✓ |
-| **Vectorize** and the **AI tools** (background removal, ×4 upscale) | — | — | ✓ |
+| Feature | Windows | macOS | Linux | Android |
+|---|:-:|:-:|:-:|:-:|
+| Drawing, text, layers, lighting, blends, effects, filters, shaders, scripts | ✓ | ✓ | ✓ | ✓ |
+| Export (SVG, PDF, PNG, …) | ✓ | ✓ | ✓ | ✓ |
+| **Vectorize** and the **AI tools** (background removal, ×4 upscale) | ✓ | ✓ Apple Silicon | ✓ | — |
 
-Vectorize depends on a component (ONNX Runtime) that isn't available for the Windows and macOS builds yet. It's planned.
+Vectorize depends on ONNX Runtime. It is not available for **Intel Macs** (ONNX Runtime publishes no binaries for them) — the app explains it there. On Windows it needs the Microsoft **Visual C++ Redistributable**, which most PCs already have.
+
+## Updates
+
+Vectopen checks GitHub for a new version a few seconds after it starts (at most once a day). When there is one, it shows a notice with the release notes and a button to **download and install** it: the installer on Windows, the `.dmg` on macOS, the `.rpm` / `.deb` on Linux and the `.apk` on Android. You can also press **Check for updates**, or turn off **Check on startup**, in the **About** window.
 
 ## System requirements
 
-- **Windows** 10 or 11 (64-bit) · **macOS** 10.15 or later (Intel) or 11 or later (Apple Silicon) · **Linux** x86_64 with glibc 2.28 or later.
+- **Windows** 10 or 11 (64-bit) · **macOS** 10.13 or later (Intel) or 11 or later (Apple Silicon) · **Android** 7 or later (64-bit) · **Linux** x86_64 with glibc 2.28 or later.
 - Any graphics card with **Vulkan** or **OpenGL 3.3** support; integrated GPUs are fine.
 - About **200 MB** of disk space.
 

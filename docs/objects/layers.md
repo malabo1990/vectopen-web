@@ -9,7 +9,8 @@ The panel has three tabs: **Layers**, **Pages** (your artboards) and **Resources
 - An **icon** shows the type: rectangle, ellipse, star, polygon, path, text, image or group.
 - **Eye** — show / hide.
 - **Lock** — locked objects can't be selected or moved on the canvas.
-- **Clip** — turn a group or a text into a clipping mask for what's inside it.
+- **Clip** — turn a group or a text into a clipping mask for what's inside it. Masks can be **nested** (a mask inside another), also when exporting, and the mask shape's stroke is drawn above the clipped content.
+- Linked **components** show a diamond; a **table** is shown as a single object.
 - **Double-click** the name to rename it.
 
 ## Organising
@@ -49,3 +50,11 @@ Click the **⚙** next to the panel title:
 Drag the panel's edge — the left edge in Smart, the right edge (next to the ruler) in Modern and Pro. The width is remembered separately for each interface.
 
 The counter at the bottom shows how many layers the document has.
+
+## Blend modes
+
+The blend-mode menu at the top of the panel (Normal, Multiply, Screen, Overlay…) applies to the selected layer, next to its opacity. Blend modes are kept when exporting to SVG and PDF.
+
+## Panel scrolling with a tablet
+
+Drag with the **middle mouse button** (or the pen's side button) to scroll this or any other panel.

@@ -44,6 +44,11 @@ El **panel de teclado** (botón del teclado abajo a la izquierda en Smart) lista
 | Modo degradado en el lienzo | G (V o Escape para salir) |
 | Texto más grueso / más fino | Ctrl+Alt+. / Ctrl+Alt+, |
 | Cancelar un arrastre en curso | Escape |
+| Grosor del trazo (pincel, o sobre una forma / trazado seleccionado) | Mayús + arrastrar — arriba o derecha = más grueso |
+| Cambiar el estilo de esquina | Mayús + clic en un tirador de redondeo |
+| Texto a curvas | Ctrl+Mayús+O |
+
+En los campos numéricos, arrastra el valor para cambiarlo: **Mayús** o **Ctrl** = rápido, **Alt** = fino.
 
 ## Edición de nodos
 

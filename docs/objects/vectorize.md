@@ -5,8 +5,8 @@
 !!! success "Private and offline"
     Everything runs **on your computer**. The AI models are included inside Vectopen: nothing is uploaded, no internet connection or account is needed, and there are no usage limits.
 
-!!! warning "Linux only in 0.2.0-alpha"
-    Vectorize and the AI tools are in the **Linux** build. Windows and macOS support is planned.
+!!! info "Availability"
+    Vectorize and the AI tools are included on **Windows**, **Linux** and **macOS with Apple Silicon**. They are not available on Intel Macs (ONNX Runtime has no binaries for them) or on Android. On Windows they need the Microsoft Visual C++ Redistributable, which most PCs already have.
 
 ## What it can do — a real example
 

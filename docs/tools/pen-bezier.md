@@ -57,3 +57,11 @@ Every edit is one undo step.
 - The result of **Convert to curves** — available in the Boolean section of the inspector (Modern), the top bar (Pro) and the right-click menu. It turns a **boolean** object, or **two or more selected shapes** (merged together), into one editable path.
 
 **Primitive shapes** — rectangle, ellipse, polygon, star, drop and the custom shapes — are edited through their parameters (corner radius, number of points…), not point by point. A single primitive shape can't be converted to a path yet.
+
+## Converting shapes and text to paths
+
+Right-click ▸ **Convert to Bézier path** turns a polygon, rectangle, star or ellipse into an editable path, and a text into curves (one path per letter). The node editor opens on the result; on converted text, a **double-click on a letter** opens that letter's nodes directly.
+
+## Stroke width with Shift + drag
+
+With a path selected and the Bézier, pen or node tool active, hold **Shift** and drag over the path to change its stroke width live (up or right = thicker). It is a single undo step.

@@ -9,7 +9,8 @@ El panel tiene tres pestañas: **Capas**, **Páginas** (tus mesas de trabajo) y 
 - Un **icono** indica el tipo: rectángulo, elipse, estrella, polígono, trazado, texto, imagen o grupo.
 - **Ojo** — mostrar / ocultar.
 - **Candado** — los objetos bloqueados no se pueden seleccionar ni mover en el lienzo.
-- **Recorte** — convierte un grupo o un texto en máscara de recorte de lo que tiene dentro.
+- **Recorte** — convierte un grupo o un texto en máscara de recorte de lo que tiene dentro. Las máscaras se pueden **anidar** (una dentro de otra), también al exportar, y el borde de la figura-máscara se ve encima del contenido recortado.
+- Los **componentes** vinculados llevan un rombo; una **tabla** se muestra como un solo objeto.
 - **Doble clic** en el nombre para renombrarlo.
 
 ## Organizar
@@ -49,3 +50,11 @@ Pulsa el **⚙** junto al título del panel:
 Arrastra el borde del panel — el izquierdo en Smart, el derecho (junto a la regla) en Modern y Pro. El ancho se recuerda por separado para cada interfaz.
 
 El contador de abajo muestra cuántas capas tiene el documento.
+
+## Modos de fusión
+
+El menú de modo de fusión de la parte de arriba del panel (Normal, Multiplicar, Trama, Superponer…) se aplica a la capa seleccionada, junto a su opacidad. Los modos de fusión se mantienen al exportar a SVG y PDF.
+
+## Desplazar el panel con la tableta
+
+Arrastra con el **botón central** del ratón (o el botón lateral del lápiz) para desplazar este o cualquier otro panel.

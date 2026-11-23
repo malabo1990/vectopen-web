@@ -34,3 +34,24 @@ These settings are remembered between sessions.
     Tested with a **Huion Kamvas 20** on Linux (KDE Plasma, Wayland). Other tablets that report pen pressure to the operating system should work the same way, but haven't been tested yet. Turning the pen over to its **eraser** end erases strokes, like the eraser style. Pen **tilt** doesn't change the stroke. If your tablet doesn't show pressure in the meter, please tell us on [Telegram](https://t.me/vectopen) or [GitHub](https://github.com/malabo1990/-Vectopen/issues) with the tablet model and your system.
 
 A mouse stroke made right after using the pen is drawn at full width — pressure only applies to strokes that come from the pen.
+
+## Styles
+
+- **Pencil** like Krita's, with hardness grades from **2H to 8B**, paper grain and no wedges in tight turns.
+- **Pen**, **marker**, **airbrush** (stamps) and **calligraphy** (with an editable nib angle).
+- Changing the style keeps your stroke width.
+
+## Shape and pattern brushes
+
+- **Shape brush**: stamps shapes along the stroke. With **Selection**, the shapes, groups or paths you have selected become the brush.
+- **Pattern brush**: bends the pattern along the curve, with separate **start**, **corner** (centred on the turn) and **end** pieces, also editable on a stroke already drawn.
+- **Textures** inside the stroke (also from your own image, saved in the document), **colour variation** along the stroke and geometric effects: wavy, zigzag and rough.
+- **My brushes**: save your favourite settings and come back to them.
+
+## Stroke width with Shift + drag
+
+Hold **Shift** and drag on the canvas to resize the brush, in **any direction**: up or right = thicker, down or left = thinner. The change is proportional (fine at small sizes, fast at large ones) and nothing is drawn during the gesture.
+
+## Editing a stroke
+
+**Double-click** a brush stroke to edit it by its nodes: it becomes a curve with few nodes and keeps the pressure. Right-click ▸ **Convert stroke to outline** turns it into a filled shape.

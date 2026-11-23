@@ -33,4 +33,18 @@ Cualquier forma se puede mover, **redimensionar arrastrando sus tiradores** y gi
 - **elipses:** elipse completa, arco o tarta (ángulo inicial/final, radio interior para anillos);
 - **polígonos y estrellas:** número de lados o puntas, radio interior.
 
-Las formas primitivas se editan con estos parámetros, no punto a punto — ver [qué se puede editar punto a punto](pen-bezier.md#que-se-puede-editar-punto-a-punto).
+Las formas primitivas se editan con estos parámetros, no punto a punto — ver [qué se puede editar punto a punto](pen-bezier.md#que-se-puede-editar-punto-a-punto). Para editar una forma punto a punto, conviértela antes (abajo).
+
+## Esquinas avanzadas
+
+Cada esquina de un rectángulo puede tener su propio estilo: **redonda**, **redondeado inverso**, **chaflán**, **muesca**, **zigzag** o **dientes de sierra**. Elígelo en el panel **Figuras**, o mantén **Mayús** y haz clic en un tirador de redondeo del lienzo para ir pasando de un estilo a otro.
+
+![Esquinas de redondeado inverso](../assets/shots/esquina_inversa.webp)
+
+## Convertir en trazado Bézier
+
+Clic derecho sobre una forma ▸ **Convertir en trazado Bézier**. Polígonos, rectángulos, estrellas y elipses pasan a un trazado editable con la misma forma, relleno, trazo y posición (los lados rectos quedan exactos; las curvas, con pocos nodos con tiradores). El editor de nodos se abre solo. Se deshace con un solo Ctrl+Z.
+
+## Grosor con Mayús + arrastrar
+
+Con una forma seleccionada y la herramienta de formas, Bézier, pluma o nodos activa, mantén **Mayús** y arrastra **sobre la forma** para cambiar el grosor del trazo en vivo: arriba o derecha = más grueso, abajo o izquierda = más fino. Una etiqueta junto al cursor muestra el grosor. Mayús + arrastrar fuera de la selección sigue dibujando una forma proporcional.

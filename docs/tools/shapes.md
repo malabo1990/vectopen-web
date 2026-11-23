@@ -33,4 +33,18 @@ Every shape can be moved, **resized by dragging its handles** and rotated with t
 - **ellipses:** full ellipse, arc or pie (start/end angle, inner radius for rings);
 - **polygons and stars:** number of sides or points, inner radius.
 
-Primitive shapes are edited through these parameters, not point by point — see [what can be edited node by node](pen-bezier.md#what-can-be-edited-node-by-node).
+Primitive shapes are edited through these parameters, not point by point — see [what can be edited node by node](pen-bezier.md#what-can-be-edited-node-by-node). To edit a shape node by node, convert it first (below).
+
+## Advanced corners
+
+Each corner of a rectangle can have its own style: **round**, **inverted round**, **chamfer**, **notch**, **zigzag** or **saw-tooth**. Choose it in the **Shapes** panel, or hold **Shift** and click a corner-radius handle on the canvas to cycle through the styles.
+
+![Inverted round corners](../assets/shots/esquina_inversa.webp)
+
+## Convert to Bézier path
+
+Right-click a shape ▸ **Convert to Bézier path**. Polygons, rectangles, stars and ellipses become an editable path with the same shape, fill, stroke and position (straight sides stay exact; curves get few nodes with handles). The node editor opens straight away. It is a single undo step.
+
+## Stroke width with Shift + drag
+
+With a shape selected and the shape, Bézier, pen or node tool active, hold **Shift** and drag **over the shape** to change its stroke width live: up or right = thicker, down or left = thinner. A label next to the cursor shows the width. Shift + drag outside the selection still draws a proportional shape.

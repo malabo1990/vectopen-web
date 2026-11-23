@@ -44,6 +44,11 @@ The **keyboard panel** (keyboard button at the bottom-left in Smart) lists the c
 | Gradient mode on the canvas | G (V or Escape to leave) |
 | Text weight heavier / lighter | Ctrl+Alt+. / Ctrl+Alt+, |
 | Cancel a drag in progress | Escape |
+| Stroke width (brush, or over a selected shape / path) | Shift + drag — up or right = thicker |
+| Cycle corner style | Shift + click a corner-radius handle |
+| Text to curves | Ctrl+Shift+O |
+
+In number fields, drag the value to change it: **Shift** or **Ctrl** = fast, **Alt** = fine.
 
 ## Node editing
 

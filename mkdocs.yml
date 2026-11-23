@@ -70,6 +70,9 @@ plugins:
             Colour & Gradients: Color y degradados
             Effects, Filters & Shaders: Efectos, filtros y shaders
             Vectorize & AI: Vectorizar e IA
+            2D Lighting: Iluminación 2D
+            Blend: Fusión
+            "Layout: Tables, Containers & Components": "Maquetación: tablas, contenedores y componentes"
             Automation: Automatización
             Scripts & Add-ons: Scripts y complementos
             MCP Server (AI): Servidor MCP (IA)
@@ -122,6 +125,9 @@ nav:
       - Colour & Gradients: objects/color-gradients.md
       - Effects, Filters & Shaders: objects/effects-filters-shaders.md
       - Vectorize & AI: objects/vectorize.md
+      - 2D Lighting: objects/lighting.md
+      - Blend: objects/blend.md
+      - "Layout: Tables, Containers & Components": objects/layout.md
   - Automation:
       - Scripts & Add-ons: automation/scripts-addons.md
       - MCP Server (AI): integrations/mcp-server.md

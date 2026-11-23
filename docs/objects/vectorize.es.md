@@ -5,8 +5,8 @@
 !!! success "Privado y sin internet"
     Todo funciona **en tu ordenador**. Los modelos de IA vienen dentro de Vectopen: no se sube nada, no hace falta internet ni cuenta, y no hay límites de uso.
 
-!!! warning "Solo en Linux en la 0.2.0-alpha"
-    Vectorizar y las herramientas de IA están en la versión de **Linux**. Windows y macOS están previstos.
+!!! info "Disponibilidad"
+    Vectorizar y las herramientas de IA van incluidos en **Windows**, **Linux** y **macOS con Apple Silicon**. No están en los Mac con procesador Intel (ONNX Runtime no tiene binarios para ellos) ni en Android. En Windows necesitan el Visual C++ Redistributable de Microsoft, que casi todos los PC ya tienen.
 
 ## Qué puede hacer — un ejemplo real
 

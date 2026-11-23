@@ -20,6 +20,25 @@ With a text selected, the typography controls are in the inspector (Modern), in 
 
 **Ctrl+Alt+.** and **Ctrl+Alt+,** make the selected text heavier or lighter.
 
+## Text on a path
+
+Select a text and a path, then right-click ▸ **Text on path**. The letters sit on their real baseline and do not distort with the curve.
+
+- On-canvas handles: **▶** where the text starts, **◀** where it ends, **◆** slides it along the curve.
+- **Above, below or centred** on the path, **reverse direction** and **mirror**.
+- The text-on-path object sits above its guide: **one click on any letter** selects it and you can drag it like any object.
+- Right-click ▸ **Detach text from path** brings back the original text.
+
+![Text on a Bézier path](../assets/shots/texto_trazado.webp)
+
+## Text styles
+
+Named styles (Title, Body, Caption…) are in the **Style** row of the text panel. Redefining a style updates every text that uses it, keeping local tweaks. Formatting can also apply to **just the selected letters** while editing.
+
+## Text to curves
+
+Right-click ▸ **Convert to curves (Bézier)** (**Ctrl+Shift+O**) turns a text into one Bézier path per letter; a double-click on a letter edits its nodes.
+
 ## Text effects
 
 Shadows, outlines, 3D and the other [effects](../objects/effects-filters-shaders.md) work on text too. When exporting to SVG you can convert text to curves, so it looks right even where the font isn't installed.

@@ -57,3 +57,11 @@ Cada edición es un paso de deshacer.
 - El resultado de **Convertir a curvas** — en la sección Booleanas del inspector (Modern), la barra superior (Pro) y el menú del botón derecho. Convierte un objeto **booleano**, o **dos o más formas seleccionadas** (unidas), en un único trazado editable.
 
 Las **formas primitivas** — rectángulo, elipse, polígono, estrella, gota y las formas personalizadas — se editan con sus parámetros (radio de esquinas, número de puntas…), no punto a punto. Todavía no se puede convertir una sola forma primitiva en trazado.
+
+## Convertir formas y textos en trazados
+
+Clic derecho ▸ **Convertir en trazado Bézier** convierte un polígono, rectángulo, estrella o elipse en un trazado editable, y un texto en curvas (un trazado por letra). El editor de nodos se abre sobre el resultado; en un texto convertido, un **doble clic en una letra** abre directamente los nodos de esa letra.
+
+## Grosor con Mayús + arrastrar
+
+Con un trazado seleccionado y la herramienta Bézier, pluma o nodos activa, mantén **Mayús** y arrastra sobre el trazado para cambiar su grosor en vivo (arriba o derecha = más grueso). Es un solo paso de deshacer.
